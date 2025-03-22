@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Xanh Homestay - Nơi kết nối thiên nhiên và sự thư giãn
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content text-center">
+        <!-- Tiêu đề hero -->
+        <h1 class="hero-title">Xanh Homestay</h1>
+        <p class="hero-subtitle">
+            Chào mừng bạn đến với không gian "Xanh Mát Homestay" – nơi kết nối giữa thiên nhiên và sự thư giãn
+        </p>
+        
+        <!-- Feature Cards in Hero -->
+        <div class="hero-features">
+            <div class="row justify-content-center">
+                <!-- Tìm kiếm -->
+                <div class="col">
+                    <div class="hero-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-header">Tìm kiếm</div>
+                            <div class="feature-text">Dễ dàng tìm kiếm</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Khám phá -->
+                <div class="col">
+                    <div class="hero-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-header">Khám phá</div>
+                            <div class="feature-text">Địa điểm độc đáo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chi tiết -->
+                <div class="col">
+                    <div class="hero-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-header">Chi tiết</div>
+                            <div class="feature-text">Thông tin đầy đủ</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hình ảnh -->
+                <div class="col">
+                    <div class="hero-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-header">Hình ảnh</div>
+                            <div class="feature-text">Bộ sưu tập đẹp</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Đánh giá -->
+                <div class="col">
+                    <div class="hero-feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="feature-content">
+                            <div class="feature-header">Đánh giá</div>
+                            <div class="feature-text">Xếp hạng, nhận xét</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Search Section -->
+<section class="search-section">
+    <div class="container">
+        <!-- Khám phá Heading -->
+        <div class="section-heading-container">
+            <h2 class="text-center section-heading">Khám phá không gian homestay</h2>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-bar">
+                <form action="{{ url_for('search') }}" method="get" class="input-group">
+                    <span class="input-group-text search-icon"><i class="fas fa-search"></i></span>
+                    <input type="text" 
+                           class="form-control" 
+                           name="search"
+                           placeholder="Tìm kiếm theo tên, địa chỉ hoặc phong cách homestay"
+                           value="{{ search_query if search_query else '' }}">
+                    <button type="submit" class="btn btn-search">Tìm kiếm</button>
+                </form>
+            </div>
+            
+            <div class="filter-section mt-4">
+                <div class="filter-header d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#filterOptions">
+                    <h5 class="m-0">Lọc homestay</h5>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                
+                <div id="filterOptions" class="collapse show mt-3">
+                    <form action="{{ url_for('search') }}" method="get" class="filter-form">
+                        <!-- Preserve search query in filter form -->
+                        {% if search_query %}
+                        <input type="hidden" name="search" value="{{ search_query }}">
+                        {% endif %}
+                        
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <label for="city" class="form-label">Thành phố</label>
+                                <select class="form-select" id="city" name="city">
+                                    <option value="">Tất cả</option>
+                                    {% for city in cities %}
+                                    <option value="{{ city.city }}" {% if selected_city == city.city %}selected{% endif %}>
+                                        {{ city.city }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <label for="district" class="form-label">Quận/Huyện</label>
+                                <select class="form-select" id="district" name="district">
+                                    <option value="">Tất cả</option>
+                                    {% for district in districts %}
+                                    <option value="{{ district.district }}" {% if selected_district == district.district %}selected{% endif %}>
+                                        {{ district.district }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <label for="style" class="form-label">Phong cách</label>
+                                <select class="form-select" id="style" name="style">
+                                    <option value="">Tất cả</option>
+                                    {% for style in styles %}
+                                    <option value="{{ style }}" {% if selected_style == style %}selected{% endif %}>
+                                        {{ style }}
+                                    </option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-3 d-flex align-items-end">
+                                <button type="submit" class="btn btn-filter me-2">Lọc</button>
+                                <a href="{{ url_for('index') }}" class="btn btn-reset">Đặt lại</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Homestay Section -->
+<section class="homestay-section">
+    <div class="container">
+        <div class="row">
+            {% for homestay in homestays %}
+            <div class="col-md-4 mb-4">
+                <div class="homestay-card">
+                    <div class="homestay-image">
+                        {% set main_image = homestay.image_urls[0] if homestay.image_urls else '/static/images/default.jpg' %}
+                        <img src="{{ main_image }}" alt="{{ homestay.name }}">
+                        {% if homestay.priority == 1 %}
+                        <div class="homestay-badge">Đề xuất</div>
+                        {% endif %}
+                    </div>
+                    <div class="homestay-details">
+                        <h3 class="homestay-title">{{ homestay.name }}</h3>
+                        <p class="homestay-location">
+                            <i class="fas fa-map-marker-alt"></i> 
+                            {% if homestay.locations and homestay.locations[0] %}
+                                {{ homestay.locations[0].district }}, {{ homestay.locations[0].city }}
+                            {% endif %}
+                        </p>
+                        <div class="homestay-rating">
+                            {% for i in range(5) %}
+                                {% if i < homestay.rating|int %}
+                                    <i class="fas fa-star"></i>
+                                {% else %}
+                                    <i class="far fa-star"></i>
+                                {% endif %}
+                            {% endfor %}
+                            <span>{{ homestay.rating }}/5</span>
+                        </div>
+                        {% set slug = homestay.name|lower|replace("'", "")|replace('"', '')|replace(' ', '-')|replace('.', '')|replace(',', '')|replace(':', '')|replace(';', '')|replace('!', '')|replace('?', '')|replace('/', '-')|replace('\\', '-') %}
+                        <a href="{{ url_for('homestay_detail', id=homestay.id) }}" class="btn btn-view">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+            {% if not homestays %}
+            <div class="col-12">
+                <div class="alert alert-info">
+                    Không tìm thấy homestay phù hợp với tiêu chí tìm kiếm. Vui lòng thử lại với tiêu chí khác.
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

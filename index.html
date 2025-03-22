@@ -1,0 +1,150 @@
+<!-- Phần Header nâng cấp -->
+<script>
+  // Đảm bảo script.js được tải sớm để khởi tạo modal
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('Trang đã tải xong, kiểm tra chức năng modal ảnh...');
+    // Gọi lại hàm setupImageClicks nếu nó tồn tại
+    if (typeof setupImageClicks === 'function') {
+      setupImageClicks();
+    }
+  });
+</script>
+<header class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm transition-all duration-300">
+  <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <img src="/assets/logo.png" alt="Xanh Homestay" class="h-10" />
+      <span class="text-xl font-semibold text-emerald-600">Xanh Homestay</span>
+    </a>
+    
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="/" class="text-gray-800 hover:text-emerald-600 font-medium transition">Trang chủ</a>
+      <a href="/gioi-thieu" class="text-gray-800 hover:text-emerald-600 font-medium transition">Giới thiệu</a>
+      <a href="/phong" class="text-gray-800 hover:text-emerald-600 font-medium transition">Phòng nghỉ</a>
+      <a href="/dich-vu" class="text-gray-800 hover:text-emerald-600 font-medium transition">Dịch vụ</a>
+      <a href="/lien-he" class="text-gray-800 hover:text-emerald-600 font-medium transition">Liên hệ</a>
+    </nav>
+    
+    <div class="flex items-center gap-4">
+      <a href="tel:0706982978" class="flex items-center gap-2 bg-emerald-500 text-white px-4 py-2 rounded-full hover:bg-emerald-600 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+        </svg>
+        <span>0706982978</span>
+      </a>
+      
+      <button class="md:hidden text-gray-600" id="mobileMenuButton">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Mobile menu -->
+  <div class="hidden md:hidden bg-white shadow-md" id="mobileMenu">
+    <div class="px-4 py-3 space-y-3">
+      <a href="/" class="block text-gray-800 hover:text-emerald-600 font-medium transition">Trang chủ</a>
+      <a href="/gioi-thieu" class="block text-gray-800 hover:text-emerald-600 font-medium transition">Giới thiệu</a>
+      <a href="/phong" class="block text-gray-800 hover:text-emerald-600 font-medium transition">Phòng nghỉ</a>
+      <a href="/dich-vu" class="block text-gray-800 hover:text-emerald-600 font-medium transition">Dịch vụ</a>
+      <a href="/lien-he" class="block text-gray-800 hover:text-emerald-600 font-medium transition">Liên hệ</a>
+    </div>
+  </div>
+</header>
+
+<!-- Phần Hero cải tiến -->
+<div class="hero-section relative w-full h-[500px] overflow-hidden">
+  <img 
+    src="\images\hero-image.jpg 
+    alt="Xanh Homestay" 
+    class="w-full h-full object-cover"
+    onerror="this.onerror=null; this.src='/assets/fallback-hero.jpg';"
+  />
+  <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white p-4">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Xanh Homestay</h1>
+    <p class="text-xl md:text-2xl text-center max-w-3xl">
+      Chào mừng đến với "Xanh Mat Homestay" - nơi kết nối giữa thiên nhiên và sự thư giãn
+    </p>
+  </div>
+</div>
+
+<!-- Phần tính năng cải tiến -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Dịch vụ của chúng tôi</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Khám phá những trải nghiệm tuyệt vời tại Xanh Homestay với các dịch vụ được thiết kế riêng cho kỳ nghỉ của bạn</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <!-- Tìm kiếm -->
+      <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-6 flex flex-col items-center text-center group">
+        <div class="bg-amber-100 text-amber-500 p-3 rounded-full mb-4 group-hover:bg-amber-500 group-hover:text-white transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Tìm kiếm</h3>
+        <p class="text-gray-600 text-sm">Dễ dàng tìm kiếm theo vị trí và phong cách</p>
+      </div>
+      
+      <!-- Khám phá -->
+      <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-6 flex flex-col items-center text-center group">
+        <div class="bg-orange-100 text-orange-500 p-3 rounded-full mb-4 group-hover:bg-orange-500 group-hover:text-white transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Khám phá</h3>
+        <p class="text-gray-600 text-sm">Nhiều địa điểm độc đáo khắp mọi nơi</p>
+      </div>
+      
+      <!-- Chi tiết -->
+      <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-6 flex flex-col items-center text-center group">
+        <div class="bg-blue-100 text-blue-500 p-3 rounded-full mb-4 group-hover:bg-blue-500 group-hover:text-white transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Chi tiết</h3>
+        <p class="text-gray-600 text-sm">Thông tin đầy đủ về tiện nghi và dịch vụ</p>
+      </div>
+      
+      <!-- Hình ảnh -->
+      <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-6 flex flex-col items-center text-center group">
+        <div class="bg-pink-100 text-pink-500 p-3 rounded-full mb-4 group-hover:bg-pink-500 group-hover:text-white transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Hình ảnh</h3>
+        <p class="text-gray-600 text-sm">Bộ sưu tập ảnh thực tế của homestay</p>
+      </div>
+      
+      <!-- Đánh giá -->
+      <div class="bg-white rounded-xl shadow-sm hover:shadow-md transition-all p-6 flex flex-col items-center text-center group">
+        <div class="bg-yellow-100 text-yellow-500 p-3 rounded-full mb-4 group-hover:bg-yellow-500 group-hover:text-white transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Đánh giá</h3>
+        <p class="text-gray-600 text-sm">Tham khảo ý kiến và nhận xét</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="/static/js/script.js"></script>
+<script>
+  // Thực hiện việc thiết lập lại hình ảnh sau khi trang đã tải hoàn chỉnh
+  window.addEventListener('load', function() {
+    console.log('Trang đã tải hoàn chỉnh, thiết lập lại chức năng modal ảnh...');
+    setTimeout(function() {
+      if (typeof setupImageClicks === 'function') {
+        setupImageClicks();
+      }
+    }, 500);
+  });
+</script> 

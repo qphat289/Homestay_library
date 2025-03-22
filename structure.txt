@@ -1,0 +1,56 @@
+homestay_app/
+│
+├── app.py                # File chính chứa logic của ứng dụng Flask
+├── database.py           # Xử lý kết nối và thao tác với cơ sở dữ liệu cho người dùng
+├── models.py             # Các model cho dữ liệu homestay và người dùng (bao gồm JSON)
+├── routes.py             # Định tuyến các route của ứng dụng
+├── utils.py              # Các hàm tiện ích chung
+│
+├── data/                 # Thư mục chứa dữ liệu JSON
+│   └── homestays.json    # Dữ liệu homestay
+│
+├── static/               # Thư mục chứa tài nguyên tĩnh
+│   ├── css/              # Thư mục chứa file CSS
+│   │   └── style.css     # File CSS chính cho ứng dụng
+│   ├── js/               # Thư mục chứa file JavaScript
+│   │   └── script.js     # File JavaScript cho các tính năng tương tác
+│   └── images/           # Thư mục chứa ảnh
+│       ├── default.jpg   # Ảnh mặc định cho homestay
+│       └── hero-bg.jpg   # Ảnh nền cho hero section
+│
+└── templates/            # Thư mục chứa templates HTML
+    ├── base.html         # Template cơ sở cho tất cả các trang
+    ├── index.html        # Trang chủ hiển thị danh sách homestay
+    ├── detail.html       # Trang chi tiết cho mỗi homestay
+    ├── about.html        # Trang giới thiệu về ứng dụng
+    ├── contact.html      # Trang liên hệ với thông tin liên hệ
+    ├── login.html        # Trang đăng nhập
+    └── error.html        # Trang thông báo lỗi
+
+
+app.py: Đây là file chính của ứng dụng Flask, nơi khởi tạo ứng dụng, định nghĩa các route, và xử lý các yêu cầu HTTP.
+
+database.py: Chứa các hàm để tương tác với cơ sở dữ liệu SQLite cho người dùng, bao gồm việc lấy và thêm người dùng.
+
+models.py: Chứa các lớp để quản lý dữ liệu homestay và người dùng, bao gồm cả việc đọc và ghi dữ liệu từ file JSON.
+
+routes.py: Định nghĩa các route cho ứng dụng của bạn, quản lý logic điều hướng giữa các trang.
+
+utils.py: Chứa các hàm tiện ích chung, chẳng hạn như định dạng giá hay xử lý đường dẫn ảnh.
+
+data/: Thư mục này chứa file JSON homestays.json, nơi lưu trữ dữ liệu về các homestay.
+
+static/: Thư mục chứa tài nguyên tĩnh như CSS, JavaScript và ảnh.
+
+css/: Chứa file CSS cho giao diện.
+js/: Chứa file JavaScript cho các tính năng tương tác.
+images/: Chứa ảnh cho homestay và ảnh nền.
+templates/: Thư mục chứa các template HTML sử dụng Jinja2 để hiển thị nội dung động.
+
+base.html: Template cha cho tất cả các trang.
+index.html: Trang hiển thị danh sách các homestay.
+detail.html: Trang hiển thị chi tiết thông tin cho từng homestay.
+about.html: Trang giới thiệu về ứng dụng.
+contact.html: Trang liên hệ với thông tin liên hệ.
+login.html: Trang đăng nhập cho người dùng.
+error.html: Trang hiển thị thông báo lỗi khi cần thiết.

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}Liên Hệ - Xanh Homestay{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="contact-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <h2>Liên Hệ Với Chúng Tôi</h2>
+                    <p class="contact-intro">Chúng tôi luôn sẵn sàng lắng nghe ý kiến đóng góp, giải đáp thắc mắc và hỗ trợ bạn trong quá trình sử dụng dịch vụ Xanh Homestay.</p>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Email</h5>
+                            <p>info@xanhhomestay.com</p>
+                            <p>support@xanhhomestay.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Điện Thoại</h5>
+                            <p>+84 123 456 789</p>
+                            <p>+84 987 654 321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Địa Chỉ</h5>
+                            <p>28 Đường Xanh, Phường Thảo Điền</p>
+                            <p>Quận 2, TP. Hồ Chí Minh, Việt Nam</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <h5>Kết Nối Với Chúng Tôi</h5>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/xanhhomestay" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/xanhhomestay" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtube.com/xanhhomestay" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <h2>Gửi Thông Tin Liên Hệ</h2>
+                    <p>Mọi đóng góp ý kiến của bạn đều rất quý giá với chúng tôi. Vui lòng điền thông tin dưới đây:</p>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên của bạn">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Nhập địa chỉ email của bạn">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại của bạn">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Chủ đề</label>
+                            <select class="form-select" id="subject">
+                                <option selected>Chọn chủ đề liên hệ</option>
+                                <option value="feedback">Góp ý, phản hồi</option>
+                                <option value="question">Câu hỏi, thắc mắc</option>
+                                <option value="partnership">Hợp tác kinh doanh</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Nội dung</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Nhập nội dung liên hệ của bạn"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-contact">Gửi Liên Hệ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

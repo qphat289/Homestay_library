@@ -1,0 +1,1376 @@
+{% extends "base.html" %}
+
+{% block styles %}
+<style>
+/* Breadcrumb Styles - Redesigned */
+.breadcrumb-section {
+    padding: 15px 0;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(230, 187, 94, 0.2);
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item a {
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb-item.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.breadcrumb-divider {
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.breadcrumb-item a i {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* Rating Input Styles */
+.rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating-input input {
+    display: none;
+}
+
+.rating-input label {
+    cursor: pointer;
+    font-size: 25px;
+    color: #ddd;
+    margin: 0 2px;
+}
+
+.rating-input label:hover,
+.rating-input label:hover ~ label,
+.rating-input input:checked ~ label {
+    color: #ffc107;
+}
+
+/* Review List Styles */
+.review-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
+}
+
+.review-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.review-user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+}
+
+.review-user i {
+    font-size: 16px;
+    color: #6c757d;
+    background: #f8f9fa;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.username {
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 0.8rem;
+}
+
+.review-rating {
+    color: #ffd700;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 2px;
+}
+
+.review-date {
+    color: #6c757d;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.review-content {
+    color: #2c3e50;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.reviews-list {
+    margin-top: 1rem;
+}
+
+/* Review Summary Styles */
+.review-summary {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-summary-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.review-summary-rating {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    line-height: 1;
+}
+
+.review-summary-rating span {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: normal;
+    display: block;
+    margin-top: 4px;
+}
+
+.review-summary-stars {
+    color: #ffd700;
+    font-size: 1rem;
+    display: flex;
+    gap: 2px;
+}
+
+.review-count {
+    margin-top: 12px;
+    color: #6c757d;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.review-count i {
+    color: #007bff;
+}
+
+.alert-info {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: #2c3e50;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.alert-info i {
+    color: #007bff;
+}
+
+.alert-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.alert-info a:hover {
+    text-decoration: underline;
+}
+
+.text-center.text-muted {
+    padding: 20px 0;
+}
+
+.text-center.text-muted i {
+    color: #dee2e6;
+    margin-bottom: 8px;
+}
+
+.text-center.text-muted p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.section-title {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+/* Review button styles */
+.btn-review {
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-review:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-review i {
+    font-size: 14px;
+}
+
+/* Smooth scroll behavior for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Review Form Styles */
+.review-form-section {
+    margin-bottom: 20px;
+}
+
+.filter-header {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #dee2e6;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+}
+
+.filter-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.filter-header h5 span {
+    color: #333;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+
+.filter-header h5 i {
+    margin-left: 8px;
+    color: #6c757d;
+    transition: transform 0.2s ease;
+}
+
+.filter-header[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+#reviewForm {
+    border-top: none;
+}
+
+.filter-form {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    margin-top: -1px;
+}
+
+#reviewForm {
+    transition: all 0.3s ease-out;
+}
+
+#reviewForm.collapsing {
+    transition: all 0.3s ease-out;
+}
+
+#reviewForm.show {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #ffd700;
+}
+
+.review-form textarea {
+    width: 100%;
+    min-height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Review Form Styles */
+.review-form {
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.rating-container {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.rating-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.rating-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating {
+    gap: 0.25rem;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0 0.2rem;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+.form-control {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.15);
+}
+
+.form-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-text {
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.btn-submit {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+}
+
+.btn-submit:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.rating-warning {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(220,53,69,0.1);
+    border-radius: 6px;
+    color: #dc3545;
+    font-size: 0.9rem;
+    text-align: center;
+    display: none;
+}
+
+.rating-warning.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Cải thiện phần thumbnail */
+.thumbnails-row {
+    overflow: hidden !important;
+    max-width: 100%;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 8px;
+    touch-action: pan-x; /* Cải thiện cho thiết bị cảm ứng */
+    background-color: rgba(0, 0, 0, 0.03); /* Nền nhẹ để tách biệt với phần còn lại */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Cover layer để tránh việc chọn ảnh khi đang kéo */
+.drag-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: grabbing;
+    display: none;
+}
+
+.thumbnails-row.dragging .drag-cover {
+    display: block;
+}
+
+.thumbnails-row .row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    padding: 12px 5px;
+    scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+    -ms-overflow-style: none; /* Ẩn thanh cuộn trên IE và Edge */
+    transition: all 0.3s ease;
+    gap: 8px; /* Khoảng cách giữa các thumbnails */
+    cursor: grab; /* Thêm icon "nắm" để gợi ý có thể kéo */
+    scroll-behavior: smooth; /* Thêm hiệu ứng cuộn mượt */
+    -webkit-overflow-scrolling: touch; /* Cải thiện cho iOS */
+    user-select: none; /* Ngăn việc chọn text */
+    justify-content: flex-start;
+}
+
+/* Thêm một class để áp dụng khi đang kéo */
+.thumbnails-row .row.active {
+    cursor: grabbing; /* Thay đổi icon khi đang kéo */
+    scroll-behavior: auto; /* Tắt smooth scroll khi đang kéo để mượt hơn */
+}
+
+.thumbnails-row .row::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên Chrome, Safari và Opera */
+}
+
+.thumbnail-col {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    min-width: 100px;
+    max-width: 100px;
+    width: 100px;
+    flex: 0 0 auto;
+    aspect-ratio: 1/1;
+    height: 100px;
+}
+
+.thumbnail-wrapper {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.thumbnail-wrapper:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    border-color: rgba(255, 111, 0, 0.5);
+}
+
+.thumbnail-wrapper.active-thumbnail {
+    border-color: #FF6F00;
+    border-width: 2px;
+    box-shadow: 0 4px 8px rgba(255, 111, 0, 0.3);
+}
+
+.thumbnail-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    opacity: 0.85;
+    transition: all 0.2s ease-in-out;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    pointer-events: none;
+}
+
+.thumbnail-wrapper:hover .thumbnail-img {
+    opacity: 1;
+}
+
+.thumbnail-wrapper.active-thumbnail .thumbnail-img {
+    opacity: 1;
+}
+
+.thumbnail-index {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+.thumbnail-wrapper:hover .thumbnail-index {
+    background-color: var(--primary-color, #4CAF50);
+    opacity: 1;
+}
+
+/* Nút điều hướng thumbnail cải tiến */
+.thumbnail-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
+}
+
+.thumbnail-nav:hover {
+    background: #f5bf43;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.thumbnail-nav-left {
+    left: -16px;
+}
+
+.thumbnail-nav-right {
+    right: -16px;
+}
+
+/* Cải thiện bộ đếm ảnh */
+.image-counter {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.image-counter i {
+    font-size: 0.7rem;
+    margin-right: 2px;
+}
+
+/* Cải thiện Carousel chính */
+.homestay-detail-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+#mainCarousel {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#mainCarousel .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    margin: 0 15px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 60%;
+    filter: invert(1) grayscale(100%);
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: white;
+    opacity: 1;
+}
+
+/* Thêm hiệu ứng hover vào nút đặt ngay */
+.btn-book {
+    background: linear-gradient(135deg, var(--primary-color, #4CAF50) 0%, var(--primary-dark, #388E3C) 100%);
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-book:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.thumbnail-wrapper.focused {
+    transform: scale(1.05);
+    border-color: #FF6F00;
+    box-shadow: 0 0 12px rgba(255, 111, 0, 0.5);
+    z-index: 5;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Breadcrumb Section - Redesigned -->
+<div class="breadcrumb-section">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{{ url_for('index') }}">
+                        <i class="fas fa-home"></i> Trang chủ
+                    </a>
+                </li>
+                <span class="breadcrumb-divider">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+                <li class="breadcrumb-item active" aria-current="page">{{ homestay.name }}</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="homestay-detail-container p-4 bg-white rounded-lg shadow-lg">
+        <div class="row">
+            <!-- Cột ảnh bên trái -->
+            <div class="col-md-7">
+                <div class="homestay-detail-image">
+                    <!-- Main Carousel -->
+                    <div id="mainCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+                        <div class="carousel-inner">
+                            {% for image_url in homestay.image_urls %}
+                            <div class="carousel-item {% if loop.first %}active{% endif %}">
+                                <img src="{{ image_url }}" class="d-block w-100" alt="{{ homestay.name }} - Image {{ loop.index }}">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
+                        <!-- Bộ đếm ảnh -->
+                        <div class="image-counter">
+                            <i class="fas fa-image"></i> <span id="currentImageIndex">1</span>/<span>{{ homestay.image_urls|length }}</span>
+                        </div>
+                        
+                        <!-- Nút điều hướng Carousel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Thumbnails -->
+                    <div class="thumbnails-row mt-3">
+                        <div class="drag-cover"></div>
+                        <div class="row mx-0" id="thumbnailsRow">
+                            {% for image_url in homestay.image_urls %}
+                            <div class="col-3 px-1 thumbnail-col">
+                                <div class="thumbnail-wrapper">
+                                    <img src="{{ image_url }}" 
+                                         class="thumbnail-img {% if loop.first %}active-thumbnail{% endif %}"
+                                         alt="Thumbnail {{ loop.index }}"
+                                         data-index="{{ loop.index0 }}">
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phong cách - không có khung -->
+                <div class="homestay-styles mt-3">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="fas fa-paint-brush text-primary me-2"></i>
+                        <span class="fw-bold">Phong cách:</span>
+                    </div>
+                    <div class="style-tags mt-1">
+                        {% for style_item in homestay.style.split(',') %}
+                        <span class="style-tag">{{ style_item.strip() }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cột thông tin homestay bên phải -->
+            <div class="col-md-5">
+                <div class="homestay-detail-info">
+                    <div class="homestay-name-badge">
+                        <h1 class="homestay-detail-title">{{ homestay.name }}</h1>
+                        {% if homestay.priority == 1 %}
+                        <span class="priority-badge"><i class="fas fa-crown"></i> Đề xuất</span>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Phần chọn cơ sở -->
+                    <div class="homestay-locations mb-4">
+                        <h5 class="section-label"><i class="fas fa-map-marker-alt"></i> Chọn cơ sở</h5>
+                        <div class="location-selector">
+                            {% for location in homestay.locations[:2] %}
+                            <div class="location-option {% if loop.first %}active{% endif %}"
+                                 data-index="{{ loop.index0 }}">
+                                <div class="location-marker">{{ loop.index }}</div>
+                                <div class="location-info">
+                                    <h6>Cơ sở {{ loop.index }}</h6>
+                                    <p><i class="fas fa-map-marker-alt"></i> {{ location.address }}</p>
+                                    <p class="location-district">{{ location.district }}, {{ location.city }}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                            {% if homestay.locations|length > 2 %}
+                            <div class="location-dropdown-toggle" onclick="toggleMoreLocations()">
+                                <span><i class="fas fa-plus-circle"></i> {{ homestay.locations|length - 2 }} cơ sở khác</span>
+                            </div>
+                            
+                            <div id="moreLocations" class="more-locations" style="display: none;">
+                                {% for location in homestay.locations[2:] %}
+                                <div class="location-option"
+                                     data-index="{{ loop.index0 + 2 }}">
+                                    <div class="location-marker">{{ loop.index + 2 }}</div>
+                                    <div class="location-info">
+                                        <h6>Cơ sở {{ loop.index + 2 }}</h6>
+                                        <p><i class="fas fa-map-marker-alt"></i> {{ location.address }}</p>
+                                        <p class="location-district">{{ location.district }}, {{ location.city }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <!-- Phần rating ở trên giá tiền - dùng rating từ homestays.json -->
+                    <div class="homestay-detail-rating">
+                        <div class="rating-stars">
+                            {% for i in range(5) %}
+                                {% if i < homestay.rating|int %}
+                                    <i class="fas fa-star"></i>
+                                {% else %}
+                                    <i class="far fa-star"></i>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <span class="rating-value">{{ homestay.rating }}/5</span>
+                    </div>
+                    
+                    <!-- Giá -->
+                    <div class="homestay-detail-price">
+                        <h5 class="section-label"><i class="fas fa-tag"></i> Giá</h5>
+                        <div class="price-value">
+                            <span class="amount">{{ homestay.price|format_price }}</span>
+                            <span class="currency">VNĐ/đêm</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Nút đặt ngay và đánh giá -->
+                    <div class="homestay-detail-actions">
+                        <form id="bookingForm" action="{{ url_for('booking') }}" method="POST">
+                            <input type="hidden" name="homestay_id" value="{{ homestay.id }}">
+                            <input type="hidden" name="location_index" id="locationIndex" value="0">
+                            {% if homestay.priority == 1 %}
+                            <div class="action-buttons">
+                                <button type="submit" class="btn btn-book">
+                                    <i class="fas fa-calendar-check"></i> Đặt ngay
+                                </button>
+                                <a href="#review-section" class="btn btn-review" onclick="scrollToReviews(event)">
+                                    <i class="fas fa-star"></i> Đánh giá
+                                </a>
+                            </div>
+                            {% else %}
+                            <div class="action-buttons">
+                                <button type="button" class="btn btn-book disabled" disabled title="Homestay này hiện không khả dụng">
+                                    <i class="fas fa-calendar-check"></i> Đặt ngay
+                                </button>
+                                <a href="#review-section" class="btn btn-review" onclick="scrollToReviews(event)">
+                                    <i class="fas fa-star"></i> Đánh giá
+                                </a>
+                            </div>
+                            {% endif %}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Phần giới thiệu -->
+        <div class="detail-section mt-5">
+            <hr class="w-full border-t border-gray-300 my-4">
+            <h3 class="section-title">Giới thiệu</h3>
+            <div class="detail-content">
+                <p>{{ homestay.description }}</p>
+            </div>
+        </div>
+        
+        <!-- Tiện ích và Phong cách - Row 1 -->
+        <div class="detail-section mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-home"></i>
+                            <h4>Tiện ích phòng</h4>
+                        </div>
+                        <div class="amenity-content">
+                            <ul>
+                                {% for amenity in homestay.room_amenities.split(',') %}
+                                <li><i class="fas fa-check"></i> {{ amenity.strip() }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-map"></i>
+                            <h4>Tiện ích xung quanh</h4>
+                        </div>
+                        <div class="amenity-content">
+                            <ul>
+                                {% for amenity in homestay.surrounding_amenities.split(',') %}
+                                <li><i class="fas fa-check"></i> {{ amenity.strip() }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="amenity-card">
+                        <div class="amenity-header">
+                            <i class="fas fa-star"></i>
+                            <h4>Đặc điểm nổi bật</h4>
+                        </div>
+                        <div class="amenity-content">
+                            <ul>
+                                {% for highlight in homestay.highlights.split(',') %}
+                                <li><i class="fas fa-check"></i> {{ highlight.strip() }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nút quay lại -->
+        <div class="mt-4 text-center">
+            <a href="{{ url_for('index') }}" class="btn btn-back">
+                <i class="fas fa-arrow-left"></i> Quay lại danh sách
+            </a>
+        </div>
+    </div>
+
+    <!-- Review Section -->
+    <div class="review-section mt-5" id="review-section">
+        <div class="container">
+            <h3 class="section-title">Đánh giá và nhận xét</h3>
+            
+            <!-- Review Summary -->
+            <div class="review-summary">
+                <div class="review-summary-header">
+                    <div class="review-summary-rating">
+                        {{ "%.1f"|format(average_rating) }}
+                        <span>Điểm Homestay</span>
+                    </div>
+                    <div class="review-summary-stars">
+                        {% for i in range(5) %}
+                            {% if i < average_rating|int %}
+                                <i class="fas fa-star"></i>
+                            {% else %}
+                                <i class="far fa-star"></i>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% if reviews %}
+                <div class="review-count">
+                    <i class="fas fa-comments"></i>
+                    {{ reviews|length }} đánh giá từ khách hàng
+                </div>
+                {% endif %}
+            </div>
+            
+            {% if current_user.is_authenticated %}
+            <div class="review-section">
+                <button class="review-toggle-btn" onclick="toggleReviewForm()">
+                    <i class="fas fa-pen"></i>
+                    Viết đánh giá mới
+                </button>
+                
+                <div id="reviewFormContainer" class="review-form-container" style="display: none;">
+                    <form action="{{ url_for('add_review', id=homestay.id) }}" method="POST" class="review-form p-3">
+                        <input type="hidden" name="rating" id="selected_rating" value="0">
+                        <div class="rating-container mb-3">
+                            <div class="rating-title">Đánh giá của bạn</div>
+                            <div class="rating-description">Chọn số sao phù hợp với trải nghiệm của bạn</div>
+                            <div class="rating d-flex justify-content-center align-items-center mt-2">
+                                <input type="radio" id="star5" name="rating" value="5" onclick="updateRating(5)" />
+                                <label for="star5" title="Tuyệt vời - 5 sao">★</label>
+                                <input type="radio" id="star4" name="rating" value="4" onclick="updateRating(4)" />
+                                <label for="star4" title="Rất tốt - 4 sao">★</label>
+                                <input type="radio" id="star3" name="rating" value="3" onclick="updateRating(3)" />
+                                <label for="star3" title="Tốt - 3 sao">★</label>
+                                <input type="radio" id="star2" name="rating" value="2" onclick="updateRating(2)" />
+                                <label for="star2" title="Trung bình - 2 sao">★</label>
+                                <input type="radio" id="star1" name="rating" value="1" onclick="updateRating(1)" />
+                                <label for="star1" title="Kém - 1 sao">★</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewText" class="form-label">Nhận xét của bạn</label>
+                            <textarea 
+                                id="reviewText"
+                                name="comment" 
+                                class="form-control"
+                                rows="3"
+                                placeholder="Chia sẻ trải nghiệm của bạn về homestay này..." 
+                                required></textarea>
+                            <div class="form-text">Tối thiểu 10 ký tự</div>
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button type="submit" class="btn-submit">
+                                <i class="fas fa-paper-plane me-2"></i>Gửi đánh giá
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            {% else %}
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i> Vui lòng <a href="{{ url_for('login') }}">đăng nhập</a> để gửi đánh giá
+            </div>
+            {% endif %}
+
+            <div class="reviews-list">
+                {% if reviews %}
+                    {% for review in reviews %}
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="review-user">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <div class="username-rating">
+                                        <span class="username">{{ review.username }}</span>
+                                        <div class="review-rating">
+                                            {% for i in range(5) %}
+                                                {% if i < review.rating %}
+                                                    <i class="fas fa-star"></i>
+                                                {% else %}
+                                                    <i class="far fa-star"></i>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="review-date">
+                                        {{ review.created_at.split('T')[0] }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            {{ review.comment }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="text-center text-muted mt-4">
+                        <i class="fas fa-comment-alt fa-2x mb-2"></i>
+                        <p>Chưa có đánh giá nào cho homestay này</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript cho carousel và chọn cơ sở -->
+<script>
+function updateRating(value) {
+    document.getElementById('selected_rating').value = value;
+}
+
+function toggleReviewForm() {
+    const formContainer = document.getElementById('reviewFormContainer');
+    formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+}
+
+function scrollToReviews(event) {
+    event.preventDefault();
+    const reviewSection = document.getElementById('review-section');
+    reviewSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToThumbnail(index) {
+    const thumbnailsRow = document.querySelector('.thumbnails-row');
+    const thumbnailWidth = document.querySelector('.thumbnail-wrapper').offsetWidth;
+    const scrollPos = index * thumbnailWidth;
+    
+    thumbnailsRow.scrollTo({
+        left: scrollPos,
+        behavior: 'smooth'
+    });
+}
+
+function selectImage(index) {
+    // Cập nhật carousel
+    var carousel = bootstrap.Carousel.getInstance(document.getElementById('mainCarousel'));
+    carousel.to(index);
+    
+    // Cập nhật thumbnail
+    document.querySelectorAll('.thumbnail-wrapper').forEach(wrapper => {
+        wrapper.classList.remove('active-thumbnail');
+    });
+    document.querySelectorAll('.thumbnail-wrapper')[index].classList.add('active-thumbnail');
+    
+    // Cập nhật bộ đếm ảnh
+    document.getElementById('currentImageIndex').textContent = index + 1;
+    
+    // Cuộn đến thumbnail đã chọn
+    scrollToThumbnail(index);
+}
+
+function selectLocation(element, locationIndex) {
+    // Cập nhật trạng thái active
+    document.querySelectorAll('.location-option').forEach(opt => {
+        opt.classList.remove('active');
+    });
+    element.classList.add('active');
+    
+    // Cập nhật location_index trong form
+    document.getElementById('locationIndex').value = locationIndex;
+}
+
+// Function to toggle visibility of additional locations
+function toggleMoreLocations() {
+    const moreLocations = document.getElementById('moreLocations');
+    const isCurrentlyHidden = moreLocations.style.display === 'none';
+    
+    moreLocations.style.display = isCurrentlyHidden ? 'block' : 'none';
+    
+    // Update toggle button text/icon
+    const toggleElement = document.querySelector('.location-dropdown-toggle span i');
+    if (isCurrentlyHidden) {
+        toggleElement.classList.remove('fa-plus-circle');
+        toggleElement.classList.add('fa-minus-circle');
+    } else {
+        toggleElement.classList.remove('fa-minus-circle');
+        toggleElement.classList.add('fa-plus-circle');
+    }
+}
+
+// Khởi tạo carousel và các chức năng khi trang được tải
+document.addEventListener('DOMContentLoaded', function() {
+    // Khởi tạo carousel
+    var carousel = new bootstrap.Carousel(document.getElementById('mainCarousel'), {
+        interval: false
+    });
+    
+    // Thêm click event cho tất cả thumbnails
+    document.querySelectorAll('.thumbnail-wrapper').forEach((wrapper, index) => {
+        wrapper.addEventListener('click', function(e) {
+            // Ngăn sự kiện click lan truyền nếu đang kéo
+            if (isDown) {
+                e.preventDefault();
+                e.stopPropagation();
+                return;
+            }
+            
+            selectImage(index);
+        });
+    });
+    
+    // Thêm click event cho các location option
+    document.querySelectorAll('.location-option').forEach(option => {
+        option.addEventListener('click', function() {
+            const locationIndex = parseInt(this.dataset.index);
+            selectLocation(this, locationIndex);
+        });
+    });
+    
+    // Ensure event listeners are reattached when toggling the dropdown
+    const moreLocations = document.getElementById('moreLocations');
+    if (moreLocations) {
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === 'style' && moreLocations.style.display === 'block') {
+                    // Add click events to all location options in the dropdown
+                    moreLocations.querySelectorAll('.location-option').forEach(option => {
+                        option.addEventListener('click', function() {
+                            const locationIndex = parseInt(this.dataset.index);
+                            selectLocation(this, locationIndex);
+                        });
+                    });
+                }
+            });
+        });
+        
+        observer.observe(moreLocations, { attributes: true });
+    }
+    
+    // Cập nhật bộ đếm ảnh khi chuyển slide
+    document.getElementById('mainCarousel').addEventListener('slide.bs.carousel', function(e) {
+        document.getElementById('currentImageIndex').textContent = e.to + 1;
+        
+        // Cập nhật thumbnail
+        document.querySelectorAll('.thumbnail-wrapper').forEach(wrapper => {
+            wrapper.classList.remove('active-thumbnail');
+        });
+        
+        const thumbnailElements = document.querySelectorAll('.thumbnail-wrapper');
+        if (e.to < thumbnailElements.length) {
+            thumbnailElements[e.to].classList.add('active-thumbnail');
+            
+            // Cuộn đến thumbnail đang active
+            scrollToThumbnail(e.to);
+        }
+    });
+    
+    // Thêm chức năng kéo bằng chuột cho hàng thumbnails
+    const thumbnailRow = document.getElementById('thumbnailsRow');
+    const thumbnailsContainer = document.querySelector('.thumbnails-row');
+    
+    let isDown = false;
+    let isDragging = false;
+    let startX;
+    let scrollLeft;
+    let clickTime;
+    let clickThreshold = 150; // Milliseconds
+    let dragThreshold = 5; // Số pixel tối thiểu để coi là đang kéo
+    
+    thumbnailRow.addEventListener('mousedown', (e) => {
+        isDown = true;
+        clickTime = new Date().getTime();
+        thumbnailRow.classList.add('active');
+        startX = e.pageX - thumbnailRow.offsetLeft;
+        scrollLeft = thumbnailRow.scrollLeft;
+        // Ngăn hành vi kéo ảnh mặc định của trình duyệt
+        e.preventDefault();
+    });
+    
+    thumbnailRow.addEventListener('mouseleave', () => {
+        if (isDown) {
+            isDown = false;
+            isDragging = false;
+            thumbnailRow.classList.remove('active');
+            thumbnailsContainer.classList.remove('dragging');
+        }
+    });
+    
+    thumbnailRow.addEventListener('mouseup', (e) => {
+        // Nếu kéo nhanh (click), cho phép xử lý click event
+        const timeElapsed = new Date().getTime() - clickTime;
+        const wasDragging = isDragging;
+        
+        isDown = false;
+        isDragging = false;
+        thumbnailRow.classList.remove('active');
+        thumbnailsContainer.classList.remove('dragging');
+        
+        // Nếu đã kéo đáng kể, ngăn click event
+        if (wasDragging) {
+            e.stopPropagation();
+        }
+    });
+    
+    thumbnailRow.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        
+        const x = e.pageX - thumbnailRow.offsetLeft;
+        const walkX = x - startX;
+        
+        // Xác định nếu đang kéo thực sự (không phải click)
+        if (!isDragging && Math.abs(walkX) > dragThreshold) {
+            isDragging = true;
+            thumbnailsContainer.classList.add('dragging');
+        }
+        
+        if (isDragging) {
+            const walk = walkX * 1.2; // Giảm tốc độ cuộn xuống
+            thumbnailRow.scrollLeft = scrollLeft - walk;
+        }
+    });
+
+    // Thêm hỗ trợ cảm ứng cho thiết bị di động
+    let touchStartX;
+    let touchScrollLeft;
+    
+    thumbnailRow.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].pageX - thumbnailRow.offsetLeft;
+        touchScrollLeft = thumbnailRow.scrollLeft;
+    }, { passive: true });
+    
+    thumbnailRow.addEventListener('touchmove', (e) => {
+        const touchX = e.touches[0].pageX - thumbnailRow.offsetLeft;
+        const touchWalk = (touchX - touchStartX) * 1.5;
+        thumbnailRow.scrollLeft = touchScrollLeft - touchWalk;
+    }, { passive: true });
+});
+</script>
+{% endblock %}

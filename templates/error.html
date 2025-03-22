@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Lỗi {{ error_code }} - Xanh Homestay{% endblock %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="error-container text-center">
+        <div class="error-code">{{ error_code }}</div>
+        <div class="error-message">{{ message }}</div>
+        <a href="{{ url_for('index') }}" class="btn btn-back mt-4">
+            <i class="fas fa-home"></i> Quay về trang chủ
+        </a>
+    </div>
+</div>
+{% endblock %}

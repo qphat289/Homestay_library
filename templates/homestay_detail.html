@@ -1,0 +1,176 @@
+<!-- Khôi phục lại bố cục và màu sắc cho trang chi tiết homestay -->
+{% extends 'base.html' %}
+
+{% block title %}{{ homestay.name }} - Xanh Homestay{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Nút quay lại -->
+    <a href="{{ url_for('index') }}" class="btn btn-back mb-4">
+        <i class="fas fa-arrow-left"></i> Quay lại danh sách
+    </a>
+    
+    <div class="homestay-detail-container">
+        <!-- Phần hình ảnh homestay -->
+        <div class="homestay-detail-image">
+            <div id="homestayCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    {% for image in homestay.image_urls %}
+                        <div class="carousel-item {% if loop.first %}active{% endif %}">
+                            <img src="{{ image }}" class="d-block w-100" alt="{{ homestay.name }}">
+                        </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#homestayCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#homestayCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+                <!-- Đếm số lượng ảnh -->
+                <div class="image-counter">
+                    <i class="fas fa-image"></i> <span id="current-image">1</span>/<span>{{ homestay.image_urls|length }}</span>
+                </div>
+                
+                <!-- Nút fullscreen -->
+                <button class="btn-fullscreen" id="fullscreenBtn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+            
+            <!-- Thumbnails -->
+            <div class="thumbnails-row">
+                <div class="row g-2">
+                    {% for image in homestay.image_urls %}
+                        <div class="col-2">
+                            <img src="{{ image }}" class="thumbnail-img {% if loop.first %}active-thumbnail{% endif %}" 
+                                 data-bs-target="#homestayCarousel" 
+                                 data-bs-slide-to="{{ loop.index0 }}" 
+                                 alt="Thumbnail {{ loop.index }}">
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="homestay-detail-info p-4">
+                    <h2 class="homestay-detail-title">{{ homestay.name }}</h2>
+                    
+                    <div class="homestay-detail-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            {% if homestay.locations[0] %}
+                                <p class="mb-0">{{ homestay.locations[0].address }}</p>
+                                <p class="mb-0">{{ homestay.locations[0].district }}, {{ homestay.locations[0].city }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="homestay-detail-rating">
+                        {% for i in range(5) %}
+                            {% if i < homestay.rating|int %}
+                                <i class="fas fa-star"></i>
+                            {% else %}
+                                <i class="far fa-star"></i>
+                            {% endif %}
+                        {% endfor %}
+                        <span class="ms-2">{{ homestay.rating }}/5</span>
+                    </div>
+                    
+                    <div class="homestay-detail-style">
+                        <h5>Phong cách</h5>
+                        <div class="style-tags">
+                            {% for style in homestay.styles %}
+                                <span class="style-tag">{{ style }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <div class="homestay-detail-price">
+                        <h5>Giá mỗi đêm</h5>
+                        <div class="price-value">{{ "{:,.0f}".format(homestay.price) }} VNĐ</div>
+                    </div>
+                </div>
+                
+                <div class="homestay-detail-description mt-4">
+                    <h3>Mô tả</h3>
+                    <p>{{ homestay.description }}</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="homestay-detail-actions mb-4">
+                    {% if current_user.is_authenticated %}
+                        <button class="btn btn-book w-100" id="datNgayBtn">
+                            Đặt ngay
+                        </button>
+                    {% else %}
+                        <a href="{{ url_for('login', next=request.path) }}" class="btn btn-book">
+                            <i class="fas fa-calendar-check"></i> Đăng nhập để đặt phòng
+                        </a>
+                    {% endif %}
+                    <a href="tel:{{ homestay.phone_number }}" class="btn btn-contact">
+                        <i class="fas fa-phone"></i> Liên hệ chủ nhà
+                    </a>
+                </div>
+                
+                <!-- Tiện ích -->
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="amenity-card">
+                            <div class="amenity-header">
+                                <i class="fas fa-home"></i>
+                                <h4>Tiện ích phòng</h4>
+                            </div>
+                            <div class="amenity-content">
+                                <ul>
+                                    {% for amenity in homestay.amenities.room %}
+                                        <li><i class="fas fa-check"></i> {{ amenity }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="amenity-card">
+                            <div class="amenity-header">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <h4>Tiện ích xung quanh</h4>
+                            </div>
+                            <div class="amenity-content">
+                                <ul>
+                                    {% for amenity in homestay.amenities.surroundings %}
+                                        <li><i class="fas fa-check"></i> {{ amenity }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="amenity-card">
+                            <div class="amenity-header">
+                                <i class="fas fa-award"></i>
+                                <h4>Đặc điểm nổi bật</h4>
+                            </div>
+                            <div class="amenity-content">
+                                <ul>
+                                    {% for feature in homestay.amenities.features %}
+                                        <li><i class="fas fa-check"></i> {{ feature }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

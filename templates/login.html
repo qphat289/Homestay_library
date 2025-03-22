@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Đăng nhập - Xanh Homestay{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    {% if request.args.get('next') %}
+    <div class="flask-login-alert">
+        <i class="fas fa-exclamation-circle me-2"></i>
+        Vui lòng đăng nhập để tiếp tục
+    </div>
+    {% endif %}
+    
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4" style="color: var(--primary-color);">
+                        {{ "Đăng ký tài khoản" if need_email else "Đăng nhập" }}
+                    </h3>
+                    
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} flash-message alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    
+                    <form method="POST" action="{{ url_for('login') }}">
+                        {% if not need_email %}
+                        <div class="mb-3">
+                            <label for="phone_number" class="form-label">Số điện thoại</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                <input type="tel" 
+                                       class="form-control" 
+                                       id="phone_number" 
+                                       name="phone_number" 
+                                       pattern="[0-9]{10}"
+                                       title="Vui lòng nhập đúng 10 chữ số"
+                                       maxlength="10"
+                                       oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                                       required>
+                            </div>
+                            <small class="form-text text-muted">Số điện thoại phải có đúng 10 chữ số</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-arrow-right"></i> Tiếp tục
+                        </button>
+                        {% else %}
+                        <div class="mb-3">
+                            <label for="phone_number" class="form-label">Số điện thoại</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                <input type="tel" class="form-control" id="phone_number" name="phone_number" value="{{ phone_number }}" readonly>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="fas fa-user-plus"></i> Đăng ký
+                        </button>
+                        {% endif %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,81 @@
+<section class="relative h-[500px] bg-cover bg-center" style="background-image: url('/images/homestay-bg.jpg')">
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <div class="container mx-auto px-4 h-full flex flex-col justify-center items-center relative z-10">
+    <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-4">Xanh Homestay</h1>
+    <p class="text-lg md:text-xl text-white text-center max-w-2xl mb-8">
+      Chào mừng bạn đến với không gian "Xanh Mát Homestay" – nơi kết nối giữa thiên nhiên và sự thư giãn
+    </p>
+    
+    
+    <div class="w-full max-w-6xl bg-white rounded-lg shadow-lg p-6">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-6">
+        <a href="#" class="flex flex-col items-center p-4 rounded-lg hover:bg-gray-50 transition-colors">
+          <div class="w-12 h-12 flex items-center justify-center bg-amber-100 rounded-full mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <span class="text-sm font-medium text-center">Tìm kiếm</span>
+        </a>
+        <!-- Thêm 4 biểu tượng khác tương tự -->
+      </div>
+      
+      <div class="relative">
+        <div class="flex">
+          <input 
+            type="text" 
+            placeholder="Tìm kiếm theo tên, địa chỉ hoặc phong cách homestay" 
+            class="w-full py-3 px-4 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+          />
+          <button class="bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-6 rounded-r-lg transition-colors">
+            Tìm kiếm
+          </button>
+        </div>
+        
+        <div class="mt-6">
+          <div class="flex items-center mb-4">
+            <h3 class="text-lg font-medium">Lọc homestay</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Thành phố</label>
+              <select class="w-full p-2 border border-gray-300 rounded-lg">
+                <option>Tất cả</option>
+                <!-- Các option khác -->
+              </select>
+            </div>
+            
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Quận/Huyện</label>
+              <select class="w-full p-2 border border-gray-300 rounded-lg">
+                <option>Tất cả</option>
+                <!-- Các option khác -->
+              </select>
+            </div>
+            
+            <div class="mb-4">
+              <label class="block text-sm font-medium mb-2">Phong cách</label>
+              <select class="w-full p-2 border border-gray-300 rounded-lg">
+                <option>Tất cả</option>
+                <!-- Các option khác -->
+              </select>
+            </div>
+          </div>
+          
+          <div class="flex justify-end space-x-3">
+            <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors">
+              Đặt lại
+            </button>
+            <button class="px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-lg transition-colors">
+              Lọc
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 

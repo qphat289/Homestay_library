@@ -1,0 +1,1552 @@
+[
+  {
+    "id": 1,
+    "name": "Cozy Bungalow Hillside",
+    "description": "Chào mừng bạn đến với Cozy Bungalow Hillside! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 5000000,
+    "rating": 1,
+    "image_urls": [
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay19.jpg",
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay1.jpg",
+      "/static/images/homestay2.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay3.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 77, Đường Nguyễn Huệ",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 191, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 191, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 191, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 191, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Cổ điển, Tối giản",
+    "room_amenities": "Phòng tắm riêng, Bàn làm việc, Máy giặt, Máy pha cà phê, Vòi sen, Áo choàng tắm",
+    "surrounding_amenities": "Trung tâm thành phố, Bãi biển, Bến tàu, Bến xe buýt, Nhà hàng, Quán cà phê",
+    "highlights": "Không gian yên tĩnh, Bếp đầy đủ tiện nghi, Khu vườn xinh xắn, Sân thượng rộng rãi",
+    "priority": 1
+  },
+  {
+    "id": 2,
+    "name": "Modern Studio Lakeside",
+    "description": "Chào mừng bạn đến với Modern Studio Lakeside! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 1200000,
+    "rating": 3.3,
+    "image_urls": [
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay15.jpg",
+      "/static/images/homestay3.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 60, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Cổ điển, Vintage",
+    "room_amenities": "Bàn làm việc, Ban công riêng, Máy sấy tóc, Phòng tắm riêng, TV màn hình phẳng, Két an toàn, Máy giặt, Dép đi trong phòng, Vòi sen",
+    "surrounding_amenities": "Nhà hàng, Trung tâm thành phố, Công viên, Bãi biển, Gym, Spa, Bến tàu",
+    "highlights": "Bếp đầy đủ tiện nghi, View đẹp, Đồ dùng cao cấp, Sân thượng rộng rãi",
+    "priority": 2
+  },
+  {
+    "id": 3,
+    "name": "Scenic Villa Lakeside",
+    "description": "Chào mừng bạn đến với Scenic Villa Lakeside! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 4600000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay2.jpg",
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay18.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 135, Đường Lê Lợi",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 158, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Scandinavian, Industrial",
+    "room_amenities": "Ghế nghỉ, Vòi sen, Dép đi trong phòng, Máy sấy tóc, Bồn tắm, Bàn làm việc",
+    "surrounding_amenities": "Chợ địa phương, Nhà hàng, Rạp chiếu phim, Trung tâm thành phố, Bảo tàng, Quán cà phê, Trung tâm thể thao, Siêu thị",
+    "highlights": "Thiết kế độc đáo, Sân thượng rộng rãi, View đẹp, Bếp đầy đủ tiện nghi, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 4,
+    "name": "Peaceful Studio City Center",
+    "description": "Chào mừng bạn đến với Peaceful Studio City Center! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 1400000,
+    "rating": 2.5,
+    "image_urls": [
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay11.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 193, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Cổ điển, Tropical",
+    "room_amenities": "Phòng tắm riêng, Wi-Fi miễn phí, Ghế nghỉ, Máy điều hòa, Tủ lạnh mini, TV màn hình phẳng, Máy sấy tóc, Ban công riêng",
+    "surrounding_amenities": "Nhà hàng, Bến xe buýt, Trung tâm mua sắm, Gym, Spa, Bãi biển",
+    "highlights": "Không gian yên tĩnh, Nội thất sang trọng, Sân thượng rộng rãi",
+    "priority": 3
+  },
+  {
+    "id": 5,
+    "name": "Deluxe House Forest",
+    "description": "Chào mừng bạn đến với Deluxe House Forest! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 2700000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay11.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay11.jpg",
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 56, Đường Lê Lợi",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Rustic, Industrial",
+    "room_amenities": "Vòi sen, Bồn tắm, Ban công riêng, TV màn hình phẳng, Phòng tắm riêng, Máy sấy tóc",
+    "surrounding_amenities": "Siêu thị, Trung tâm mua sắm, Bến xe buýt, Gym, Trạm taxi, Bảo tàng, Trung tâm thể thao, Rạp chiếu phim",
+    "highlights": "Sân thượng rộng rãi, Thiết kế độc đáo, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 6,
+    "name": "Cozy Studio Garden",
+    "description": "Chào mừng bạn đến với Cozy Studio Garden! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
+    "price": 3200000,
+    "rating": 4.5,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay7.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 162, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tối giản, Tropical, Scandinavian",
+    "room_amenities": "Dép đi trong phòng, Minibar, Bàn làm việc, Ban công riêng, TV màn hình phẳng, Máy pha cà phê, Máy điều hòa, Áo choàng tắm, Phòng tắm riêng, Máy sấy tóc",
+    "surrounding_amenities": "Chợ địa phương, Nhà hàng, Trung tâm mua sắm, Công viên, Bảo tàng, Trung tâm thành phố, Gym",
+    "highlights": "View đẹp, Không gian yên tĩnh, Bếp đầy đủ tiện nghi, Thiết kế độc đáo",
+    "priority": 3
+  },
+  {
+    "id": 7,
+    "name": "Elegant Suite Hillside",
+    "description": "Chào mừng bạn đến với Elegant Suite Hillside! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
+    "price": 4600000,
+    "rating": 3.7,
+    "image_urls": [
+      "/static/images/homestay19.jpg",
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay5.jpg",
+      "/static/images/homestay16.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 113, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Bohemian",
+    "room_amenities": "Wi-Fi miễn phí, Vòi sen, Két an toàn, Ghế nghỉ, Ban công riêng, Phòng tắm riêng, Dép đi trong phòng, Máy sấy tóc, Áo choàng tắm",
+    "surrounding_amenities": "Nhà hàng, Bến xe buýt, Công viên, Gym, Trung tâm thành phố, Trung tâm thể thao, Spa",
+    "highlights": "View đẹp, Thiết kế độc đáo, Đồ dùng cao cấp, Không gian yên tĩnh, Nội thất sang trọng",
+    "priority": 2
+  },
+  {
+    "id": 8,
+    "name": "Cozy Cottage Mountain View",
+    "description": "Chào mừng bạn đến với Cozy Cottage Mountain View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 5000000,
+    "rating": 2.0,
+    "image_urls": [
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay12.jpg",
+      "/static/images/homestay12.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 195, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 49, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 25, Đường Lê Lợi",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Vintage, Rustic, Scandinavian",
+    "room_amenities": "Dép đi trong phòng, Ban công riêng, Lò vi sóng, Máy pha cà phê, Minibar, Máy sấy tóc, Máy điều hòa, Wi-Fi miễn phí",
+    "surrounding_amenities": "Bảo tàng, Trung tâm mua sắm, Spa, Gym, Bến tàu",
+    "highlights": "Sân thượng rộng rãi, Bếp đầy đủ tiện nghi, View đẹp, Đồ dùng cao cấp",
+    "priority": 3
+  },
+  {
+    "id": 9,
+    "name": "Modern Homestay Beachfront",
+    "description": "Chào mừng bạn đến với Modern Homestay Beachfront! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 2300000,
+    "rating": 5.0,
+    "image_urls": [
+      "/static/images/homestay20.jpg",
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay19.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 96, Đường Trần Hưng Đạo",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 147, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tropical, Vintage",
+    "room_amenities": "Ban công riêng, Dép đi trong phòng, Áo choàng tắm, Bồn tắm, Tủ lạnh mini, TV màn hình phẳng, Wi-Fi miễn phí",
+    "surrounding_amenities": "Bến xe buýt, Gym, Trung tâm thể thao, Trạm taxi, Rạp chiếu phim",
+    "highlights": "Bếp đầy đủ tiện nghi, Thiết kế độc đáo, Khu vườn xinh xắn, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 10,
+    "name": "Peaceful Cabin Hillside",
+    "description": "Chào mừng bạn đến với Peaceful Cabin Hillside! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
+    "price": 3900000,
+    "rating": 4.5,
+    "image_urls": [
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay8.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 66, Đường Lê Lợi",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 56, Đường Lê Lợi",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 4, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Tối giản, Hiện đại",
+    "room_amenities": "Minibar, Dép đi trong phòng, Vòi sen, Ghế nghỉ, Wi-Fi miễn phí",
+    "surrounding_amenities": "Bảo tàng, Spa, Bãi biển, Rạp chiếu phim, Chợ địa phương",
+    "highlights": "View đẹp, Bếp đầy đủ tiện nghi, Sân thượng rộng rãi, Nội thất sang trọng, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 11,
+    "name": "Elegant Studio Sea View",
+    "description": "Chào mừng bạn đến với Elegant Studio Sea View! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 3800000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay8.jpg",
+      "/static/images/homestay10.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 197, Đường Trần Hưng Đạo",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 115, Đường Trần Hưng Đạo",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 115, Đường Trần Hưng Đạo",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Tropical, Contemporary",
+    "room_amenities": "Ban công riêng, Lò vi sóng, Két an toàn, Minibar, Áo choàng tắm, Máy pha cà phê, Bồn tắm",
+    "surrounding_amenities": "Công viên, Bến tàu, Trung tâm thể thao, Trung tâm mua sắm, Rạp chiếu phim, Nhà hàng",
+    "highlights": "Đồ dùng cao cấp, View đẹp, Không gian yên tĩnh, Khu vườn xinh xắn, Thiết kế độc đáo",
+    "priority": 3
+  },
+  {
+    "id": 12,
+    "name": "Rustic Homestay Hillside",
+    "description": "Chào mừng bạn đến với Rustic Homestay Hillside! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
+    "price": 700000,
+    "rating": 3.3,
+    "image_urls": [
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay3.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 136, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tối giản, Scandinavian",
+    "room_amenities": "Bàn làm việc, Phòng tắm riêng, Wi-Fi miễn phí, TV màn hình phẳng, Máy điều hòa, Máy pha cà phê, Vòi sen, Két an toàn, Lò vi sóng",
+    "surrounding_amenities": "Trung tâm thể thao, Công viên, Trung tâm thành phố, Bến xe buýt, Nhà hàng, Chợ địa phương, Hồ bơi, Rạp chiếu phim",
+    "highlights": "Không gian yên tĩnh, Bếp đầy đủ tiện nghi, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 13,
+    "name": "Cozy Condo Riverside",
+    "description": "Chào mừng bạn đến với Cozy Condo Riverside! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 1500000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay1.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 10, Đường Trần Hưng Đạo",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 163, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Contemporary",
+    "room_amenities": "Dép đi trong phòng, Máy điều hòa, Tủ lạnh mini, Máy pha cà phê, Máy sấy tóc, Phòng tắm riêng, Lò vi sóng, Bồn tắm, Minibar",
+    "surrounding_amenities": "Bãi biển, Quán cà phê, Bến xe buýt, Siêu thị, Sân bay",
+    "highlights": "View đẹp, Thiết kế độc đáo, Khu vườn xinh xắn, Không gian yên tĩnh, Nội thất sang trọng",
+    "priority": 3
+  },
+  {
+    "id": 14,
+    "name": "Cozy Homestay Garden",
+    "description": "Chào mừng bạn đến với Cozy Homestay Garden! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 1500000,
+    "rating": 3.5,
+    "image_urls": [
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay7.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 134, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 186, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Contemporary, Industrial",
+    "room_amenities": "Máy giặt, TV màn hình phẳng, Tủ lạnh mini, Máy điều hòa, Minibar, Két an toàn, Bàn làm việc, Phòng tắm riêng",
+    "surrounding_amenities": "Bến xe buýt, Nhà hàng, Siêu thị, Trạm taxi, Bến tàu, Sân bay",
+    "highlights": "Nội thất sang trọng, Bếp đầy đủ tiện nghi, Không gian yên tĩnh, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 15,
+    "name": "Cozy Condo Hillside",
+    "description": "Chào mừng bạn đến với Cozy Condo Hillside! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 1900000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay11.jpg",
+      "/static/images/homestay15.jpg",
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay6.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 142, Đường Nguyễn Huệ",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Cổ điển, Bohemian, Rustic",
+    "room_amenities": "Minibar, Ghế nghỉ, Máy pha cà phê, Máy sấy tóc, Lò vi sóng, Phòng tắm riêng, Tủ lạnh mini, Máy giặt, Két an toàn, Dép đi trong phòng",
+    "surrounding_amenities": "Trạm taxi, Quán cà phê, Bến xe buýt, Rạp chiếu phim, Sân bay",
+    "highlights": "Sân thượng rộng rãi, Nội thất sang trọng, Khu vườn xinh xắn, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 16,
+    "name": "Modern Condo Mountain View",
+    "description": "Chào mừng bạn đến với Modern Condo Mountain View! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
+    "price": 700000,
+    "rating": 2.0,
+    "image_urls": [
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay15.jpg",
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay5.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 77, Đường Lê Lợi",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Contemporary, Scandinavian, Tối giản",
+    "room_amenities": "Tủ lạnh mini, Bồn tắm, Máy điều hòa, Máy pha cà phê, Wi-Fi miễn phí, Phòng tắm riêng, Lò vi sóng",
+    "surrounding_amenities": "Gym, Bãi biển, Trạm taxi, Trung tâm mua sắm, Quán cà phê, Bến tàu",
+    "highlights": "Không gian yên tĩnh, Sân thượng rộng rãi, Đồ dùng cao cấp",
+    "priority": 3
+  },
+  {
+    "id": 17,
+    "name": "Elegant Suite Mountain View",
+    "description": "Chào mừng bạn đến với Elegant Suite Mountain View! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 1400000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay8.jpg",
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay19.jpg",
+      "/static/images/homestay12.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 150, Đường Trần Hưng Đạo",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 6, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 122, Đường Trần Hưng Đạo",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Rustic, Hiện đại",
+    "room_amenities": "Két an toàn, Máy điều hòa, Minibar, Áo choàng tắm, Wi-Fi miễn phí, Phòng tắm riêng, Bồn tắm",
+    "surrounding_amenities": "Gym, Siêu thị, Bãi biển, Trung tâm thể thao, Sân bay",
+    "highlights": "Khu vườn xinh xắn, Nội thất sang trọng, Thiết kế độc đáo, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 18,
+    "name": "Cozy Cottage City Center",
+    "description": "Chào mừng bạn đến với Cozy Cottage City Center! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
+    "price": 3800000,
+    "rating": 2.3,
+    "image_urls": [
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay14.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 21, Đường Trần Hưng Đạo",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 67, Đường Trần Hưng Đạo",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 80, Đường Nguyễn Huệ",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Cổ điển, Bohemian",
+    "room_amenities": "Ban công riêng, Ghế nghỉ, Máy điều hòa, TV màn hình phẳng, Minibar, Wi-Fi miễn phí, Vòi sen, Máy pha cà phê",
+    "surrounding_amenities": "Rạp chiếu phim, Nhà hàng, Bãi biển, Bến tàu, Gym, Trạm taxi",
+    "highlights": "Bếp đầy đủ tiện nghi, View đẹp, Nội thất sang trọng, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 19,
+    "name": "Peaceful Cottage Forest",
+    "description": "Chào mừng bạn đến với Peaceful Cottage Forest! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 2100000,
+    "rating": 2.0,
+    "image_urls": [
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay11.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 33, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 129, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 104, Đường Trần Hưng Đạo",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Scandinavian, Hiện đại, Rustic",
+    "room_amenities": "Bồn tắm, TV màn hình phẳng, Bàn làm việc, Ban công riêng, Tủ lạnh mini, Lò vi sóng",
+    "surrounding_amenities": "Rạp chiếu phim, Chợ địa phương, Công viên, Bến xe buýt, Bãi biển, Quán cà phê, Nhà hàng, Bến tàu",
+    "highlights": "Đồ dùng cao cấp, Thiết kế độc đáo, Khu vườn xinh xắn, Bếp đầy đủ tiện nghi",
+    "priority": 3
+  },
+  {
+    "id": 20,
+    "name": "Rustic Homestay Beachfront",
+    "description": "Chào mừng bạn đến với Rustic Homestay Beachfront! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
+    "price": 4500000,
+    "rating": 3.3,
+    "image_urls": [
+      "/static/images/homestay12.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay5.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 100, Đường Lê Lợi",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 107, Đường Nguyễn Huệ",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 20, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tropical, Industrial, Hiện đại",
+    "room_amenities": "TV màn hình phẳng, Ghế nghỉ, Máy điều hòa, Két an toàn, Minibar, Bàn làm việc, Máy sấy tóc, Áo choàng tắm",
+    "surrounding_amenities": "Bảo tàng, Quán cà phê, Siêu thị, Rạp chiếu phim, Trung tâm thể thao, Bãi biển, Sân bay, Trung tâm mua sắm",
+    "highlights": "Bếp đầy đủ tiện nghi, Nội thất sang trọng, Sân thượng rộng rãi",
+    "priority": 3
+  },
+  {
+    "id": 21,
+    "name": "Peaceful Condo Lakeside",
+    "description": "Chào mừng bạn đến với Peaceful Condo Lakeside! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
+    "price": 3600000,
+    "rating": 2.2,
+    "image_urls": [
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay15.jpg",
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay8.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 110, Đường Trần Hưng Đạo",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 30, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 146, Đường Trần Hưng Đạo",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tối giản, Vintage",
+    "room_amenities": "Ghế nghỉ, Bồn tắm, Áo choàng tắm, Tủ lạnh mini, TV màn hình phẳng, Máy sấy tóc, Wi-Fi miễn phí",
+    "surrounding_amenities": "Gym, Siêu thị, Nhà hàng, Chợ địa phương, Bảo tàng",
+    "highlights": "Thiết kế độc đáo, Nội thất sang trọng, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 22,
+    "name": "Charming Apartment Beachfront",
+    "description": "Chào mừng bạn đến với Charming Apartment Beachfront! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 700000,
+    "rating": 5,
+    "image_urls": [
+      "/static/images/homestay8.jpg",
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay15.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 51, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 2, Đường Trần Hưng Đạo",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Vintage, Contemporary",
+    "room_amenities": "Wi-Fi miễn phí, Két an toàn, Máy giặt, Bồn tắm, Ban công riêng",
+    "surrounding_amenities": "Bãi biển, Sân bay, Quán cà phê, Siêu thị, Bảo tàng, Trung tâm thể thao, Chợ địa phương, Trung tâm mua sắm",
+    "highlights": "Đồ dùng cao cấp, Thiết kế độc đáo, Nội thất sang trọng, Khu vườn xinh xắn, Bếp đầy đủ tiện nghi",
+    "priority": 3
+  },
+  {
+    "id": 23,
+    "name": "Modern House Hillside",
+    "description": "Chào mừng bạn đến với Modern House Hillside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 3100000,
+    "rating": 1.0,
+    "image_urls": [
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay8.jpg",
+      "/static/images/homestay4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 120, Đường Nguyễn Huệ",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Rustic, Cổ điển",
+    "room_amenities": "Dép đi trong phòng, Tủ lạnh mini, Lò vi sóng, Bàn làm việc, Máy sấy tóc, Minibar, Máy pha cà phê",
+    "surrounding_amenities": "Trung tâm thể thao, Bãi biển, Siêu thị, Hồ bơi, Chợ địa phương, Bến xe buýt",
+    "highlights": "Không gian yên tĩnh, Thiết kế độc đáo, Sân thượng rộng rãi, Nội thất sang trọng",
+    "priority": 3
+  },
+  {
+    "id": 24,
+    "name": "Elegant Bungalow Riverside",
+    "description": "Chào mừng bạn đến với Elegant Bungalow Riverside! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 2200000,
+    "rating": 2.7,
+    "image_urls": [
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay5.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay17.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 91, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 10, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tropical, Tối giản, Industrial",
+    "room_amenities": "Máy pha cà phê, Ghế nghỉ, Phòng tắm riêng, TV màn hình phẳng, Máy điều hòa, Ban công riêng, Tủ lạnh mini, Bàn làm việc",
+    "surrounding_amenities": "Trung tâm thành phố, Bến tàu, Siêu thị, Chợ địa phương, Bến xe buýt, Gym, Rạp chiếu phim",
+    "highlights": "Đồ dùng cao cấp, Nội thất sang trọng, Thiết kế độc đáo, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 25,
+    "name": "Charming Studio City Center",
+    "description": "Chào mừng bạn đến với Charming Studio City Center! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 3900000,
+    "rating": 3.5,
+    "image_urls": [
+      "/static/images/homestay15.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay3.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 45, Đường Nguyễn Huệ",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 34, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 185, Đường Nguyễn Huệ",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Tối giản, Cổ điển",
+    "room_amenities": "Ban công riêng, Tủ lạnh mini, Két an toàn, Áo choàng tắm, Lò vi sóng, Máy giặt, Máy điều hòa, Bàn làm việc, Ghế nghỉ, Máy pha cà phê",
+    "surrounding_amenities": "Sân bay, Trạm taxi, Bãi biển, Công viên, Bảo tàng, Chợ địa phương",
+    "highlights": "Sân thượng rộng rãi, Đồ dùng cao cấp, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 26,
+    "name": "Peaceful Villa Mountain View",
+    "description": "Chào mừng bạn đến với Peaceful Villa Mountain View! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 1900000,
+    "rating": 2.7,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay15.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 26, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Bohemian, Industrial",
+    "room_amenities": "Minibar, Ban công riêng, Két an toàn, Ghế nghỉ, Lò vi sóng, Wi-Fi miễn phí, Máy giặt, Máy pha cà phê, Máy điều hòa, Áo choàng tắm",
+    "surrounding_amenities": "Bến xe buýt, Rạp chiếu phim, Công viên, Nhà hàng, Trung tâm thành phố, Gym",
+    "highlights": "Thiết kế độc đáo, Khu vườn xinh xắn, Sân thượng rộng rãi",
+    "priority": 3
+  },
+  {
+    "id": 27,
+    "name": "Cozy House City Center",
+    "description": "Chào mừng bạn đến với Cozy House City Center! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 3600000,
+    "rating": 1.5,
+    "image_urls": [
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay15.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 174, Đường Lê Lợi",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 11, Đường Nguyễn Huệ",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Vintage, Tối giản, Scandinavian",
+    "room_amenities": "Ban công riêng, Tủ lạnh mini, Minibar, Dép đi trong phòng, Bồn tắm, Máy sấy tóc, Áo choàng tắm, Két an toàn, Bàn làm việc, Máy điều hòa",
+    "surrounding_amenities": "Spa, Rạp chiếu phim, Quán cà phê, Trạm taxi, Bến xe buýt",
+    "highlights": "Đồ dùng cao cấp, Nội thất sang trọng, Bếp đầy đủ tiện nghi",
+    "priority": 3
+  },
+  {
+    "id": 28,
+    "name": "Modern Bungalow City Center",
+    "description": "Chào mừng bạn đến với Modern Bungalow City Center! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 3100000,
+    "rating": 4.7,
+    "image_urls": [
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay16.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 16, Đường Trần Hưng Đạo",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 90, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 8, Đường Trần Hưng Đạo",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tropical, Tối giản",
+    "room_amenities": "Vòi sen, Bồn tắm, Máy pha cà phê, Ghế nghỉ, Máy sấy tóc, Phòng tắm riêng, Wi-Fi miễn phí, Minibar",
+    "surrounding_amenities": "Công viên, Bãi biển, Rạp chiếu phim, Trạm taxi, Siêu thị, Bảo tàng, Gym, Sân bay",
+    "highlights": "Sân thượng rộng rãi, Bếp đầy đủ tiện nghi, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 29,
+    "name": "Elegant Homestay Downtown",
+    "description": "Chào mừng bạn đến với Elegant Homestay Downtown! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 600000,
+    "rating": 1.7,
+    "image_urls": [
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay5.jpg",
+      "/static/images/homestay15.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 59, Đường Lê Lợi",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 126, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 150, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Bohemian, Hiện đại, Contemporary",
+    "room_amenities": "Bàn làm việc, Lò vi sóng, Máy sấy tóc, Dép đi trong phòng, Vòi sen",
+    "surrounding_amenities": "Bảo tàng, Siêu thị, Bãi biển, Bến xe buýt, Quán cà phê, Rạp chiếu phim, Nhà hàng, Gym",
+    "highlights": "Khu vườn xinh xắn, Thiết kế độc đáo, Sân thượng rộng rãi, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 30,
+    "name": "Peaceful Condo Hillside",
+    "description": "Chào mừng bạn đến với Peaceful Condo Hillside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 3000000,
+    "rating": 2.3,
+    "image_urls": [
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay19.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 149, Đường Trần Hưng Đạo",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 33, Đường Trần Hưng Đạo",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Vintage, Industrial, Scandinavian",
+    "room_amenities": "Tủ lạnh mini, Wi-Fi miễn phí, Minibar, Bồn tắm, Máy điều hòa, Máy pha cà phê, Vòi sen",
+    "surrounding_amenities": "Bãi biển, Sân bay, Gym, Chợ địa phương, Trung tâm thể thao, Nhà hàng, Quán cà phê, Spa",
+    "highlights": "Không gian yên tĩnh, Thiết kế độc đáo, View đẹp, Nội thất sang trọng",
+    "priority": 3
+  },
+  {
+    "id": 31,
+    "name": "Cozy Suite Sea View",
+    "description": "Chào mừng bạn đến với Cozy Suite Sea View! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 900000,
+    "rating": 2.5,
+    "image_urls": [
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay20.jpg",
+      "/static/images/homestay6.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 73, Đường Trần Hưng Đạo",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 87, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Rustic, Scandinavian, Bohemian",
+    "room_amenities": "Tủ lạnh mini, Ban công riêng, Máy điều hòa, Máy giặt, Phòng tắm riêng, TV màn hình phẳng, Lò vi sóng",
+    "surrounding_amenities": "Hồ bơi, Trạm taxi, Rạp chiếu phim, Bến xe buýt, Trung tâm mua sắm, Quán cà phê, Bãi biển, Bến tàu",
+    "highlights": "Không gian yên tĩnh, Khu vườn xinh xắn, Đồ dùng cao cấp, View đẹp",
+    "priority": 3
+  },
+  {
+    "id": 32,
+    "name": "Cozy House Sea View",
+    "description": "Chào mừng bạn đến với Cozy House Sea View! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 4800000,
+    "rating": 4.0,
+    "image_urls": [
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay16.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 133, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 88, Đường Trần Hưng Đạo",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Tối giản, Industrial",
+    "room_amenities": "Máy điều hòa, Áo choàng tắm, Minibar, TV màn hình phẳng, Máy giặt, Két an toàn",
+    "surrounding_amenities": "Trung tâm thể thao, Trạm taxi, Hồ bơi, Siêu thị, Bến xe buýt, Chợ địa phương, Quán cà phê, Bãi biển",
+    "highlights": "View đẹp, Không gian yên tĩnh, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 33,
+    "name": "Deluxe House Forest",
+    "description": "Chào mừng bạn đến với Deluxe House Forest! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 2600000,
+    "rating": 2.3,
+    "image_urls": [
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay5.jpg",
+      "/static/images/homestay9.jpg",
+      "/static/images/homestay12.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 168, Đường Trần Hưng Đạo",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Rustic, Vintage",
+    "room_amenities": "Máy điều hòa, Máy sấy tóc, Phòng tắm riêng, Ghế nghỉ, Dép đi trong phòng, Két an toàn, Wi-Fi miễn phí, Bồn tắm, Máy pha cà phê, Áo choàng tắm",
+    "surrounding_amenities": "Trung tâm thể thao, Trung tâm mua sắm, Rạp chiếu phim, Chợ địa phương, Quán cà phê, Nhà hàng, Spa, Bãi biển",
+    "highlights": "Khu vườn xinh xắn, Nội thất sang trọng, Bếp đầy đủ tiện nghi, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 34,
+    "name": "Rustic Bungalow Mountain View",
+    "description": "Chào mừng bạn đến với Rustic Bungalow Mountain View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 2300000,
+    "rating": 1.5,
+    "image_urls": [
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay12.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay5.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 105, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 168, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 187, Đường Nguyễn Huệ",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Tối giản, Tropical",
+    "room_amenities": "Máy pha cà phê, Wi-Fi miễn phí, Máy điều hòa, Ghế nghỉ, Bàn làm việc",
+    "surrounding_amenities": "Rạp chiếu phim, Trung tâm thể thao, Bảo tàng, Trung tâm thành phố, Bến xe buýt, Trạm taxi",
+    "highlights": "Sân thượng rộng rãi, Khu vườn xinh xắn, Nội thất sang trọng, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 35,
+    "name": "Charming Suite Beachfront",
+    "description": "Chào mừng bạn đến với Charming Suite Beachfront! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 4900000,
+    "rating": 1.7,
+    "image_urls": [
+      "/static/images/homestay19.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay5.jpg",
+      "/static/images/homestay6.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 92, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 75, Đường Trần Hưng Đạo",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 8, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Rustic, Vintage, Scandinavian",
+    "room_amenities": "Bồn tắm, Két an toàn, Máy sấy tóc, Bàn làm việc, Máy giặt",
+    "surrounding_amenities": "Sân bay, Trạm taxi, Hồ bơi, Bến xe buýt, Gym, Bến tàu, Trung tâm thành phố",
+    "highlights": "Bếp đầy đủ tiện nghi, Sân thượng rộng rãi, Đồ dùng cao cấp, View đẹp, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 36,
+    "name": "Rustic Condo Sea View",
+    "description": "Chào mừng bạn đến với Rustic Condo Sea View! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
+    "price": 2700000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay2.jpg",
+      "/static/images/homestay15.jpg",
+      "/static/images/homestay1.jpg",
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 86, Đường Nguyễn Huệ",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 186, Đường Lê Lợi",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 89, Đường Nguyễn Huệ",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Tối giản, Vintage, Hiện đại",
+    "room_amenities": "Máy sấy tóc, Dép đi trong phòng, Minibar, Áo choàng tắm, Bàn làm việc, TV màn hình phẳng, Ban công riêng, Wi-Fi miễn phí",
+    "surrounding_amenities": "Rạp chiếu phim, Chợ địa phương, Gym, Bến xe buýt, Bãi biển, Trung tâm mua sắm, Trung tâm thể thao",
+    "highlights": "Khu vườn xinh xắn, Đồ dùng cao cấp, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 37,
+    "name": "Luxury Apartment Garden",
+    "description": "Chào mừng bạn đến với Luxury Apartment Garden! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
+    "price": 4300000,
+    "rating": 4.7,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay12.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 118, Đường Trần Hưng Đạo",
+        "district": "Ba Đình",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 60, Đường Trần Hưng Đạo",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Cổ điển, Scandinavian",
+    "room_amenities": "Máy pha cà phê, Minibar, Ghế nghỉ, Wi-Fi miễn phí, Vòi sen, Tủ lạnh mini",
+    "surrounding_amenities": "Rạp chiếu phim, Sân bay, Hồ bơi, Bến tàu, Nhà hàng, Bảo tàng",
+    "highlights": "Sân thượng rộng rãi, Đồ dùng cao cấp, Không gian yên tĩnh, Thiết kế độc đáo, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 38,
+    "name": "Charming Cottage Forest",
+    "description": "Chào mừng bạn đến với Charming Cottage Forest! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 1400000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay1.jpg",
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay16.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 30, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 112, Đường Trần Hưng Đạo",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 66, Đường Lê Lợi",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Tropical, Industrial, Scandinavian",
+    "room_amenities": "TV màn hình phẳng, Bàn làm việc, Áo choàng tắm, Máy điều hòa, Bồn tắm, Phòng tắm riêng, Máy sấy tóc, Lò vi sóng",
+    "surrounding_amenities": "Hồ bơi, Công viên, Chợ địa phương, Bến xe buýt, Bảo tàng, Bãi biển",
+    "highlights": "Không gian yên tĩnh, Sân thượng rộng rãi, Nội thất sang trọng, Khu vườn xinh xắn",
+    "priority": 3
+  },
+  {
+    "id": 39,
+    "name": "Charming House Sea View",
+    "description": "Chào mừng bạn đến với Charming House Sea View! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
+    "price": 1500000,
+    "rating": 4.0,
+    "image_urls": [
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 31, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 110, Đường Trần Hưng Đạo",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 186, Đường Nguyễn Huệ",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Industrial, Hiện đại, Scandinavian",
+    "room_amenities": "Két an toàn, Bàn làm việc, Wi-Fi miễn phí, Bồn tắm, Máy giặt",
+    "surrounding_amenities": "Rạp chiếu phim, Bảo tàng, Bến tàu, Trung tâm mua sắm, Bến xe buýt, Bãi biển, Trung tâm thể thao",
+    "highlights": "Sân thượng rộng rãi, Khu vườn xinh xắn, View đẹp, Bếp đầy đủ tiện nghi",
+    "priority": 3
+  },
+  {
+    "id": 40,
+    "name": "Elegant Condo Sea View",
+    "description": "Chào mừng bạn đến với Elegant Condo Sea View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 1800000,
+    "rating": 1.8,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay10.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 128, Đường Lê Lợi",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 44, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      }
+    ],
+    "style": "Contemporary, Cổ điển",
+    "room_amenities": "Dép đi trong phòng, Máy giặt, Máy sấy tóc, Minibar, Bàn làm việc, Máy pha cà phê, Wi-Fi miễn phí, Bồn tắm, Ban công riêng",
+    "surrounding_amenities": "Bãi biển, Trung tâm thành phố, Trung tâm mua sắm, Hồ bơi, Công viên, Bảo tàng, Gym",
+    "highlights": "Nội thất sang trọng, Khu vườn xinh xắn, Sân thượng rộng rãi, Thiết kế độc đáo",
+    "priority": 3
+  },
+  {
+    "id": 41,
+    "name": "Charming Villa Downtown",
+    "description": "Chào mừng bạn đến với Charming Villa Downtown! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 2000000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay19.jpg",
+      "/static/images/homestay4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 107, Đường Trần Hưng Đạo",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 184, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 172, Đường Nguyễn Huệ",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Bohemian",
+    "room_amenities": "Máy pha cà phê, Dép đi trong phòng, Phòng tắm riêng, Máy điều hòa, TV màn hình phẳng, Tủ lạnh mini",
+    "surrounding_amenities": "Trung tâm thành phố, Hồ bơi, Bãi biển, Gym, Bảo tàng, Bến xe buýt, Chợ địa phương",
+    "highlights": "View đẹp, Khu vườn xinh xắn, Đồ dùng cao cấp",
+    "priority": 3
+  },
+  {
+    "id": 42,
+    "name": "Charming Apartment Riverside",
+    "description": "Chào mừng bạn đến với Charming Apartment Riverside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 1800000,
+    "rating": 2.3,
+    "image_urls": [
+      "/static/images/homestay18.jpg",
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay17.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 70, Đường Nguyễn Huệ",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 129, Đường Trần Hưng Đạo",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tropical, Hiện đại, Scandinavian",
+    "room_amenities": "Lò vi sóng, Ban công riêng, Máy pha cà phê, Bàn làm việc, Dép đi trong phòng, Máy giặt, Bồn tắm, Vòi sen, Máy sấy tóc",
+    "surrounding_amenities": "Bến xe buýt, Bảo tàng, Chợ địa phương, Nhà hàng, Trung tâm thể thao, Trạm taxi, Công viên, Trung tâm mua sắm",
+    "highlights": "View đẹp, Khu vườn xinh xắn, Bếp đầy đủ tiện nghi, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 43,
+    "name": "Peaceful Studio Downtown",
+    "description": "Chào mừng bạn đến với Peaceful Studio Downtown! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
+    "price": 1000000,
+    "rating": 1.0,
+    "image_urls": [
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay19.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 59, Đường Trần Hưng Đạo",
+        "district": "Sơn Trà",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 29, Đường Trần Hưng Đạo",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 87, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Rustic, Tropical",
+    "room_amenities": "Lò vi sóng, Ghế nghỉ, Phòng tắm riêng, Bồn tắm, Minibar",
+    "surrounding_amenities": "Công viên, Sân bay, Hồ bơi, Gym, Quán cà phê, Bảo tàng, Bến tàu, Trung tâm mua sắm",
+    "highlights": "Bếp đầy đủ tiện nghi, Khu vườn xinh xắn, Sân thượng rộng rãi, Thiết kế độc đáo, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 44,
+    "name": "Classic Cottage Sea View",
+    "description": "Chào mừng bạn đến với Classic Cottage Sea View! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 4700000,
+    "rating": 3.2,
+    "image_urls": [
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay11.jpg",
+      "/static/images/homestay12.jpg",
+      "/static/images/homestay16.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 14, Đường Nguyễn Huệ",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 106, Đường Trần Hưng Đạo",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 47, Đường Lê Lợi",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Tropical, Vintage",
+    "room_amenities": "TV màn hình phẳng, Bàn làm việc, Tủ lạnh mini, Két an toàn, Lò vi sóng, Máy sấy tóc",
+    "surrounding_amenities": "Bến tàu, Bãi biển, Trung tâm thể thao, Hồ bơi, Nhà hàng, Chợ địa phương, Gym",
+    "highlights": "Sân thượng rộng rãi, View đẹp, Thiết kế độc đáo",
+    "priority": 3
+  },
+  {
+    "id": 45,
+    "name": "Modern Suite Riverside",
+    "description": "Chào mừng bạn đến với Modern Suite Riverside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
+    "price": 3800000,
+    "rating": 4.0,
+    "image_urls": [
+      "/static/images/homestay16.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay8.jpg",
+      "/static/images/homestay9.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 153, Đường Nguyễn Huệ",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 115, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Bohemian, Contemporary, Industrial",
+    "room_amenities": "Ghế nghỉ, Két an toàn, Máy điều hòa, Bồn tắm, Phòng tắm riêng",
+    "surrounding_amenities": "Trung tâm thành phố, Trạm taxi, Quán cà phê, Nhà hàng, Bến xe buýt, Trung tâm mua sắm, Hồ bơi",
+    "highlights": "Bếp đầy đủ tiện nghi, Thiết kế độc đáo, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 46,
+    "name": "Luxury Bungalow Garden",
+    "description": "Chào mừng bạn đến với Luxury Bungalow Garden! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
+    "price": 1300000,
+    "rating": 2.7,
+    "image_urls": [
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay13.jpg",
+      "/static/images/homestay7.jpg",
+      "/static/images/homestay1.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 71, Đường Lê Lợi",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Cổ điển, Contemporary, Vintage",
+    "room_amenities": "Máy pha cà phê, Ban công riêng, Dép đi trong phòng, Máy giặt, TV màn hình phẳng, Wi-Fi miễn phí",
+    "surrounding_amenities": "Nhà hàng, Bến xe buýt, Trung tâm thể thao, Gym, Rạp chiếu phim, Trạm taxi, Quán cà phê, Công viên",
+    "highlights": "Nội thất sang trọng, Sân thượng rộng rãi, Thiết kế độc đáo, View đẹp, Không gian yên tĩnh",
+    "priority": 3
+  },
+  {
+    "id": 47,
+    "name": "Peaceful Apartment City Center",
+    "description": "Chào mừng bạn đến với Peaceful Apartment City Center! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 3400000,
+    "rating": 1.8,
+    "image_urls": [
+      "/static/images/homestay10.jpg",
+      "/static/images/homestay8.jpg",
+      "/static/images/homestay6.jpg",
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay18.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 60, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 33, Đường Nguyễn Huệ",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Rustic, Tối giản",
+    "room_amenities": "Phòng tắm riêng, TV màn hình phẳng, Két an toàn, Máy pha cà phê, Bồn tắm, Ban công riêng, Vòi sen",
+    "surrounding_amenities": "Trung tâm thành phố, Trung tâm mua sắm, Trung tâm thể thao, Hồ bơi, Rạp chiếu phim, Gym",
+    "highlights": "Khu vườn xinh xắn, Nội thất sang trọng, Thiết kế độc đáo",
+    "priority": 3
+  },
+  {
+    "id": 48,
+    "name": "Rustic Apartment Hillside",
+    "description": "Chào mừng bạn đến với Rustic Apartment Hillside! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
+    "price": 1800000,
+    "rating": 2.7,
+    "image_urls": [
+      "/static/images/homestay17.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay3.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 83, Đường Lê Lợi",
+        "district": "Hoàn Kiếm",
+        "city": "Hà Nội"
+      },
+      {
+        "address": "Số 192, Đường Nguyễn Huệ",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 96, Đường Trần Hưng Đạo",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Hiện đại, Scandinavian, Industrial",
+    "room_amenities": "Máy pha cà phê, Vòi sen, Máy sấy tóc, Phòng tắm riêng, Ban công riêng, Lò vi sóng",
+    "surrounding_amenities": "Bãi biển, Trung tâm mua sắm, Quán cà phê, Công viên, Hồ bơi",
+    "highlights": "Khu vườn xinh xắn, View đẹp, Nội thất sang trọng, Không gian yên tĩnh, Thiết kế độc đáo",
+    "priority": 3
+  },
+  {
+    "id": 49,
+    "name": "Luxury Studio Beachfront",
+    "description": "Chào mừng bạn đến với Luxury Studio Beachfront! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 2800000,
+    "rating": 4.8,
+    "image_urls": [
+      "/static/images/homestay11.jpg",
+      "/static/images/homestay4.jpg",
+      "/static/images/homestay5.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 144, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 48, Đường Nguyễn Huệ",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      },
+      {
+        "address": "Số 40, Đường Nguyễn Huệ",
+        "district": "Hải Châu",
+        "city": "Đà Nẵng"
+      }
+    ],
+    "style": "Hiện đại, Industrial, Vintage",
+    "room_amenities": "TV màn hình phẳng, Ban công riêng, Lò vi sóng, Ghế nghỉ, Máy giặt, Phòng tắm riêng, Wi-Fi miễn phí",
+    "surrounding_amenities": "Nhà hàng, Trung tâm mua sắm, Quán cà phê, Trạm taxi, Bảo tàng, Siêu thị, Chợ địa phương",
+    "highlights": "Thiết kế độc đáo, Không gian yên tĩnh, Bếp đầy đủ tiện nghi, Đồ dùng cao cấp, Sân thượng rộng rãi",
+    "priority": 3
+  },
+  {
+    "id": 50,
+    "name": "Peaceful Studio Mountain View",
+    "description": "Chào mừng bạn đến với Peaceful Studio Mountain View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
+    "price": 1900000,
+    "rating": 3.0,
+    "image_urls": [
+      "/static/images/homestay14.jpg",
+      "/static/images/homestay3.jpg",
+      "/static/images/homestay15.jpg"
+    ],
+    "locations": [
+      {
+        "address": "Số 36, Đường Nguyễn Huệ",
+        "district": "Quận 2",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Industrial, Tropical, Hiện đại",
+    "room_amenities": "TV màn hình phẳng, Két an toàn, Máy pha cà phê, Minibar, Máy giặt",
+    "surrounding_amenities": "Trung tâm mua sắm, Bãi biển, Trung tâm thành phố, Siêu thị, Sân bay",
+    "highlights": "Thiết kế độc đáo, Khu vườn xinh xắn, Đồ dùng cao cấp",
+    "priority": 3
+  }
+]
