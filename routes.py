@@ -10,6 +10,7 @@ import uuid
 from auth import UserLogin
 import re
 
+
 def register_routes(app):
     @app.route('/')
     @login_required

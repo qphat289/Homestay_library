@@ -4,6 +4,7 @@ import datetime
 import os
 from uuid import uuid4
 
+
 # Danh sách các tên phòng
 room_name_prefixes = ["Cozy", "Modern", "Luxury", "Rustic", "Elegant", "Classic", "Charming", "Deluxe", "Peaceful", "Scenic"]
 room_name_types = ["Villa", "Apartment", "Homestay", "Bungalow", "Suite", "House", "Condo", "Cabin", "Studio", "Cottage"]

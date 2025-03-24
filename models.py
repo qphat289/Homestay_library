@@ -2,6 +2,7 @@ import json
 import os
 from database import get_db_connection
 
+
 class User:
     @staticmethod
     def get_by_id(user_id):

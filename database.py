@@ -1,5 +1,6 @@
 import sqlite3
 
+
 # Helper function to get database connection
 def get_db_connection():
     conn = sqlite3.connect('database.db')
