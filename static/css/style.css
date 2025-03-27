@@ -1,11 +1,11 @@
 /* Main color scheme - Màu xanh lá nhạt hơn */
 :root {
-    --primary-color: #e6bb5e;     /* Màu vàng chủ đạo */
-    --primary-hover: #c2993a;     /* Màu vàng đậm khi hover */
+    --primary-color: #D8C3A5;     /* Màu vàng chủ đạo */
+    --primary-hover: #e2b77b;     /* Màu vàng đậm khi hover */
     --danger-color: #dc3545;      /* Màu đỏ cho nút nguy hiểm */
     --danger-hover: #c82333;      /* Màu đỏ đậm khi hover */
-    --primary-light: #e4995346;     
-    --primary-dark: #c2993a;     
+    --primary-light: #e7dccb;     
+    --primary-dark: #ae8a56;     
     --text-primary: #333333;      
     --text-secondary: #666666;   
     --border-color: #e0e0e0;      
@@ -665,7 +665,7 @@ body {
 .price-value {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--text-primary);
 }
 
 .homestay-detail-actions {
@@ -741,7 +741,7 @@ body {
 }
 
 .amenity-header i {
-    color: var(--primary-color);
+    color: #a973318a;
     font-size: 20px;
     margin-right: 10px;
 }
@@ -2856,7 +2856,7 @@ a, button, .btn, .feature-card, .homestay-card {
 .price-value .amount {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: #E98074;
 }
 
 .price-value .currency {
