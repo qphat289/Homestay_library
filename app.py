@@ -3,7 +3,7 @@ import os
 from utils import format_price
 import json
 from PIL import Image
-from database import init_db, add_sample_user
+from database import init_db
 from models import HomestayJSONManager, User
 from flask_login import LoginManager
 from auth import UserLogin
@@ -52,7 +52,6 @@ def init_homestay_data():
 
 # Initialize database for users
 init_db()
-add_sample_user()
 
 # Initialize JSON data for homestays
 init_homestay_data()
