@@ -10,6 +10,7 @@ from auth import UserLogin
 import base64
 from routes import register_routes
 from datetime import timedelta
+from flask_compress import Compress
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -18,6 +19,9 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-generated-key')
 # Configure static file caching
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(days=7)
 app.config['STATIC_FOLDER'] = 'static'
+
+# Initialize compression
+Compress(app)
 
 # Initialize Flask-Login
 login_manager = LoginManager()
