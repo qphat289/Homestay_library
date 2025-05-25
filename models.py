@@ -8,24 +8,30 @@ class User:
     @staticmethod
     def get_by_id(user_id):
         conn = get_db_connection()
-        user = conn.execute('SELECT * FROM users WHERE id = ?', 
-                          (user_id,)).fetchone()
+        cur = conn.cursor()
+        cur.execute('SELECT * FROM users WHERE id = %s', (user_id,))
+        user = cur.fetchone()
+        cur.close()
         conn.close()
         return user
 
     @staticmethod
     def get_by_phone(phone_number):
         conn = get_db_connection()
-        user = conn.execute('SELECT * FROM users WHERE phone_number = ?', 
-                          (phone_number,)).fetchone()
+        cur = conn.cursor()
+        cur.execute('SELECT * FROM users WHERE phone_number = %s', (phone_number,))
+        user = cur.fetchone()
+        cur.close()
         conn.close()
         return user
     
     @staticmethod
     def get_by_email(email):
         conn = get_db_connection()
-        user = conn.execute('SELECT * FROM users WHERE email = ?', 
-                          (email,)).fetchone()
+        cur = conn.cursor()
+        cur.execute('SELECT * FROM users WHERE email = %s', (email,))
+        user = cur.fetchone()
+        cur.close()
         conn.close()
         return user
     
@@ -37,8 +43,9 @@ class User:
             return None
             
         conn = get_db_connection()
+        cur = conn.cursor()
         try:
-            conn.execute('INSERT INTO users (phone_number, email) VALUES (?, ?)',
+            cur.execute('INSERT INTO users (phone_number, email) VALUES (%s, %s)',
                        (phone_number, email))
             conn.commit()
             user = User.get_by_phone(phone_number)
@@ -47,6 +54,7 @@ class User:
             print(f"Error creating user: {e}")
             return None
         finally:
+            cur.close()
             conn.close()
 
 class HomestayJSONManager:
