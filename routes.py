@@ -1,5 +1,5 @@
 from models import User, Homestay, HomestayJSONManager, Review, ReviewJSONManager
-from flask import Flask, render_template, request, redirect, session, send_file, url_for, flash
+from flask import Flask, render_template, request, redirect, session, send_file, url_for, flash, jsonify
 from flask_login import login_user, login_required, current_user, logout_user
 from io import BytesIO
 import os
@@ -9,6 +9,8 @@ from datetime import datetime
 import uuid
 from auth import UserLogin
 import re
+from services.image_storage import ImageStorageService
+from werkzeug.utils import secure_filename
 
 
 def register_routes(app):
@@ -337,6 +339,60 @@ def register_routes(app):
                 
         flash('Không tìm thấy trang yêu cầu', 'error')
         return redirect(url_for('index'))
+
+    # Initialize image storage service
+    image_storage = ImageStorageService()
+
+    @app.route('/upload_image/<int:homestay_id>', methods=['POST'])
+    def upload_image(homestay_id):
+        if 'image' not in request.files:
+            return jsonify({'error': 'No image provided'}), 400
+        
+        file = request.files['image']
+        if file.filename == '':
+            return jsonify({'error': 'No selected file'}), 400
+        
+        if file:
+            # Save file temporarily
+            filename = secure_filename(file.filename)
+            temp_path = os.path.join('/tmp', filename)
+            file.save(temp_path)
+            
+            try:
+                # Upload to Cloudinary
+                image_url = image_storage.upload_image(temp_path)
+                if image_url:
+                    # Add image URL to homestay
+                    if Homestay.add_image(homestay_id, image_url):
+                        return jsonify({'success': True, 'image_url': image_url})
+                
+                return jsonify({'error': 'Failed to upload image'}), 500
+            finally:
+                # Clean up temporary file
+                if os.path.exists(temp_path):
+                    os.remove(temp_path)
+
+    @app.route('/delete_image/<int:homestay_id>', methods=['POST'])
+    def delete_image(homestay_id):
+        data = request.get_json()
+        if not data or 'image_url' not in data:
+            return jsonify({'error': 'No image URL provided'}), 400
+        
+        image_url = data['image_url']
+        if Homestay.remove_image(homestay_id, image_url):
+            return jsonify({'success': True})
+        return jsonify({'error': 'Failed to delete image'}), 500
+
+    @app.route('/update_images/<int:homestay_id>', methods=['POST'])
+    def update_images(homestay_id):
+        data = request.get_json()
+        if not data or 'image_urls' not in data:
+            return jsonify({'error': 'No image URLs provided'}), 400
+        
+        image_urls = data['image_urls']
+        if Homestay.update_images(homestay_id, image_urls):
+            return jsonify({'success': True})
+        return jsonify({'error': 'Failed to update images'}), 500
 
 
 

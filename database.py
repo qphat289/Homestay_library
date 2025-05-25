@@ -1,43 +1,54 @@
-import sqlite3
+import os
+import psycopg2
+from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
 
+load_dotenv()
 
-# Helper function to get database connection
 def get_db_connection():
-    conn = sqlite3.connect('database.db')
-    conn.row_factory = sqlite3.Row  # This enables column access by name
+    """Get database connection"""
+    conn = psycopg2.connect(
+        host=os.getenv('POSTGRES_HOST'),
+        database=os.getenv('POSTGRES_DB'),
+        user=os.getenv('POSTGRES_USER'),
+        password=os.getenv('POSTGRES_PASSWORD'),
+        port=os.getenv('POSTGRES_PORT', '5432'),
+        sslmode='require'
+    )
+    conn.cursor_factory = RealDictCursor
     return conn
 
-# Database setup function
 def init_db():
-    conn = sqlite3.connect('database.db')
-    c = conn.cursor()
+    """Initialize database tables"""
+    conn = get_db_connection()
+    cur = conn.cursor()
     
     # Create users table
-    c.execute('''
-    CREATE TABLE IF NOT EXISTS users (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        phone_number TEXT UNIQUE NOT NULL,
-        email TEXT UNIQUE NOT NULL
-    )
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id SERIAL PRIMARY KEY,
+            phone_number VARCHAR(20) UNIQUE NOT NULL,
+            email VARCHAR(100) UNIQUE NOT NULL,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    ''')
+    
+    # Create reviews table
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS reviews (
+            id SERIAL PRIMARY KEY,
+            homestay_id INTEGER NOT NULL,
+            user_id INTEGER NOT NULL,
+            rating INTEGER NOT NULL CHECK (rating >= 1 AND rating <= 5),
+            comment TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id)
+        )
     ''')
     
     conn.commit()
+    cur.close()
     conn.close()
 
-# Function to add sample user
-def add_sample_user():
-    conn = get_db_connection()
-    
-    # Check if data already exists
-    user_count = conn.execute('SELECT COUNT(*) FROM users').fetchone()[0]
-    
-    if user_count == 0:
-        # Add sample user
-        conn.execute('''
-            INSERT INTO users (phone_number, email)
-            VALUES (?, ?)
-        ''', ('0123456789', 'user@example.com'))
-        
-        conn.commit()
-    
-    conn.close()
+if __name__ == '__main__':
+    init_db()

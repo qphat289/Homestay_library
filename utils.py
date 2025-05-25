@@ -5,7 +5,7 @@ from io import BytesIO
 
 def format_price(price):
     """Format price with thousand separators"""
-    return "{:,.0f}".format(price)
+    return price
 
 def get_image_url(image_path):
     """Return image URL, or default if image doesn't exist"""

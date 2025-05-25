@@ -1,1552 +1,2086 @@
 [
   {
     "id": 1,
-    "name": "Cozy Bungalow Hillside",
-    "description": "Chào mừng bạn đến với Cozy Bungalow Hillside! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 5000000,
-    "rating": 1,
+    "name": "Vitamin Homestay",
+    "description": "Hai căn phòng 'đủ đầy' giữa lòng Quận 5. Bạn đang tìm một chốn dừng chân chill chill, tiện nghi và riêng tư giữa trung tâm Sài Gòn? Onyx và Solis tại Vitamin Homestay chính là lựa chọn không thể bỏ qua!",
+    "price": "100.000/h",
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay19.jpg",
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay1.jpg",
-      "/static/images/homestay2.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay3.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103134/homestay/Vitamin%20Homestay/qi3xhneorntmmri9zryy.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103135/homestay/Vitamin%20Homestay/vtdggnnfctvefjkhcxcx.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103136/homestay/Vitamin%20Homestay/uw0hueochnr07ljzxddb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103137/homestay/Vitamin%20Homestay/i77meinyvbm5njkvzgbk.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103138/homestay/Vitamin%20Homestay/u1qcxdtedfdciagxsghf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103138/homestay/Vitamin%20Homestay/v0su0vkigamqvptr8poj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103139/homestay/Vitamin%20Homestay/ist6mjfllfv0xjnkwdtw.jpg"
     ],
     "locations": [
       {
-        "address": "Số 77, Đường Nguyễn Huệ",
-        "district": "Quận 3",
+        "address": "20 Sư Vạn Hạnh, Phường 9, Quận 5",
+        "district": "Quận 5",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 191, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 191, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 191, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 191, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "16/94/7 Nguyễn Thiện Thuật, P2, Quận 3",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Cổ điển, Tối giản",
-    "room_amenities": "Phòng tắm riêng, Bàn làm việc, Máy giặt, Máy pha cà phê, Vòi sen, Áo choàng tắm",
-    "surrounding_amenities": "Trung tâm thành phố, Bãi biển, Bến tàu, Bến xe buýt, Nhà hàng, Quán cà phê",
-    "highlights": "Không gian yên tĩnh, Bếp đầy đủ tiện nghi, Khu vườn xinh xắn, Sân thượng rộng rãi",
-    "priority": 1
+    "style": "Hiện đại, Ấm cúng",
+    "room_amenities": "Bếp đầy đủ dụng cụ, Máy chiếu, Bồn tắm thư giãn, Boardgame",
+    "surrounding_amenities": "Chợ địa phương, Cửa hàng tiện lợi, Quán cà phê, Quán ăn, Trung tâm thành phố",
+    "highlights": "Riêng tư tuyệt đối, Bếp riêng đầy đủ, Không gian ấm cúng, Decor dễ thương, Check-in tự động",
+    "priority": 3
   },
   {
     "id": 2,
-    "name": "Modern Studio Lakeside",
-    "description": "Chào mừng bạn đến với Modern Studio Lakeside! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 1200000,
-    "rating": 3.3,
+    "name": "SkyHome Homestay",
+    "description": "SkyHome, một căn homestay mới tinh, xinh lung linh giữa trung tâm Quận 10.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay15.jpg",
-      "/static/images/homestay3.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103074/homestay/SkyHome%20Homestay/cpbbtvmbllhsirvrixbw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103075/homestay/SkyHome%20Homestay/oc6vuuoxjr3u0lyu0t9k.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103076/homestay/SkyHome%20Homestay/wdfdjpjug6zkh7ihbm6r.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103076/homestay/SkyHome%20Homestay/oxgfxzx2cb3aqpcmwhvn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103077/homestay/SkyHome%20Homestay/rxxrxzeduaekk2xwcume.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103078/homestay/SkyHome%20Homestay/pdivvcaujyijkwoqo7ek.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103078/homestay/SkyHome%20Homestay/hy6qwaxequxz1qwobyv3.jpg"
     ],
     "locations": [
       {
-        "address": "Số 60, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      }
-    ],
-    "style": "Cổ điển, Vintage",
-    "room_amenities": "Bàn làm việc, Ban công riêng, Máy sấy tóc, Phòng tắm riêng, TV màn hình phẳng, Két an toàn, Máy giặt, Dép đi trong phòng, Vòi sen",
-    "surrounding_amenities": "Nhà hàng, Trung tâm thành phố, Công viên, Bãi biển, Gym, Spa, Bến tàu",
-    "highlights": "Bếp đầy đủ tiện nghi, View đẹp, Đồ dùng cao cấp, Sân thượng rộng rãi",
-    "priority": 2
-  },
-  {
-    "id": 3,
-    "name": "Scenic Villa Lakeside",
-    "description": "Chào mừng bạn đến với Scenic Villa Lakeside! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 4600000,
-    "rating": 3.0,
-    "image_urls": [
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay2.jpg",
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay18.jpg"
-    ],
-    "locations": [
-      {
-        "address": "Số 135, Đường Lê Lợi",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 158, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "462/19 Điện Biên Phủ, Quận 3",
+        "district": "Quận 3",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Scandinavian, Industrial",
-    "room_amenities": "Ghế nghỉ, Vòi sen, Dép đi trong phòng, Máy sấy tóc, Bồn tắm, Bàn làm việc",
-    "surrounding_amenities": "Chợ địa phương, Nhà hàng, Rạp chiếu phim, Trung tâm thành phố, Bảo tàng, Quán cà phê, Trung tâm thể thao, Siêu thị",
-    "highlights": "Thiết kế độc đáo, Sân thượng rộng rãi, View đẹp, Bếp đầy đủ tiện nghi, Không gian yên tĩnh",
+    "style": "Cổ điển, Hiện đại, Ấm cúng, Tối giản",
+    "room_amenities": "Ban công, Máy chiếu, Bồn tắm, Bếp, Nước uống miễn phí",
+    "surrounding_amenities": "Trung tâm thành phố",
+    "highlights": "Đặt phòng nhanh - gọn - lẹ, không cần sợ 'bị soi'!",
+    "priority": 3
+  },
+  {
+    "id": 3,
+    "name": "Four P Homestay",
+    "description": "Chào mừng bạn đến với Homestay Four P.",
+    "price": 0,
+    "rating": 4.8,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102905/homestay/Four%20P%20Homestay/alelwqo8hvcwyreryizo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102906/homestay/Four%20P%20Homestay/klgbqvtiud01qgkp8m89.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102906/homestay/Four%20P%20Homestay/xjwxdujabjipxjkr9urw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102907/homestay/Four%20P%20Homestay/zzmvufwd4w7jxovnjej0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102908/homestay/Four%20P%20Homestay/yvawlqpjregcsuqz8bau.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102909/homestay/Four%20P%20Homestay/cnrclxhjwfrgptxumrbt.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102910/homestay/Four%20P%20Homestay/c6pjjeiebp0cqj4yn79g.jpg"
+    ],
+    "locations": [
+      {
+        "address": "28/2 Phan Tây Hồ, Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "17/10 Mê Linh, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "60/3 Quốc Lộ 13, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "195 Ngô Tất Tố, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Ấm cúng, Tối giản",
+    "room_amenities": "Máy lạnh, Wifi, Bếp nhỏ, Tủ lạnh, Máy chiếu",
+    "surrounding_amenities": "Vị trí thuận tiện, Dễ dàng di chuyển",
+    "highlights": "Full tiện nghi, Cho thuê theo giờ, ngày, hoặc ngắn hạn, Không gian ấm cúng, riêng tư",
     "priority": 3
   },
   {
     "id": 4,
-    "name": "Peaceful Studio City Center",
-    "description": "Chào mừng bạn đến với Peaceful Studio City Center! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 1400000,
-    "rating": 2.5,
+    "name": "COSY Garden Homestay",
+    "description": "Trốn khỏi ồn ào để tìm đến sự yên bình tại Homestay Cosy Garden, nơi bạn có thể tận hưởng trọn vẹn ý nghĩa của việc 'Netflix and chill'. Nằm giữa thiên nhiên, homestay của chúng tôi mang đến một nơi nghỉ ngơi thư giãn với đầy đủ tiện nghi hiện đại.",
+    "price": 0,
+    "rating": 4.9,
     "image_urls": [
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay11.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102869/homestay/Cosy%20Garden%20Homestay/ref0szymhu5tmqkrgnlo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102869/homestay/Cosy%20Garden%20Homestay/cav01c8tl7cjuaxn9crp.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102870/homestay/Cosy%20Garden%20Homestay/q5f7xrvwumc9vcphq9va.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102871/homestay/Cosy%20Garden%20Homestay/beovux7ouhphlk1dvjz1.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102872/homestay/Cosy%20Garden%20Homestay/adsuzfctzlvokugvrdjs.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102872/homestay/Cosy%20Garden%20Homestay/uzssfaift8epde3sra3z.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102873/homestay/Cosy%20Garden%20Homestay/g6c6mjnolejmls3xqkte.jpg"
     ],
     "locations": [
       {
-        "address": "Số 193, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "553, Đường 3/2, Phường 8, Q.10",
+        "district": "Quận 10",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Cổ điển, Tropical",
-    "room_amenities": "Phòng tắm riêng, Wi-Fi miễn phí, Ghế nghỉ, Máy điều hòa, Tủ lạnh mini, TV màn hình phẳng, Máy sấy tóc, Ban công riêng",
-    "surrounding_amenities": "Nhà hàng, Bến xe buýt, Trung tâm mua sắm, Gym, Spa, Bãi biển",
-    "highlights": "Không gian yên tĩnh, Nội thất sang trọng, Sân thượng rộng rãi",
+    "style": "Hiện đại, Ấm cúng, Thiên nhiên, Cổ điển",
+    "room_amenities": "Bàn bida, Ban công, Máy chiếu, Bếp, Tủ lạnh, Bàn ghế, Tivi, Quầy bar",
+    "surrounding_amenities": "Vị trí thuận tiện, Dễ dàng di chuyển",
+    "highlights": "Check-in tự động, Netflix & Chill, Bao quanh bởi thiên nhiên",
     "priority": 3
   },
   {
     "id": 5,
-    "name": "Deluxe House Forest",
-    "description": "Chào mừng bạn đến với Deluxe House Forest! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 2700000,
-    "rating": 3.0,
+    "name": "Space Homestay",
+    "description": "Trốn khỏi ồn ào để tìm đến sự yên bình tại Homestay Cosy Garden, nơi bạn có thể tận hưởng trọn vẹn ý nghĩa của việc 'Netflix and chill'. Nằm giữa thiên nhiên, homestay của chúng tôi mang đến một nơi nghỉ ngơi thư giãn với đầy đủ tiện nghi hiện đại. Space Home không chỉ là một nơi để ở - đó là một trải nghiệm, một lời mời gọi dành cho những ai yêu cái đẹp.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay11.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay11.jpg",
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay4.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136968/homestay/Space%20Homestay/uymfopad9q6xtwgsshks.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136969/homestay/Space%20Homestay/uz7o5x14kjeldoemgfa7.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136970/homestay/Space%20Homestay/aauks9wp7dcfq0l557fj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136971/homestay/Space%20Homestay/rd7g7lahq0c3rrdp3oey.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136972/homestay/Space%20Homestay/vr7ouaxj2mg60ysqklrd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136973/homestay/Space%20Homestay/ntq7yx56qar3i1d5b1b7.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136973/homestay/Space%20Homestay/znwsuddvdhwmgpyb2zev.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136974/homestay/Space%20Homestay/a69lo4au0re1rdc9j23e.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136975/homestay/Space%20Homestay/zqjotei59ceeylb12ta6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748136975/homestay/Space%20Homestay/ucywho9chbidbfgspgda.jpg"
     ],
     "locations": [
       {
-        "address": "Số 56, Đường Lê Lợi",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "V9 Ba Vì, P.15, Q.10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "824/4 Sư Vạn Hạnh, P.12, Q.10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "9 Huỳnh Khương Ninh, P.Đa Kao, Q.1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Industrial",
-    "room_amenities": "Vòi sen, Bồn tắm, Ban công riêng, TV màn hình phẳng, Phòng tắm riêng, Máy sấy tóc",
-    "surrounding_amenities": "Siêu thị, Trung tâm mua sắm, Bến xe buýt, Gym, Trạm taxi, Bảo tàng, Trung tâm thể thao, Rạp chiếu phim",
-    "highlights": "Sân thượng rộng rãi, Thiết kế độc đáo, View đẹp",
+    "style": "Hiện đại, Ấm cúng, Đa dạng",
+    "room_amenities": "Bồn tắm, Ban công, Máy chiếu, Bếp, Tủ lạnh, Bàn ghế",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Siêu thị",
+    "highlights": "Space Home không chỉ là một nơi để ở - đó là một trải nghiệm, một lời mời gọi dành cho những ai yêu cái đẹp.",
     "priority": 3
   },
   {
     "id": 6,
-    "name": "Cozy Studio Garden",
-    "description": "Chào mừng bạn đến với Cozy Studio Garden! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
-    "price": 3200000,
-    "rating": 4.5,
+    "name": "LoveBox Homestay",
+    "description": "Tận hưởng giây phút thăng hoa với nhiều cung bậc cảm xúc cùng LoveBox Homestay.",
+    "price": 0,
+    "rating": 4.0,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay7.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102988/homestay/LoveBox%20Homestay/gmfb8mdhcp56zvawk26i.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102989/homestay/LoveBox%20Homestay/njr7yzxwgx9uzjhydupc.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102990/homestay/LoveBox%20Homestay/knlpjcyjivzwd5t1wf1l.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102991/homestay/LoveBox%20Homestay/t4qrg804suotmphbkrxq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102991/homestay/LoveBox%20Homestay/oontqxhefw6nflbkmlsa.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102992/homestay/LoveBox%20Homestay/izpi504om33x5zhb5vc5.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102993/homestay/LoveBox%20Homestay/d6x7winbalikjtihqrv7.jpg"
     ],
     "locations": [
       {
-        "address": "Số 162, Đường Nguyễn Huệ",
-        "district": "Quận 1",
+        "address": "145/2A Lê Văn Quới, P. Bình Trị Đông, Quận Bình Tân",
+        "district": "Quận Bình Tân",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "296A Hiệp Thành 13, Phường Hiệp Thành, Quận 12",
+        "district": "Quận 12",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tối giản, Tropical, Scandinavian",
-    "room_amenities": "Dép đi trong phòng, Minibar, Bàn làm việc, Ban công riêng, TV màn hình phẳng, Máy pha cà phê, Máy điều hòa, Áo choàng tắm, Phòng tắm riêng, Máy sấy tóc",
-    "surrounding_amenities": "Chợ địa phương, Nhà hàng, Trung tâm mua sắm, Công viên, Bảo tàng, Trung tâm thành phố, Gym",
-    "highlights": "View đẹp, Không gian yên tĩnh, Bếp đầy đủ tiện nghi, Thiết kế độc đáo",
+    "style": "Lãng mạn, Ấm cúng, Đa dạng",
+    "room_amenities": "Bồn tắm, Máy chiếu, Bếp, Tủ lạnh, Boardgame, Xếp hình, Phi tiêu, Quần áo cosplay",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Siêu thị",
+    "highlights": "Cosplay đa dạng nhân vật, Máy nước nóng tắm thư giãn, Netflix, Vieon, GalaxyPlay, Youtube Pro",
     "priority": 3
   },
   {
     "id": 7,
-    "name": "Elegant Suite Hillside",
-    "description": "Chào mừng bạn đến với Elegant Suite Hillside! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
-    "price": 4600000,
-    "rating": 3.7,
+    "name": "Tuan Khang Home",
+    "description": "Tuan Khang Home là không gian lý tưởng cho những ai yêu sự yên bình.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay19.jpg",
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay5.jpg",
-      "/static/images/homestay16.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103122/homestay/Tuan%20Khang%20Home/yeukpazeoqalcdk4cmpg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103123/homestay/Tuan%20Khang%20Home/tepfqdawu6w6grygeacg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103124/homestay/Tuan%20Khang%20Home/luju6ssvvttzthtp9cq8.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103124/homestay/Tuan%20Khang%20Home/niuewdfktj1yhq2wnp3p.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103125/homestay/Tuan%20Khang%20Home/nn27sdipseonnverjnkh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103126/homestay/Tuan%20Khang%20Home/fm6ni6bpv7fotzcpeeqj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103127/homestay/Tuan%20Khang%20Home/hfynfpazhjbrgsilphaw.jpg"
     ],
     "locations": [
       {
-        "address": "Số 113, Đường Nguyễn Huệ",
-        "district": "Quận 1",
+        "address": "85/9 Phạm Viết Chánh, Phường 19, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "497 Hoàng Sa, Quận 3",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Tòa Nhà Skyy Garden 98 Phùng Văn Cung, Quận Phú Nhuận",
+        "district": "Quận Phú Nhuận",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Hiện đại, Bohemian",
-    "room_amenities": "Wi-Fi miễn phí, Vòi sen, Két an toàn, Ghế nghỉ, Ban công riêng, Phòng tắm riêng, Dép đi trong phòng, Máy sấy tóc, Áo choàng tắm",
-    "surrounding_amenities": "Nhà hàng, Bến xe buýt, Công viên, Gym, Trung tâm thành phố, Trung tâm thể thao, Spa",
-    "highlights": "View đẹp, Thiết kế độc đáo, Đồ dùng cao cấp, Không gian yên tĩnh, Nội thất sang trọng",
-    "priority": 2
+    "style": "Tối giản, Ấm cúng",
+    "room_amenities": "Bồn tắm, Máy chiếu, Bếp, Tủ lạnh, Boardgame, Bida",
+    "surrounding_amenities": "Trung tâm thành phố, Quán cà phê",
+    "highlights": "Gaming room, Couple room, Máy dò camera ẩn, Check-in tự động",
+    "priority": 3
   },
   {
     "id": 8,
-    "name": "Cozy Cottage Mountain View",
-    "description": "Chào mừng bạn đến với Cozy Cottage Mountain View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 5000000,
-    "rating": 2.0,
+    "name": "OMI Homestay",
+    "description": "Nếu bạn đang muốn cùng người ấy “trốn cả thế giới” một chút – sao không ghé OMI?",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay12.jpg",
-      "/static/images/homestay12.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103043/homestay/OMI%20Homestay/vzc0tffpomcou84tgvhf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103045/homestay/OMI%20Homestay/sn0uet35whlrptna00qb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103045/homestay/OMI%20Homestay/sobvspbhxfylrfwikihy.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103046/homestay/OMI%20Homestay/wgpzvylfjw9te6lnnw09.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103047/homestay/OMI%20Homestay/bs7qhajpuapixy2azeig.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103048/homestay/OMI%20Homestay/h7ekvpi8vfaivetmglsd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103048/homestay/OMI%20Homestay/sgdl3eybm074boxmbx8n.jpg"
     ],
     "locations": [
       {
-        "address": "Số 195, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "212A/A44 Nguyễn Trãi, P.Nguyễn Cư Trinh, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 49, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "212A/A59 Nguyễn Trãi, P.Nguyễn Cư Trinh, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 25, Đường Lê Lợi",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "285/27 Cách mạng tháng 8, P.12, Quận 10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Vintage, Rustic, Scandinavian",
-    "room_amenities": "Dép đi trong phòng, Ban công riêng, Lò vi sóng, Máy pha cà phê, Minibar, Máy sấy tóc, Máy điều hòa, Wi-Fi miễn phí",
-    "surrounding_amenities": "Bảo tàng, Trung tâm mua sắm, Spa, Gym, Bến tàu",
-    "highlights": "Sân thượng rộng rãi, Bếp đầy đủ tiện nghi, View đẹp, Đồ dùng cao cấp",
+    "style": "Tối giản, Ấm cúng, Hiện đại, Nhật Bản",
+    "room_amenities": "Bồn tắm, Máy chiếu, Bếp, Tủ lạnh, Ban công, Bàn bida",
+    "surrounding_amenities": "Trung tâm thành phố, Quán cà phê",
+    "highlights": "Gaming room, Japanese room, Check-in tự động",
     "priority": 3
   },
   {
     "id": 9,
-    "name": "Modern Homestay Beachfront",
-    "description": "Chào mừng bạn đến với Modern Homestay Beachfront! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 2300000,
-    "rating": 5.0,
+    "name": "Seulu De Treat",
+    "description": "Seulu De Treat Homestay cung cấp những trải nghiệm gần gũi, dễ dàng tiếp xúc với văn hóa địa phương, tham gia vào hoạt động cuộc sống hàng ngày.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay20.jpg",
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay19.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103065/homestay/Seulu%20De%20Treat/mzbo17koeppwuburuyio.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103065/homestay/Seulu%20De%20Treat/uqel3ii18awheixqjizm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103066/homestay/Seulu%20De%20Treat/wob6seeuddkwjx6fq6vz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103067/homestay/Seulu%20De%20Treat/yykvbzpaax38b6wqmwuy.jpg"
     ],
     "locations": [
       {
-        "address": "Số 96, Đường Trần Hưng Đạo",
-        "district": "Quận 3",
+        "address": "96 Nguyễn Trãi, Bến Thành, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 147, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "122 Trần Hữu Trang, Phú Nhuận",
+        "district": "Phú Nhuận",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Vintage",
-    "room_amenities": "Ban công riêng, Dép đi trong phòng, Áo choàng tắm, Bồn tắm, Tủ lạnh mini, TV màn hình phẳng, Wi-Fi miễn phí",
-    "surrounding_amenities": "Bến xe buýt, Gym, Trung tâm thể thao, Trạm taxi, Rạp chiếu phim",
-    "highlights": "Bếp đầy đủ tiện nghi, Thiết kế độc đáo, Khu vườn xinh xắn, Không gian yên tĩnh",
+    "style": "Tối giản, Ấm cúng, Hiện đại, Cổ điển, Đa dạng",
+    "room_amenities": "Khu bếp, Máy chiếu, Ban công, Máy giặt",
+    "surrounding_amenities": "Trung tâm thành phố, Sân bay",
+    "highlights": "Phòng ngủ tách bếp, Check-in tự động, Homestay cho nhiều người hoặc 1 người",
     "priority": 3
   },
   {
     "id": 10,
-    "name": "Peaceful Cabin Hillside",
-    "description": "Chào mừng bạn đến với Peaceful Cabin Hillside! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
-    "price": 3900000,
-    "rating": 4.5,
+    "name": "Cocico Homestay",
+    "description": "Cocico Homestay Sài Gòn Trung tâm Quận 1 – Lựa chọn hoàn hảo cho người đi công tác & du lịch.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay8.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102864/homestay/Cocico%20Homestay/xwfumfg2qkd8dfrzrdke.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102865/homestay/Cocico%20Homestay/nnaoekhgaol6m9n7tzzg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102865/homestay/Cocico%20Homestay/cwxqlqgmhuydfughjajq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102866/homestay/Cocico%20Homestay/nfwfq43b6ie03uw6vlwo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102867/homestay/Cocico%20Homestay/ruek9axwhz5ps1wajgou.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102867/homestay/Cocico%20Homestay/f5paefzhj8zok0vflg8x.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102868/homestay/Cocico%20Homestay/rrsburlzempsxrscn1qr.jpg"
     ],
     "locations": [
       {
-        "address": "Số 66, Đường Lê Lợi",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 56, Đường Lê Lợi",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 4, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "28/14 Đỗ Quang Đẩu, Phường Phạm Ngũ Lão, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tối giản, Hiện đại",
-    "room_amenities": "Minibar, Dép đi trong phòng, Vòi sen, Ghế nghỉ, Wi-Fi miễn phí",
-    "surrounding_amenities": "Bảo tàng, Spa, Bãi biển, Rạp chiếu phim, Chợ địa phương",
-    "highlights": "View đẹp, Bếp đầy đủ tiện nghi, Sân thượng rộng rãi, Nội thất sang trọng, Khu vườn xinh xắn",
+    "style": "Tối giản, Ấm cúng, Hiện đại",
+    "room_amenities": "Khu bếp, Máy chiếu, Board game, Ban công, Bánh kẹo, Nước suối, Mì gói miễn phí",
+    "surrounding_amenities": "Trung tâm thành phố",
+    "highlights": "Vị trí đắc địa, Phòng rộng rãi, đầy đủ tiện nghi, Check-in tự động, Bếp riêng từng tầng",
     "priority": 3
   },
   {
     "id": 11,
-    "name": "Elegant Studio Sea View",
-    "description": "Chào mừng bạn đến với Elegant Studio Sea View! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 3800000,
-    "rating": 3.0,
+    "name": "The Hideaway Alley",
+    "description": "Đến với Nhà Hẻm bạn sẽ có được những giấc ngủ như tại nhà của mình với không gian ấm cúng, yên tĩnh cùng máy chiếu có sẵn Netflix để bạn cùng chill với bạn bè và người thân.",
+    "price": 0,
+    "rating": 4.9,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay8.jpg",
-      "/static/images/homestay10.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103093/homestay/The%20Hideaway%20Alley/jxfdwk59e3dila6ekkvv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103093/homestay/The%20Hideaway%20Alley/zktwa0guf2sagzhzf1yh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103094/homestay/The%20Hideaway%20Alley/nkd52frymduqjv1m7b4c.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103095/homestay/The%20Hideaway%20Alley/iyoojdep3vfbsbe9gmaz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103095/homestay/The%20Hideaway%20Alley/ccj1yvozegzix2qll1wl.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103096/homestay/The%20Hideaway%20Alley/yajfmfwz9emixqieymr6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103097/homestay/The%20Hideaway%20Alley/thtkzfxdoaytos1xqtzu.jpg"
     ],
     "locations": [
       {
-        "address": "Số 197, Đường Trần Hưng Đạo",
-        "district": "Quận 3",
+        "address": "54/22 Nguyễn Cư Trinh, P. Phạm Ngũ Lão, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 115, Đường Trần Hưng Đạo",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 115, Đường Trần Hưng Đạo",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "29/10 Nguyễn Bỉnh Khiêm, P. Đa Kao, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Contemporary",
-    "room_amenities": "Ban công riêng, Lò vi sóng, Két an toàn, Minibar, Áo choàng tắm, Máy pha cà phê, Bồn tắm",
-    "surrounding_amenities": "Công viên, Bến tàu, Trung tâm thể thao, Trung tâm mua sắm, Rạp chiếu phim, Nhà hàng",
-    "highlights": "Đồ dùng cao cấp, View đẹp, Không gian yên tĩnh, Khu vườn xinh xắn, Thiết kế độc đáo",
+    "style": "Tối giản, Ấm cúng",
+    "room_amenities": "Khu bếp, Máy chiếu, Board game, Ban công, Tinh dầu, Tủ lạnh",
+    "surrounding_amenities": "Trung tâm thành phố, Nhà hàng, Quán bar",
+    "highlights": "Máy giặt, Máy sấy ở khu vực sân thượng, Giường cỡ Queen, Internet không dây tốc độ cao",
     "priority": 3
   },
   {
     "id": 12,
-    "name": "Rustic Homestay Hillside",
-    "description": "Chào mừng bạn đến với Rustic Homestay Hillside! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
-    "price": 700000,
-    "rating": 3.3,
+    "name": "Homestay 3 Cây Non",
+    "description": "Chào mừng bạn đến với Homestay 3 cây non, homestay tại Phú Nhuận.",
+    "price": 0,
+    "rating": 3.5,
     "image_urls": [
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay3.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102938/homestay/Homestay%203%20c%C3%A2y%20non/wy4nmlejkdsvh78d4ivc.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102939/homestay/Homestay%203%20c%C3%A2y%20non/so0pr60wgi48ms5itrz6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102940/homestay/Homestay%203%20c%C3%A2y%20non/ip9itpugahtk24rv9ssu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102941/homestay/Homestay%203%20c%C3%A2y%20non/k4a0hdbpvirudlqsgg3d.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102941/homestay/Homestay%203%20c%C3%A2y%20non/mey7ph65mmhvgmiimhyi.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102942/homestay/Homestay%203%20c%C3%A2y%20non/hkrnjphhi6pcjigjwkok.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102943/homestay/Homestay%203%20c%C3%A2y%20non/dfdilcyhzivldrpajpcz.jpg"
     ],
     "locations": [
       {
-        "address": "Số 136, Đường Nguyễn Huệ",
-        "district": "Quận 1",
+        "address": "20 Hồ Biểu Chánh, Phường 11, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "43A Trần Hữu Trang, Phường 11, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tối giản, Scandinavian",
-    "room_amenities": "Bàn làm việc, Phòng tắm riêng, Wi-Fi miễn phí, TV màn hình phẳng, Máy điều hòa, Máy pha cà phê, Vòi sen, Két an toàn, Lò vi sóng",
-    "surrounding_amenities": "Trung tâm thể thao, Công viên, Trung tâm thành phố, Bến xe buýt, Nhà hàng, Chợ địa phương, Hồ bơi, Rạp chiếu phim",
-    "highlights": "Không gian yên tĩnh, Bếp đầy đủ tiện nghi, View đẹp",
+    "style": "Hiện đại, Ấm cúng",
+    "room_amenities": "Điều hòa, Bồn tắm, Bếp, Tủ lạnh, Tivi, Máy chiếu, Ban công, Board game",
+    "surrounding_amenities": "Chợ, Sân bay",
+    "highlights": "Nhiều góc sống ảo, Máy nước nóng bếp (kèm gia vị), Tivi 43K",
     "priority": 3
   },
   {
     "id": 13,
-    "name": "Cozy Condo Riverside",
-    "description": "Chào mừng bạn đến với Cozy Condo Riverside! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 1500000,
-    "rating": 3.0,
+    "name": "Tryst Home",
+    "description": "Bạn đang tìm một “chốn riêng” dễ thương để tránh nắng, trốn khói bụi thành phố… và né luôn cả deadline? Vậy thì ghé ngay Tryst Home Gò Vấp nhé.",
+    "price": 0,
+    "rating": 0,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay1.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103116/homestay/Tryst%20Home/jeuzirl57ojz1dymzvco.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103117/homestay/Tryst%20Home/wq2w7idn2fyabfcxnyu6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103118/homestay/Tryst%20Home/ozzvxaddylzrez0rurqk.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103119/homestay/Tryst%20Home/t9omcqrjw2x1lvqehosy.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103120/homestay/Tryst%20Home/sscyfr0jmz9st8a1kck7.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103121/homestay/Tryst%20Home/m5qpooujdmaoaflyctla.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103122/homestay/Tryst%20Home/h1srf4zwpdeo2xkr4zeq.jpg"
     ],
     "locations": [
       {
-        "address": "Số 10, Đường Trần Hưng Đạo",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 163, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "Gò Vấp (inbox)",
+        "district": "Quận Gò Vấp",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Hiện đại, Contemporary",
-    "room_amenities": "Dép đi trong phòng, Máy điều hòa, Tủ lạnh mini, Máy pha cà phê, Máy sấy tóc, Phòng tắm riêng, Lò vi sóng, Bồn tắm, Minibar",
-    "surrounding_amenities": "Bãi biển, Quán cà phê, Bến xe buýt, Siêu thị, Sân bay",
-    "highlights": "View đẹp, Thiết kế độc đáo, Khu vườn xinh xắn, Không gian yên tĩnh, Nội thất sang trọng",
+    "style": "Hiện đại, Ấm cúng",
+    "room_amenities": "Máy giặt, Tủ quần áo, Bếp, Máy chiếu, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Dọn phòng mỗi ngày, Khóa vân tay, An ninh, Bếp riêng ngoài ban công",
     "priority": 3
   },
   {
     "id": 14,
-    "name": "Cozy Homestay Garden",
-    "description": "Chào mừng bạn đến với Cozy Homestay Garden! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 1500000,
-    "rating": 3.5,
+    "name": "Looking Homestay",
+    "description": "Nếu cuối tuần này bạn vẫn còn đang phân vân không biết nên dẫn nàng đi đâu, thì để tụi mình gợi ý nhẹ một nơi “đi một lần là dính, ở một lần là mê”: Looking Homestay.",
+    "price": 0,
+    "rating": 4.5,
     "image_urls": [
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay7.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102981/homestay/Looking%20Homestay/baxioasifmmnm140uxrj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102982/homestay/Looking%20Homestay/mj5cgvemb4ygbpfocml0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102983/homestay/Looking%20Homestay/gfuya7lnqc31ra4bfsh4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102983/homestay/Looking%20Homestay/q7cfvokhmz4hi5kkotix.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102984/homestay/Looking%20Homestay/xwkr8flivnk3nxq8j9bp.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102985/homestay/Looking%20Homestay/je44gdixenu7aele0tzv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102986/homestay/Looking%20Homestay/eitc04oszpzfx8lvvutc.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102986/homestay/Looking%20Homestay/gvdmncixs4pg94b0dfwb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102987/homestay/Looking%20Homestay/jb7cblrmtyqvg8az53sz.jpg"
     ],
     "locations": [
       {
-        "address": "Số 134, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "Đường D5, P.25, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 186, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "277 Xô Viết Nghệ Tĩnh, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "347 Huỳnh Văn Bánh, Quận Phú Nhuận",
+        "district": "Quận Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Nguyễn Đình Chính, P.11, Quận Phú Nhuận",
+        "district": "Quận Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Nguyễn Thị Huỳnh, P.11, Quận Phú Nhuận",
+        "district": "Quận Phú Nhuận",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Contemporary, Industrial",
-    "room_amenities": "Máy giặt, TV màn hình phẳng, Tủ lạnh mini, Máy điều hòa, Minibar, Két an toàn, Bàn làm việc, Phòng tắm riêng",
-    "surrounding_amenities": "Bến xe buýt, Nhà hàng, Siêu thị, Trạm taxi, Bến tàu, Sân bay",
-    "highlights": "Nội thất sang trọng, Bếp đầy đủ tiện nghi, Không gian yên tĩnh, View đẹp",
+    "style": "Hiện đại, Ấm cúng, Cổ điển",
+    "room_amenities": "Bồn tắm, Bếp, Máy chiếu, Ban công, Board game",
+    "surrounding_amenities": "Chợ, Quán cà phê, Siêu thị, Cửa hàng tiện lợi",
+    "highlights": "Quản gia 24/24, Đồ chơi tình yêu, Bồn tắm riêng, Thơm như spa",
     "priority": 3
   },
   {
     "id": 15,
-    "name": "Cozy Condo Hillside",
-    "description": "Chào mừng bạn đến với Cozy Condo Hillside! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 1900000,
-    "rating": 3.0,
+    "name": "Her Homestay",
+    "description": "Her Homestay nho nhỏ ngọt ngào, lãng mạn, đầy đủ tiện nghi giữa lòng thành phố.",
+    "price": 0,
+    "rating": 4.5,
     "image_urls": [
-      "/static/images/homestay11.jpg",
-      "/static/images/homestay15.jpg",
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay6.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102931/homestay/Her%20Homestay/gc7xtkb0mddsyith3tki.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102932/homestay/Her%20Homestay/bfmlzsdk0jpq7dmjhtxw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102932/homestay/Her%20Homestay/ie8zyuyjmpf2nw4ockqi.jpg"
     ],
     "locations": [
       {
-        "address": "Số 142, Đường Nguyễn Huệ",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "322/4C Lưu Hữu Phước, Phường 15, Quận 8",
+        "district": "Quận 8",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Cổ điển, Bohemian, Rustic",
-    "room_amenities": "Minibar, Ghế nghỉ, Máy pha cà phê, Máy sấy tóc, Lò vi sóng, Phòng tắm riêng, Tủ lạnh mini, Máy giặt, Két an toàn, Dép đi trong phòng",
-    "surrounding_amenities": "Trạm taxi, Quán cà phê, Bến xe buýt, Rạp chiếu phim, Sân bay",
-    "highlights": "Sân thượng rộng rãi, Nội thất sang trọng, Khu vườn xinh xắn, Không gian yên tĩnh",
+    "style": "Hiện đại, Ấm cúng, Sang trọng, Dễ thương",
+    "room_amenities": "Bếp, Máy chiếu, Máy sấy, Ổ cắm",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Mã khóa, Menu đồ ăn vặt nước uống, Chụp hình check-in sống ảo",
     "priority": 3
   },
   {
     "id": 16,
-    "name": "Modern Condo Mountain View",
-    "description": "Chào mừng bạn đến với Modern Condo Mountain View! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
-    "price": 700000,
-    "rating": 2.0,
+    "name": "M Village",
+    "description": "Our 40 hotels, premium to economy, is surely your New Generation of Hotel experience. At M Village, local story & human bond is behind every design.",
+    "price": 0,
+    "rating": 4.9,
     "image_urls": [
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay15.jpg",
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay5.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103000/homestay/M%20Village/az2kly0suwq9qtco3s1o.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103001/homestay/M%20Village/sjgmpokahsosnsd2rb7x.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103002/homestay/M%20Village/dzavawsy1u6gypskfeig.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103003/homestay/M%20Village/cg5y9cudegjjfki9opox.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103003/homestay/M%20Village/tikv9gtouirrwqsepniy.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103004/homestay/M%20Village/yxeutwkavwviph7exnuu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103005/homestay/M%20Village/fqil6esfo1evuadsruiu.jpg"
     ],
     "locations": [
       {
-        "address": "Số 77, Đường Lê Lợi",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
+        "address": "26 Thi Sách, Bến Nghé, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "131 Tôn Thất Đạm, Bến Nghé, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "24 Lê Thánh Tôn, Bến Nghé, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Contemporary, Scandinavian, Tối giản",
-    "room_amenities": "Tủ lạnh mini, Bồn tắm, Máy điều hòa, Máy pha cà phê, Wi-Fi miễn phí, Phòng tắm riêng, Lò vi sóng",
-    "surrounding_amenities": "Gym, Bãi biển, Trạm taxi, Trung tâm mua sắm, Quán cà phê, Bến tàu",
-    "highlights": "Không gian yên tĩnh, Sân thượng rộng rãi, Đồ dùng cao cấp",
+    "style": "Hiện đại, Ấm cúng, Cổ điển, Đa dạng, Sang trọng",
+    "room_amenities": "Bồn tắm, Ban công, Tivi, Tủ lạnh, Nhà bếp",
+    "surrounding_amenities": "Trung tâm thành phố, Siêu thị, Bảo tàng, Quán cà phê",
+    "highlights": "Quản gia 24/24, Hồ bơi, Khu giặt đồ",
     "priority": 3
   },
   {
     "id": 17,
-    "name": "Elegant Suite Mountain View",
-    "description": "Chào mừng bạn đến với Elegant Suite Mountain View! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 1400000,
-    "rating": 3.0,
+    "name": "Ace Homestay",
+    "description": "Ace Homestay - Một không gian riêng tư, không lễ tân, không camera ẩn, sạch sẽ và tinh tế. Lý tưởng cho những cặp đôi cần một nơi chỉ dành cho hai người.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay8.jpg",
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay19.jpg",
-      "/static/images/homestay12.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102797/homestay/Ace%20Homestay/uixntvoesobgk0aip6c5.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102798/homestay/Ace%20Homestay/b12udpdtk4zrrj2ij5m3.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102799/homestay/Ace%20Homestay/yb7p6chnegvh0au2hsux.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102801/homestay/Ace%20Homestay/diwwnrwljpt9ddsk6pat.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102801/homestay/Ace%20Homestay/x3t5kxhpsuoathfgndad.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102802/homestay/Ace%20Homestay/lzezakokpu0i4dexib1a.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102803/homestay/Ace%20Homestay/ig6ekmxmkdfhxajtqit6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102804/homestay/Ace%20Homestay/duel2jdjmvbvjrifwqux.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102805/homestay/Ace%20Homestay/z1m8us6tkcghbrgvjw4q.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102806/homestay/Ace%20Homestay/b9bejqri0ao8bmz5rbdq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102807/homestay/Ace%20Homestay/c1qalp49jdofx0sk1a02.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102809/homestay/Ace%20Homestay/onoehryknuuiery0y8jc.jpg"
     ],
     "locations": [
       {
-        "address": "Số 150, Đường Trần Hưng Đạo",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 6, Đường Nguyễn Huệ",
-        "district": "Quận 1",
+        "address": "783 Nguyễn Kiệm, Phường 3, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 122, Đường Trần Hưng Đạo",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "467/125 Lê Đức Thọ, Phường 16, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Hiện đại",
-    "room_amenities": "Két an toàn, Máy điều hòa, Minibar, Áo choàng tắm, Wi-Fi miễn phí, Phòng tắm riêng, Bồn tắm",
-    "surrounding_amenities": "Gym, Siêu thị, Bãi biển, Trung tâm thể thao, Sân bay",
-    "highlights": "Khu vườn xinh xắn, Nội thất sang trọng, Thiết kế độc đáo, View đẹp",
+    "style": "Hiện đại, Ấm cúng, Lãng mạn, Santorini",
+    "room_amenities": "Máy chiếu, Bồn tắm, Bếp, Bida, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Không lễ tân, Check-in tự động, Booking theo giờ/ngày/đêm",
     "priority": 3
   },
   {
     "id": 18,
-    "name": "Cozy Cottage City Center",
-    "description": "Chào mừng bạn đến với Cozy Cottage City Center! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
-    "price": 3800000,
-    "rating": 2.3,
+    "name": "Cozynet Homestay",
+    "description": "Bạn đang tìm kiếm một chốn nghỉ ngơi yên bình nhưng vẫn gần trung tâm? Cozynet Homestay của chúng tôi tại Quận 12, TP.HCM chính là lựa chọn hoàn hảo.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay14.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102874/homestay/Cozynet%20Homestay/ppggyfiy0qalvesqjl5s.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102874/homestay/Cozynet%20Homestay/nnluixkfcspvsqz6ybzr.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102875/homestay/Cozynet%20Homestay/wrjmqkjnl8txlqkov3d5.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102876/homestay/Cozynet%20Homestay/nhokjtjgtpv45lq6b471.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102876/homestay/Cozynet%20Homestay/yspqexmfyo0yym0vazrw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102877/homestay/Cozynet%20Homestay/eecettdumsumqvcdtkm3.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102878/homestay/Cozynet%20Homestay/fdfzi7es3sg1ory8eeia.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102878/homestay/Cozynet%20Homestay/xquztnqmle42ddzna1lm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102879/homestay/Cozynet%20Homestay/kohy1h6zqeovmbmgazwn.jpg"
     ],
     "locations": [
       {
-        "address": "Số 21, Đường Trần Hưng Đạo",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 67, Đường Trần Hưng Đạo",
-        "district": "Quận 1",
+        "address": "47/32 Hà Huy Giáp, Phường Thạnh Lộc, Q.12",
+        "district": "Quận 12",
         "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 80, Đường Nguyễn Huệ",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
       }
     ],
-    "style": "Cổ điển, Bohemian",
-    "room_amenities": "Ban công riêng, Ghế nghỉ, Máy điều hòa, TV màn hình phẳng, Minibar, Wi-Fi miễn phí, Vòi sen, Máy pha cà phê",
-    "surrounding_amenities": "Rạp chiếu phim, Nhà hàng, Bãi biển, Bến tàu, Gym, Trạm taxi",
-    "highlights": "Bếp đầy đủ tiện nghi, View đẹp, Nội thất sang trọng, Khu vườn xinh xắn",
+    "style": "Hiện đại, Ấm cúng, Dễ thương, Lãng mạn",
+    "room_amenities": "Máy chiếu, Bếp, Tủ quần áo, Dầu gội, Sữa tắm, Board game",
+    "surrounding_amenities": "Chợ, Siêu thị, Bến xe",
+    "highlights": "Góc chill cà phê cực chất, Tự check-in theo giờ hoặc theo ngày, Free snack và nước, Máy dò camera ẩn",
     "priority": 3
   },
   {
     "id": 19,
-    "name": "Peaceful Cottage Forest",
-    "description": "Chào mừng bạn đến với Peaceful Cottage Forest! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 2100000,
-    "rating": 2.0,
+    "name": "Kin Vietnam",
+    "description": "Kin Wander là nơi bạn có thể thật sự ngơi nghỉ, thư giãn và kết nối, với người bạn yêu, hoặc chính mình.",
+    "price": 0,
+    "rating": 4.7,
     "image_urls": [
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay11.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102952/homestay/Kin%20Vietnam/frlmci9vqkg0hvhc7dla.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102952/homestay/Kin%20Vietnam/ssmfjoszhjh5ma8p4x4s.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102953/homestay/Kin%20Vietnam/vz1oiam5jm3il09ltnas.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102954/homestay/Kin%20Vietnam/q3a9bbutv1ojmcooxpyl.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102955/homestay/Kin%20Vietnam/ljg8cjdhcanqyrzwtad6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102956/homestay/Kin%20Vietnam/lu8shmqbn7ctax3gj0aw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102957/homestay/Kin%20Vietnam/b7zqhkwuztmai10cm1sd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102957/homestay/Kin%20Vietnam/hpugi0fanevamx7tvyn4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102958/homestay/Kin%20Vietnam/yusgdj4wi55cerny0yt9.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102959/homestay/Kin%20Vietnam/qllt45kvikle6esvxkp2.jpg"
     ],
     "locations": [
       {
-        "address": "Số 33, Đường Lê Lợi",
-        "district": "Quận 3",
+        "address": "Số 9, Đường số 81, Phường Tân Quy, Quận 7",
+        "district": "Quận 7",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 129, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "Số 23 (Lô III), Đường số 75, Phường Tân Phong, Quận 7",
+        "district": "Quận 7",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 104, Đường Trần Hưng Đạo",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
+        "address": "13 Đường số 64, Tân Phong, Quận 7",
+        "district": "Quận 7",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "309 Đường 9A, Khu dân cư Trung Sơn, Bình Chánh",
+        "district": "Bình Chánh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "51 Đường Núi Thành, P.13, Tân Bình",
+        "district": "Quận Tân Bình",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "11A Thi Sách, Bến Nghé, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "145-147 Lý Tự Trọng, Bến Thành, Quận 1 (Hotel)",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Scandinavian, Hiện đại, Rustic",
-    "room_amenities": "Bồn tắm, TV màn hình phẳng, Bàn làm việc, Ban công riêng, Tủ lạnh mini, Lò vi sóng",
-    "surrounding_amenities": "Rạp chiếu phim, Chợ địa phương, Công viên, Bến xe buýt, Bãi biển, Quán cà phê, Nhà hàng, Bến tàu",
-    "highlights": "Đồ dùng cao cấp, Thiết kế độc đáo, Khu vườn xinh xắn, Bếp đầy đủ tiện nghi",
+    "style": "Hiện đại, Ấm cúng, Sang trọng, Vintage",
+    "room_amenities": "Máy chiếu, Bồn tắm, Bếp, Tủ lạnh",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Bồn tắm lớn, Máy chiếu Netflix riêng, Phòng rộng với bếp mini để nấu bữa ăn tại gia",
     "priority": 3
   },
   {
     "id": 20,
-    "name": "Rustic Homestay Beachfront",
-    "description": "Chào mừng bạn đến với Rustic Homestay Beachfront! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
-    "price": 4500000,
-    "rating": 3.3,
+    "name": "Lalendi Studio",
+    "description": "Gần mực thì đen, gần Lalendi Studio HCM thì không chỉ thư giãn mà còn được tận hưởng hàng ngàn ưu đãi tuyệt “hết cỡ” khi đặt phòng.",
+    "price": 0,
+    "rating": 4.5,
     "image_urls": [
-      "/static/images/homestay12.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay5.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102965/homestay/Lalendi%20Studio/uhp1rwtw37mvirszgxjw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102966/homestay/Lalendi%20Studio/etg6lfcffp4pl3oj9il2.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102967/homestay/Lalendi%20Studio/d78xdgu3hhqjxawtyhee.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102967/homestay/Lalendi%20Studio/mzmaqwfgndd2q3caye0q.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102968/homestay/Lalendi%20Studio/xhkhqngj2ztzo8oynsmv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102969/homestay/Lalendi%20Studio/i2mxlyrq0s6kkgoxud52.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102970/homestay/Lalendi%20Studio/zw5h2trpqnve116fbjer.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102971/homestay/Lalendi%20Studio/pxhma1jyikwpq8cejqmu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102972/homestay/Lalendi%20Studio/x1yoh6jiq0evw6032x1t.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102972/homestay/Lalendi%20Studio/qa7wpa1ac939xxbkxaks.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102973/homestay/Lalendi%20Studio/ncdecbwqbxgnz1wqqd9t.jpg"
     ],
     "locations": [
       {
-        "address": "Số 100, Đường Lê Lợi",
+        "address": "Số 9, Đường số 81, Phường Tân Quy, Quận 7",
+        "district": "Quận 7",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Số 23 (Lô III), Đường số 75, Phường Tân Phong, Quận 7",
+        "district": "Quận 7",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "13 Đường số 64, Tân Phong, Quận 7",
+        "district": "Quận 7",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "309 Đường 9A, Khu dân cư Trung Sơn, Bình Chánh",
+        "district": "Bình Chánh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "51 Đường Núi Thành, P.13, Tân Bình",
+        "district": "Quận Tân Bình",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "11A Thi Sách, Bến Nghé, Quận 1",
         "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 107, Đường Nguyễn Huệ",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 20, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "145-147 Lý Tự Trọng, Bến Thành, Quận 1 (Hotel)",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Industrial, Hiện đại",
-    "room_amenities": "TV màn hình phẳng, Ghế nghỉ, Máy điều hòa, Két an toàn, Minibar, Bàn làm việc, Máy sấy tóc, Áo choàng tắm",
-    "surrounding_amenities": "Bảo tàng, Quán cà phê, Siêu thị, Rạp chiếu phim, Trung tâm thể thao, Bãi biển, Sân bay, Trung tâm mua sắm",
-    "highlights": "Bếp đầy đủ tiện nghi, Nội thất sang trọng, Sân thượng rộng rãi",
+    "style": "Hiện đại, Ấm cúng, Tối giản, Lãng mạn, Cổ điển, Phương Tây, Dễ thương",
+    "room_amenities": "Máy chiếu, Tủ lạnh, Lò vi sóng, Bếp, Bida",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Gần mực thì đen, gần Lalendi Studio HCM thì không chỉ thư giãn mà còn được tận hưởng hàng ngàn ưu đãi tuyệt “hết cỡ” khi đặt phòng",
     "priority": 3
   },
   {
     "id": 21,
-    "name": "Peaceful Condo Lakeside",
-    "description": "Chào mừng bạn đến với Peaceful Condo Lakeside! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
-    "price": 3600000,
-    "rating": 2.2,
+    "name": "Domino Homestay",
+    "description": "Bạn đi chơi, công tác, trải nghiệm… và cần một nơi dừng chân ấm cúng thì hãy đến với Domino Homestay chúng mình. Giữa Sài Gòn nhộn nhịp đôi khi quẹo vào một con hẻm nhỏ không tên và bạn vỡ òa ra trước một bất ngờ thú vị. Domino Homestay của tụi mình là một chỗ như vậy đó.",
+    "price": 0,
+    "rating": 4.6,
     "image_urls": [
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay15.jpg",
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay8.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102893/homestay/Domino%20Homestay/kypjxrc37nf6arql8p7x.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102894/homestay/Domino%20Homestay/jy6q6fkyszamehvlhsdb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102895/homestay/Domino%20Homestay/knydgr1ge5hobujakwa9.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102896/homestay/Domino%20Homestay/zhrmmypworx5sctlkr43.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102897/homestay/Domino%20Homestay/mrv3yjgucebakgfzcikr.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102897/homestay/Domino%20Homestay/agvlku8t3gpmwo2w6n4c.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102898/homestay/Domino%20Homestay/frbqkhtph7q8r3ij1zbn.jpg"
     ],
     "locations": [
       {
-        "address": "Số 110, Đường Trần Hưng Đạo",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 30, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
+        "address": "161A Đường 79, P. Tân Hưng, Quận 7",
+        "district": "Quận 7",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 146, Đường Trần Hưng Đạo",
+        "address": "54/2 Nguyễn Cư Trinh, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "54/6, Nguyễn Cư Trinh, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Tầng 1, 54/14, Nguyễn Cư Trinh, Quận 1",
         "district": "Quận 1",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tối giản, Vintage",
-    "room_amenities": "Ghế nghỉ, Bồn tắm, Áo choàng tắm, Tủ lạnh mini, TV màn hình phẳng, Máy sấy tóc, Wi-Fi miễn phí",
-    "surrounding_amenities": "Gym, Siêu thị, Nhà hàng, Chợ địa phương, Bảo tàng",
-    "highlights": "Thiết kế độc đáo, Nội thất sang trọng, Khu vườn xinh xắn",
+    "style": "Hiện đại, Ấm cúng, Tối giản, Lãng mạn, Cổ điển",
+    "room_amenities": "Tủ lạnh, Lò vi sóng, Bếp, Ban công",
+    "surrounding_amenities": "Quán cà phê, Trung tâm thành phố, Siêu thị",
+    "highlights": "Giữa Sài Gòn nhộn nhịp đôi khi quẹo vào một con hẻm nhỏ không tên và bạn vỡ oà ra trước một bất ngờ thú vị. Domino Homestay của tụi mình là một chỗ như vậy đó.",
     "priority": 3
   },
   {
     "id": 22,
-    "name": "Charming Apartment Beachfront",
-    "description": "Chào mừng bạn đến với Charming Apartment Beachfront! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 700000,
-    "rating": 5,
+    "name": "Vania House",
+    "description": "Ẩn mình trong con hẻm đường Thống Nhất nhưng sự chỉn chu, mộc mạc cùng cảm giác như đang ở nhà chính là điều đặc biệt làm nên Vania House.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay8.jpg",
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay15.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103128/homestay/Vania%20House/n1kfhbwntnpgtyyrskuu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103129/homestay/Vania%20House/xw8kpwxkavameqizalpf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103129/homestay/Vania%20House/o7fsoojswmf49z75oree.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103130/homestay/Vania%20House/l6ipjpg3u4e9ee4mizrv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103131/homestay/Vania%20House/wzfdbb9qqwqr39nh0mkm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103132/homestay/Vania%20House/yydjzkjcs7nhahyqsoja.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103133/homestay/Vania%20House/damrsvepdofwflwtzd5l.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103133/homestay/Vania%20House/taelbvhqbxmk4izeq2k6.jpg"
     ],
     "locations": [
       {
-        "address": "Số 51, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 2, Đường Trần Hưng Đạo",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "58/1A Thống Nhất, Phường 10, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Vintage, Contemporary",
-    "room_amenities": "Wi-Fi miễn phí, Két an toàn, Máy giặt, Bồn tắm, Ban công riêng",
-    "surrounding_amenities": "Bãi biển, Sân bay, Quán cà phê, Siêu thị, Bảo tàng, Trung tâm thể thao, Chợ địa phương, Trung tâm mua sắm",
-    "highlights": "Đồ dùng cao cấp, Thiết kế độc đáo, Nội thất sang trọng, Khu vườn xinh xắn, Bếp đầy đủ tiện nghi",
+    "style": "Ấm cúng, Tối giản, Cổ điển",
+    "room_amenities": "Tủ lạnh, Lò vi sóng, Bếp, Ban công, Tivi, Bệnh viện",
+    "surrounding_amenities": "Quán cà phê, Sân bay, Chợ đêm, Công viên",
+    "highlights": "Dịch vụ dọn phòng, Lễ tân 24/24, Khu sinh hoạt sân vườn",
     "priority": 3
   },
   {
     "id": 23,
-    "name": "Modern House Hillside",
-    "description": "Chào mừng bạn đến với Modern House Hillside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 3100000,
-    "rating": 1.0,
+    "name": "Happy Dream Homestay",
+    "description": "Chào mừng đến Happy Dream Homestay, homestay tình yêu dành cho các cặp đôi tọa lạc tại Quận 12. Happy Dream - Homestay tình yêu sang xịn, decor xinh hết nước chấm! Giường êm, view xịn, check-in một cái là auto có ảnh nghìn like!",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay8.jpg",
-      "/static/images/homestay4.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102918/homestay/Happy%20Dream%20Homestay/kc1onef40lnpejkpfulz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102918/homestay/Happy%20Dream%20Homestay/uryx5iuoip5axrfas6a4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102919/homestay/Happy%20Dream%20Homestay/sudi0ypilph1rwwhfw4b.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102920/homestay/Happy%20Dream%20Homestay/idrr7nignsxqb65f7jix.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102921/homestay/Happy%20Dream%20Homestay/kvgqqigaasrtupsjolys.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102922/homestay/Happy%20Dream%20Homestay/l5hsfbbnszh5bbz5nqwv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102923/homestay/Happy%20Dream%20Homestay/jcytdr4rt91mbltnwln0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102923/homestay/Happy%20Dream%20Homestay/ddccys1nsdfpvgqhx8y8.jpg"
     ],
     "locations": [
       {
-        "address": "Số 120, Đường Nguyễn Huệ",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
+        "address": "163/1A Bùi Văn Ngữ, Hiệp Thành, Quận 12",
+        "district": "Quận 12",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Cổ điển",
-    "room_amenities": "Dép đi trong phòng, Tủ lạnh mini, Lò vi sóng, Bàn làm việc, Máy sấy tóc, Minibar, Máy pha cà phê",
-    "surrounding_amenities": "Trung tâm thể thao, Bãi biển, Siêu thị, Hồ bơi, Chợ địa phương, Bến xe buýt",
-    "highlights": "Không gian yên tĩnh, Thiết kế độc đáo, Sân thượng rộng rãi, Nội thất sang trọng",
+    "style": "Ấm cúng, Tối giản, Lãng mạn",
+    "room_amenities": "Máy chiếu, Bồn tắm",
+    "surrounding_amenities": "Quán cà phê",
+    "highlights": "Happy Dream - Homestay tình yêu sang xịn, decor xinh hết nước chấm! Giường êm, view xịn, check-in một cái là auto có ảnh nghìn like!",
     "priority": 3
   },
   {
     "id": 24,
-    "name": "Elegant Bungalow Riverside",
-    "description": "Chào mừng bạn đến với Elegant Bungalow Riverside! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 2200000,
-    "rating": 2.7,
+    "name": "Home Tụi Mình",
+    "description": "Bạn đã sẵn sàng “đổi gió” với một không gian lãng mạn, riêng tư, nơi mỗi góc nhỏ đều được thiết kế để mang đến trải nghiệm đáng nhớ chưa. Hãy đến ngay Home Tụi Mình để có những trải nghiệm khó quên.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay5.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay17.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102933/homestay/Home%20T%E1%BB%A5i%20M%C3%ACnh/qdpcbjdizqfo48n6umm8.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102934/homestay/Home%20T%E1%BB%A5i%20M%C3%ACnh/yznnccm0pah559yiwhgt.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102935/homestay/Home%20T%E1%BB%A5i%20M%C3%ACnh/r5gnkadequqlmwf45rrx.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102935/homestay/Home%20T%E1%BB%A5i%20M%C3%ACnh/njmwoq63w5uxcuwlhjdu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102936/homestay/Home%20T%E1%BB%A5i%20M%C3%ACnh/enzcc6ezodq400svyhjm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102937/homestay/Home%20T%E1%BB%A5i%20M%C3%ACnh/bkjklg9ml2mgnbuihcck.jpg"
     ],
     "locations": [
       {
-        "address": "Số 91, Đường Lê Lợi",
-        "district": "Quận 3",
-        "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 10, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "VinHome Grand Park, Long Thạnh Mỹ, Thủ Đức",
+        "district": "Thủ Đức",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Tối giản, Industrial",
-    "room_amenities": "Máy pha cà phê, Ghế nghỉ, Phòng tắm riêng, TV màn hình phẳng, Máy điều hòa, Ban công riêng, Tủ lạnh mini, Bàn làm việc",
-    "surrounding_amenities": "Trung tâm thành phố, Bến tàu, Siêu thị, Chợ địa phương, Bến xe buýt, Gym, Rạp chiếu phim",
-    "highlights": "Đồ dùng cao cấp, Nội thất sang trọng, Thiết kế độc đáo, View đẹp",
+    "style": "Ấm cúng, Tối giản, Dễ thương",
+    "room_amenities": "Máy chiếu, Bếp, Máy lạnh, Board game",
+    "surrounding_amenities": "Quán cà phê, Chợ đêm, Trung tâm thương mại, Cửa hàng tiện lợi",
+    "highlights": "Hồ bơi, Check-in tự động, Mì ly và trà miễn phí, Khóa vân tay",
     "priority": 3
   },
   {
     "id": 25,
-    "name": "Charming Studio City Center",
-    "description": "Chào mừng bạn đến với Charming Studio City Center! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 3900000,
-    "rating": 3.5,
+    "name": "Manor Staycation and Home",
+    "description": "Ở ngay trung tâm Quận Phú Nhuận, Manor không chỉ là nơi để nghỉ lại mà là một điểm chạm lý tưởng để bắt đầu hành trình khám phá Sài Gòn.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay15.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay3.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103006/homestay/Manor%20Staycation%20and%20Home/ivga42rpu41os5us8mkw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103007/homestay/Manor%20Staycation%20and%20Home/bz3hggkpasr1asvhyjfi.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103008/homestay/Manor%20Staycation%20and%20Home/zpsf8n3tc7yczzaadzdt.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103008/homestay/Manor%20Staycation%20and%20Home/hq1pasyl2ghu5y709qwa.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103009/homestay/Manor%20Staycation%20and%20Home/srgsticm3qe3cnwmngun.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103010/homestay/Manor%20Staycation%20and%20Home/vxmrloohe2rhhh5xibgs.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103011/homestay/Manor%20Staycation%20and%20Home/lyxziqmdpupkga63pvx2.jpg"
     ],
     "locations": [
       {
-        "address": "Số 45, Đường Nguyễn Huệ",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 34, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "34 Cầm Bá Thước, Phường 7, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
         "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 185, Đường Nguyễn Huệ",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
       }
     ],
-    "style": "Tối giản, Cổ điển",
-    "room_amenities": "Ban công riêng, Tủ lạnh mini, Két an toàn, Áo choàng tắm, Lò vi sóng, Máy giặt, Máy điều hòa, Bàn làm việc, Ghế nghỉ, Máy pha cà phê",
-    "surrounding_amenities": "Sân bay, Trạm taxi, Bãi biển, Công viên, Bảo tàng, Chợ địa phương",
-    "highlights": "Sân thượng rộng rãi, Đồ dùng cao cấp, Khu vườn xinh xắn",
+    "style": "Ấm cúng, Hiện đại",
+    "room_amenities": "Máy chiếu, Bếp, Máy lạnh, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Chợ địa phương, Khu tham quan du lịch",
+    "highlights": "Khóa vân tay",
     "priority": 3
   },
   {
     "id": 26,
-    "name": "Peaceful Villa Mountain View",
-    "description": "Chào mừng bạn đến với Peaceful Villa Mountain View! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 1900000,
-    "rating": 2.7,
+    "name": "Mềm Mại Homestay",
+    "description": "Chào mừng các bạn đến với Mềm Mại Homestay của chúng mình tọa lạc tại Quận 10.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay15.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103029/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/hebvmujq8f4qljbjieof.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103030/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/obms80niovkpgo77mu6t.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103030/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/atjsvznfivvjsi2tq0cb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103031/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/ipc3dbs5fethvihvs3xi.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103032/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/vsmq9sdtktknpaaeyzmr.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103033/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/wrzvqdrlj9xp7dffehji.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103033/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/zyaawngmeyoo1ilfcdra.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103034/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/fjkokdkzq14jvwwo5hno.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103035/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/ysumgcvq3s6yuetyfaar.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103036/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/hfo1xsmisqn5shtip2s1.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103037/homestay/M%E1%BB%81m%20M%E1%BA%A1i%20Homestay/b8gz5igqvv62d0rewvcf.jpg"
     ],
     "locations": [
       {
-        "address": "Số 26, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "34 273/27 Tô Hiến Thành, Phường 13, Quận 10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Bohemian, Industrial",
-    "room_amenities": "Minibar, Ban công riêng, Két an toàn, Ghế nghỉ, Lò vi sóng, Wi-Fi miễn phí, Máy giặt, Máy pha cà phê, Máy điều hòa, Áo choàng tắm",
-    "surrounding_amenities": "Bến xe buýt, Rạp chiếu phim, Công viên, Nhà hàng, Trung tâm thành phố, Gym",
-    "highlights": "Thiết kế độc đáo, Khu vườn xinh xắn, Sân thượng rộng rãi",
+    "style": "Dễ thương, Ấm cúng, Lãng mạn",
+    "room_amenities": "Máy chiếu, Board game, Máy trò chơi, Bàn bida, Máy lạnh, Tủ lạnh mini",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Chợ địa phương, Khu tham quan du lịch",
+    "highlights": "Nước suối, cà phê, snack miễn phí, Book theo giờ và ngày, Tự check-in, Sân thượng cực chill",
     "priority": 3
   },
   {
     "id": 27,
-    "name": "Cozy House City Center",
-    "description": "Chào mừng bạn đến với Cozy House City Center! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 3600000,
-    "rating": 1.5,
+    "name": "Tom's Homestay",
+    "description": "Chào mừng các bạn đến với Mềm Mại Homestay của chúng mình tọa lạc tại Quận 10.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay15.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103102/homestay/Tom%27s%20Homestay/jijkc0aenfd5kix4zyvs.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103103/homestay/Tom%27s%20Homestay/xxviloge5rbmse2vgspw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103104/homestay/Tom%27s%20Homestay/zwmjxls0q199l7vlqlw3.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103105/homestay/Tom%27s%20Homestay/camzghhig1jqfioqjqk1.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103105/homestay/Tom%27s%20Homestay/rz2rm4mauubln4yu2nea.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103106/homestay/Tom%27s%20Homestay/ku82p8gpdhqhivditd5x.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103107/homestay/Tom%27s%20Homestay/tcedrosqb4fywtg3rsya.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103108/homestay/Tom%27s%20Homestay/kuurywit3glfxleyqb6n.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103109/homestay/Tom%27s%20Homestay/z6jojjrftojnyibcstsu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103110/homestay/Tom%27s%20Homestay/ed4c2qxydh9ac68v6pvi.jpg"
     ],
     "locations": [
       {
-        "address": "Số 174, Đường Lê Lợi",
-        "district": "Quận 2",
+        "address": "156/2 Đường Cộng Hòa, Quận Tân Bình",
+        "district": "Quận Tân Bình",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 11, Đường Nguyễn Huệ",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
+        "address": "270 Hoàng Văn Thụ, Quận Tân Bình",
+        "district": "Quận Tân Bình",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Vintage, Tối giản, Scandinavian",
-    "room_amenities": "Ban công riêng, Tủ lạnh mini, Minibar, Dép đi trong phòng, Bồn tắm, Máy sấy tóc, Áo choàng tắm, Két an toàn, Bàn làm việc, Máy điều hòa",
-    "surrounding_amenities": "Spa, Rạp chiếu phim, Quán cà phê, Trạm taxi, Bến xe buýt",
-    "highlights": "Đồ dùng cao cấp, Nội thất sang trọng, Bếp đầy đủ tiện nghi",
+    "style": "Ấm cúng, Hiện đại, Cổ điển",
+    "room_amenities": "Máy chiếu, Bếp, Máy giặt, Tủ lạnh, Tivi",
+    "surrounding_amenities": "Sân bay",
+    "highlights": "Phòng sạch, Tiện nghi, Ấm cúng, Tự check-in, Mã khóa điện tử",
     "priority": 3
   },
   {
     "id": 28,
-    "name": "Modern Bungalow City Center",
-    "description": "Chào mừng bạn đến với Modern Bungalow City Center! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 3100000,
-    "rating": 4.7,
+    "name": "LoCo Homestay",
+    "description": "Chào mừng các bạn đến với LoCo Homestay của chúng mình tọa lạc tại Quận 1 trung tâm thành phố Hồ Chí Minh.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay16.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102979/homestay/LoCo%20Homestay/g9c26mzkzrxsbkwu2vlz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102980/homestay/LoCo%20Homestay/z7oqyji6599swimkpu2i.jpg"
     ],
     "locations": [
       {
-        "address": "Số 16, Đường Trần Hưng Đạo",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 90, Đường Nguyễn Huệ",
-        "district": "Quận 1",
-        "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 8, Đường Trần Hưng Đạo",
+        "address": "18bis/22/1H, Đ. Nguyễn Thị Minh Khai, Quận 1",
         "district": "Quận 1",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Tối giản",
-    "room_amenities": "Vòi sen, Bồn tắm, Máy pha cà phê, Ghế nghỉ, Máy sấy tóc, Phòng tắm riêng, Wi-Fi miễn phí, Minibar",
-    "surrounding_amenities": "Công viên, Bãi biển, Rạp chiếu phim, Trạm taxi, Siêu thị, Bảo tàng, Gym, Sân bay",
-    "highlights": "Sân thượng rộng rãi, Bếp đầy đủ tiện nghi, Khu vườn xinh xắn",
+    "style": "Ấm cúng, Hiện đại",
+    "room_amenities": "Máy chiếu, Tủ lạnh",
+    "surrounding_amenities": "Khu tham quan du lịch, Công viên, Quán cà phê, Trung tâm thành phố",
+    "highlights": "Phòng sạch, Đầy đủ tiện nghi, Ấm cúng, Tự check-in, Mã khóa điện tử",
     "priority": 3
   },
   {
     "id": 29,
-    "name": "Elegant Homestay Downtown",
-    "description": "Chào mừng bạn đến với Elegant Homestay Downtown! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 600000,
-    "rating": 1.7,
+    "name": "MQ Village",
+    "description": "Khám phá MQ Village – Nơi lý tưởng cho chuyến công tác và du lịch Quận 1, TP.HCM.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay5.jpg",
-      "/static/images/homestay15.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103012/homestay/MQ%20Village/vnegy1iapadvamp249p4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103013/homestay/MQ%20Village/lim4t1xdn4ltvjaiwthz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103014/homestay/MQ%20Village/y1op5z22pdfvw0k86hpj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103015/homestay/MQ%20Village/wtuv8w0dyey1x8lh2bag.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103016/homestay/MQ%20Village/imdyuts2q1al5rhrgdyv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103017/homestay/MQ%20Village/ttsng9yfnxr5bfbeiuep.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103018/homestay/MQ%20Village/v7rpzlcwnk0a70i4lpoi.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103018/homestay/MQ%20Village/y1opx640kapzzdjocx9f.jpg"
     ],
     "locations": [
       {
-        "address": "Số 59, Đường Lê Lợi",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 126, Đường Lê Lợi",
-        "district": "Quận 3",
+        "address": "137/111 Đ.Trần Đình Xu, Phường Nguyễn Cư Trinh, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 150, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "195 Ngô Tất Tố, Phường 22, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Bohemian, Hiện đại, Contemporary",
-    "room_amenities": "Bàn làm việc, Lò vi sóng, Máy sấy tóc, Dép đi trong phòng, Vòi sen",
-    "surrounding_amenities": "Bảo tàng, Siêu thị, Bãi biển, Bến xe buýt, Quán cà phê, Rạp chiếu phim, Nhà hàng, Gym",
-    "highlights": "Khu vườn xinh xắn, Thiết kế độc đáo, Sân thượng rộng rãi, View đẹp",
+    "style": "Ấm cúng, Hiện đại",
+    "room_amenities": "Máy chiếu, Tủ lạnh, Bồn tắm, Ban công, Bếp",
+    "surrounding_amenities": "Trung tâm thành phố",
+    "highlights": "Phòng sạch, Đầy đủ tiện nghi, Ấm cúng",
     "priority": 3
   },
   {
     "id": 30,
-    "name": "Peaceful Condo Hillside",
-    "description": "Chào mừng bạn đến với Peaceful Condo Hillside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 3000000,
-    "rating": 2.3,
+    "name": "Cactus Homestay",
+    "description": "Hãy để Cactus Homestay là điểm dừng chân lý tưởng trong hành trình tìm về sự bình yên giữa nhịp sống hối hả của bạn.",
+    "price": 0,
+    "rating": 4.7,
     "image_urls": [
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay19.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102842/homestay/Cactus%20Homestay/uowasmknk67eozrahst9.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102843/homestay/Cactus%20Homestay/fnbavsjrgehc5jfiguxv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102847/homestay/Cactus%20Homestay/w1hsci91mfc6nqyzncdv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102848/homestay/Cactus%20Homestay/rbw2duwhpaev9riczawt.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102849/homestay/Cactus%20Homestay/v4ln7q6d0o5agnidnicj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102850/homestay/Cactus%20Homestay/abuwiolarbfkd0a8h5z8.jpg"
     ],
     "locations": [
       {
-        "address": "Số 149, Đường Trần Hưng Đạo",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
+        "address": "393/30 Trần Hưng Đạo, Phường Cầu Kho, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 33, Đường Trần Hưng Đạo",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
+        "address": "35 Bình Giã, Phường 13, Quận Tân Bình",
+        "district": "Quận Tân Bình",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "28 Rạch Bùng Binh, Phường 10, Quận 3",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "251/8 Nguyễn Văn Trỗi, Phường 10, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "38/16 Nguyễn Văn Trỗi, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Vintage, Industrial, Scandinavian",
-    "room_amenities": "Tủ lạnh mini, Wi-Fi miễn phí, Minibar, Bồn tắm, Máy điều hòa, Máy pha cà phê, Vòi sen",
-    "surrounding_amenities": "Bãi biển, Sân bay, Gym, Chợ địa phương, Trung tâm thể thao, Nhà hàng, Quán cà phê, Spa",
-    "highlights": "Không gian yên tĩnh, Thiết kế độc đáo, View đẹp, Nội thất sang trọng",
+    "style": "Ấm cúng, Cổ điển, Lãng mạn",
+    "room_amenities": "Máy chiếu, Tủ lạnh, Ban công, Bếp",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Tự check-in/out bằng mã, Miễn phí nước suối, View Sài Gòn cực đẹp",
     "priority": 3
   },
   {
     "id": 31,
-    "name": "Cozy Suite Sea View",
-    "description": "Chào mừng bạn đến với Cozy Suite Sea View! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 900000,
-    "rating": 2.5,
+    "name": "Haystay Saigon",
+    "description": "Chào mừng bạn đến với Haystaycation chốn bình yên tọa lạc tại trung tâm Sài Gòn sầm uất.",
+    "price": 0,
+    "rating": 4.5,
     "image_urls": [
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay20.jpg",
-      "/static/images/homestay6.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102924/homestay/Haystay%20Saigon/u3nf5v59srprlqdn9xc0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102925/homestay/Haystay%20Saigon/xthmpfshagldkoxzmbek.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102926/homestay/Haystay%20Saigon/lvtmvwqrdgfv2snrelrp.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102926/homestay/Haystay%20Saigon/wrinanlxguozjduqnmzn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102927/homestay/Haystay%20Saigon/omkbvtbd3hwpeprexke8.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102928/homestay/Haystay%20Saigon/swgs33446uchutr64viq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102928/homestay/Haystay%20Saigon/lxb0wb9imdphrutsvx9m.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102930/homestay/Haystay%20Saigon/fzcnm6v0dgalvvbmdc27.jpg"
     ],
     "locations": [
       {
-        "address": "Số 73, Đường Trần Hưng Đạo",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 87, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "169 Nguyễn Văn Thủ, Phường Đa Kao, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Scandinavian, Bohemian",
-    "room_amenities": "Tủ lạnh mini, Ban công riêng, Máy điều hòa, Máy giặt, Phòng tắm riêng, TV màn hình phẳng, Lò vi sóng",
-    "surrounding_amenities": "Hồ bơi, Trạm taxi, Rạp chiếu phim, Bến xe buýt, Trung tâm mua sắm, Quán cà phê, Bãi biển, Bến tàu",
-    "highlights": "Không gian yên tĩnh, Khu vườn xinh xắn, Đồ dùng cao cấp, View đẹp",
+    "style": "Ấm cúng, Hiện đại, Lãng mạn",
+    "room_amenities": "Máy chiếu, Bồn tắm, Bếp, Ban công",
+    "surrounding_amenities": "Trung tâm thành phố, Quán cà phê, Cửa hàng tiện lợi, Công viên, Khu tham quan du lịch",
+    "highlights": "Sạch sẽ, Không gian rộng rãi, Sạch sẽ",
     "priority": 3
   },
   {
     "id": 32,
-    "name": "Cozy House Sea View",
-    "description": "Chào mừng bạn đến với Cozy House Sea View! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 4800000,
-    "rating": 4.0,
+    "name": "Dhomestay",
+    "description": "Chào mừng bạn đến với Dhomestay.",
+    "price": 0,
+    "rating": 4.9,
     "image_urls": [
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay16.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102885/homestay/Dhomestay/ri1pdzq1w5jdwmbcunfl.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102885/homestay/Dhomestay/owyl7lunkl2he0lxppm8.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102886/homestay/Dhomestay/hptkpq2qfglbvvwo8qmd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102887/homestay/Dhomestay/rbmvhhcfnqutehcyrnsv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102888/homestay/Dhomestay/kf8ugo8qrlskqmmva98z.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102889/homestay/Dhomestay/hfhyz4wtkqfxtyauygzj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102889/homestay/Dhomestay/k7hxaropzdi8a3uhzni4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102890/homestay/Dhomestay/s9vki4xy4x0nlaqkmvkf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102891/homestay/Dhomestay/zd0fgejyfe7vbgyz4brb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102891/homestay/Dhomestay/nxcgj9iklawqzjqi9kdd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102892/homestay/Dhomestay/zfkhkfrcyyy8wxg1i4on.jpg"
     ],
     "locations": [
       {
-        "address": "Số 133, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "286/12 Nguyễn Oanh, Phường 17, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 88, Đường Trần Hưng Đạo",
-        "district": "Quận 3",
+        "address": "91B Trương Văng Quế, Phường 3, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "417/76 Quang Trung, Phường 10, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "529/142 Huỳnh Văn Bánh, Phường 13, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "19/48 Hồ Văn Huê, Phường 9, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Hiện đại, Tối giản, Industrial",
-    "room_amenities": "Máy điều hòa, Áo choàng tắm, Minibar, TV màn hình phẳng, Máy giặt, Két an toàn",
-    "surrounding_amenities": "Trung tâm thể thao, Trạm taxi, Hồ bơi, Siêu thị, Bến xe buýt, Chợ địa phương, Quán cà phê, Bãi biển",
-    "highlights": "View đẹp, Không gian yên tĩnh, Khu vườn xinh xắn",
+    "style": "Ấm cúng, Hiện đại, Cổ điển, Dễ thương, Lãng mạn, Thiên nhiên",
+    "room_amenities": "Máy chiếu, Tivi, Bếp, Bida, Bồn tắm",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Tự check-in, Khu vực để xe có camera an ninh, Thuê theo giờ/ngày",
     "priority": 3
   },
   {
     "id": 33,
-    "name": "Deluxe House Forest",
-    "description": "Chào mừng bạn đến với Deluxe House Forest! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 2600000,
-    "rating": 2.3,
+    "name": "Amazing Home",
+    "description": "Chào mừng bạn đến với Amazing Home, homestay ấm cúng tại HCM.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay5.jpg",
-      "/static/images/homestay9.jpg",
-      "/static/images/homestay12.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102810/homestay/Amazing%20Home/xr85uzggdserfomauoos.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102812/homestay/Amazing%20Home/g8ygcqsehwgeaq0os874.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102814/homestay/Amazing%20Home/umgrrzg4htekmy9aql52.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102815/homestay/Amazing%20Home/j0p4kvmjsx2sriuu9zts.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102817/homestay/Amazing%20Home/m8lxihmmupyqkfziukss.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102818/homestay/Amazing%20Home/qdarhfdnx455siwdulp9.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102819/homestay/Amazing%20Home/eulhkgbrcfresrkpkplh.jpg"
     ],
     "locations": [
       {
-        "address": "Số 168, Đường Trần Hưng Đạo",
-        "district": "Quận 3",
+        "address": "419/5 Cách Mạng Tháng Tám, Quận 10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Phú Nhuận (inbox)",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Bình Thạnh (inbox)",
+        "district": "Bình Thạnh",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Vintage",
-    "room_amenities": "Máy điều hòa, Máy sấy tóc, Phòng tắm riêng, Ghế nghỉ, Dép đi trong phòng, Két an toàn, Wi-Fi miễn phí, Bồn tắm, Máy pha cà phê, Áo choàng tắm",
-    "surrounding_amenities": "Trung tâm thể thao, Trung tâm mua sắm, Rạp chiếu phim, Chợ địa phương, Quán cà phê, Nhà hàng, Spa, Bãi biển",
-    "highlights": "Khu vườn xinh xắn, Nội thất sang trọng, Bếp đầy đủ tiện nghi, Không gian yên tĩnh",
+    "style": "Ấm cúng, Hiện đại, Cổ điển, Lãng mạn, Nhật Bản",
+    "room_amenities": "Máy chiếu, Máy giặt, Bếp, Bàn ủi, Tủ lạnh, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Sạch sẽ, Đầy đủ tiện nghi, Không gian phòng rộng rãi",
     "priority": 3
   },
   {
     "id": 34,
-    "name": "Rustic Bungalow Mountain View",
-    "description": "Chào mừng bạn đến với Rustic Bungalow Mountain View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 2300000,
-    "rating": 1.5,
+    "name": "Bliss Home",
+    "description": "Chào mừng bạn đến với Bliss Home, Homestay riêng tư dành cho giới trẻ Sài Gòn.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay12.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay5.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102826/homestay/Bliss%20Home/ct72yehakciwac20gnac.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102827/homestay/Bliss%20Home/t6a1tooh55tgeeojgrdd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102828/homestay/Bliss%20Home/qmpky9xnyimpjs4d5nm2.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102829/homestay/Bliss%20Home/phgqxgv6lihnojuclqhf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102830/homestay/Bliss%20Home/iqe0wrmgdowdyisf7eh4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102831/homestay/Bliss%20Home/oqycyy2us4nfme1xzfzm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102832/homestay/Bliss%20Home/dgxwe8ao0adqpbsqmg3n.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102833/homestay/Bliss%20Home/hauajglsz5bcqich1f7e.jpg"
     ],
     "locations": [
       {
-        "address": "Số 105, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "71 Xuân Hồng, Phường 4, Q.Tân Bình",
+        "district": "Quận Tân Bình",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 168, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 187, Đường Nguyễn Huệ",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
+        "address": "25A Đường 3 Tháng 2, Phường 11, Quận 10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tối giản, Tropical",
-    "room_amenities": "Máy pha cà phê, Wi-Fi miễn phí, Máy điều hòa, Ghế nghỉ, Bàn làm việc",
-    "surrounding_amenities": "Rạp chiếu phim, Trung tâm thể thao, Bảo tàng, Trung tâm thành phố, Bến xe buýt, Trạm taxi",
-    "highlights": "Sân thượng rộng rãi, Khu vườn xinh xắn, Nội thất sang trọng, Không gian yên tĩnh",
+    "style": "Ấm cúng, Hiện đại, Tối giản",
+    "room_amenities": "Máy chiếu, Bếp, Board game, Bida, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Trung tâm thành phố",
+    "highlights": "Sạch sẽ, Đầy đủ tiện nghi, Không gian phòng rộng rãi, Tự check-in, Máy dò camera ẩn",
     "priority": 3
   },
   {
     "id": 35,
-    "name": "Charming Suite Beachfront",
-    "description": "Chào mừng bạn đến với Charming Suite Beachfront! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 4900000,
-    "rating": 1.7,
+    "name": "Bloomin Homestay",
+    "description": "Tại Bloomin’, bạn không chỉ tận hưởng không gian hiện đại, nghệ thuật mà còn cảm nhận trọn vẹn hơi thở của trung tâm thành phố.",
+    "price": 0,
+    "rating": 4.3,
     "image_urls": [
-      "/static/images/homestay19.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay5.jpg",
-      "/static/images/homestay6.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102834/homestay/Bloomin%20Homestay/daajfxlliuesjgvmcgwt.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102835/homestay/Bloomin%20Homestay/pnwbgnhh6bapdbthe3qz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102837/homestay/Bloomin%20Homestay/jdihdzmf8i5ruzrlqcnb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102838/homestay/Bloomin%20Homestay/ivtjf6j5ifor7q5gqzl6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102839/homestay/Bloomin%20Homestay/scrj0uwzkrdcfk0qnxus.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102840/homestay/Bloomin%20Homestay/crxwy9j9syhbl9dzmflp.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102841/homestay/Bloomin%20Homestay/omgs06gprjvlbir66mme.jpg"
     ],
     "locations": [
       {
-        "address": "Số 92, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 75, Đường Trần Hưng Đạo",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 8, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "14 Tôn Thất Đạm, Phường Nguyễn Thái Bình, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Vintage, Scandinavian",
-    "room_amenities": "Bồn tắm, Két an toàn, Máy sấy tóc, Bàn làm việc, Máy giặt",
-    "surrounding_amenities": "Sân bay, Trạm taxi, Hồ bơi, Bến xe buýt, Gym, Bến tàu, Trung tâm thành phố",
-    "highlights": "Bếp đầy đủ tiện nghi, Sân thượng rộng rãi, Đồ dùng cao cấp, View đẹp, Khu vườn xinh xắn",
+    "style": "Ấm cúng, Hiện đại, Tối giản",
+    "room_amenities": "Tivi, Bếp, Máy lạnh, Ban công, Board game",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Trung tâm thành phố, Công viên",
+    "highlights": "Ban công rộng mát rượi, Bếp xinh ngoài trời, Tối về chơi boardgame, Nintendo Switch, Ngắm Sài Gòn lên đèn.",
     "priority": 3
   },
   {
     "id": 36,
-    "name": "Rustic Condo Sea View",
-    "description": "Chào mừng bạn đến với Rustic Condo Sea View! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
-    "price": 2700000,
-    "rating": 3.0,
+    "name": "Felila Homestay",
+    "description": "Khám phá Felila Homestay - không gian lãng mạn và riêng tư dành cho các cặp đôi tại Sài Gòn. Tận hưởng sự bình yên và thoải mái trong những khoảnh khắc bên nhau.",
+    "price": 0,
+    "rating": 4.6,
     "image_urls": [
-      "/static/images/homestay2.jpg",
-      "/static/images/homestay15.jpg",
-      "/static/images/homestay1.jpg",
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay4.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102903/homestay/Felila%20Homestay/sozpftljdi0dcpc2rd7e.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102903/homestay/Felila%20Homestay/dnsves6hkwk9lnqcfxdz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102904/homestay/Felila%20Homestay/oqecr3mreo8ljqeap56w.jpg"
     ],
     "locations": [
       {
-        "address": "Số 86, Đường Nguyễn Huệ",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 186, Đường Lê Lợi",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 89, Đường Nguyễn Huệ",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
+        "address": "1/21 Nguyễn Thái Sơn, Phường 3, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tối giản, Vintage, Hiện đại",
-    "room_amenities": "Máy sấy tóc, Dép đi trong phòng, Minibar, Áo choàng tắm, Bàn làm việc, TV màn hình phẳng, Ban công riêng, Wi-Fi miễn phí",
-    "surrounding_amenities": "Rạp chiếu phim, Chợ địa phương, Gym, Bến xe buýt, Bãi biển, Trung tâm mua sắm, Trung tâm thể thao",
-    "highlights": "Khu vườn xinh xắn, Đồ dùng cao cấp, Không gian yên tĩnh",
+    "style": "Ấm cúng, Tối giản, Lãng mạn",
+    "room_amenities": "Máy chiếu, Bếp, Máy lạnh",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Tự check-in/check-out, Hầm để xe rộng rãi, Bếp đầy đủ dụng cụ, Nhà vệ sinh riêng",
     "priority": 3
   },
   {
     "id": 37,
-    "name": "Luxury Apartment Garden",
-    "description": "Chào mừng bạn đến với Luxury Apartment Garden! Đây là một không gian tuyệt vời tại Ba Đình, Hà Nội.",
-    "price": 4300000,
-    "rating": 4.7,
+    "name": "The Stay Saigon Riverfront",
+    "description": "Visit the Stay located in a serene river shore of District 9, The Stay Saigon Riverfront is your riverside home for comfort, cuisine and celebrations.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay12.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103097/homestay/The%20stay%20Saigon%20Riverfront/jsyhhapakrj3wg2flvpj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103098/homestay/The%20stay%20Saigon%20Riverfront/vddz31ze0co6x5egyl5w.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103099/homestay/The%20stay%20Saigon%20Riverfront/vfiogzg2lycnfuboipmu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103100/homestay/The%20stay%20Saigon%20Riverfront/aqpdkugsa1qstoa4kn4a.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103100/homestay/The%20stay%20Saigon%20Riverfront/ubyoigrlw8l9ramtzlth.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103101/homestay/The%20stay%20Saigon%20Riverfront/rishqyu0sh29ikh8lqv9.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103102/homestay/The%20stay%20Saigon%20Riverfront/ak3anx4ihvyzrssfb9kt.jpg"
     ],
     "locations": [
       {
-        "address": "Số 118, Đường Trần Hưng Đạo",
-        "district": "Ba Đình",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 60, Đường Trần Hưng Đạo",
-        "district": "Quận 1",
+        "address": "75/A10 Long Thuận, Trường Thạnh, Quận 9",
+        "district": "Quận 9",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Cổ điển, Scandinavian",
-    "room_amenities": "Máy pha cà phê, Minibar, Ghế nghỉ, Wi-Fi miễn phí, Vòi sen, Tủ lạnh mini",
-    "surrounding_amenities": "Rạp chiếu phim, Sân bay, Hồ bơi, Bến tàu, Nhà hàng, Bảo tàng",
-    "highlights": "Sân thượng rộng rãi, Đồ dùng cao cấp, Không gian yên tĩnh, Thiết kế độc đáo, Khu vườn xinh xắn",
+    "style": "Sang trọng, Hiện đại",
+    "room_amenities": "Bồn tắm, Máy lạnh, Tivi, Bếp nhỏ",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Hồ bơi ngoài trời, View sông hồ, Phòng rộng rãi sang trọng, Các hoạt động thú vị ngoài sông",
     "priority": 3
   },
   {
     "id": 38,
-    "name": "Charming Cottage Forest",
-    "description": "Chào mừng bạn đến với Charming Cottage Forest! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 1400000,
-    "rating": 3.0,
+    "name": "Wabi Sabi Homestay",
+    "description": "Chào mừng bạn đến với Wabi Sabi, homestay xinh xắn, gần ngay trạm Ba Son.",
+    "price": 0,
+    "rating": 3.3,
     "image_urls": [
-      "/static/images/homestay1.jpg",
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay16.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103140/homestay/Wabi%20Sabi%20Homestay/kznyhnzhzvo8q5vwpul4.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103141/homestay/Wabi%20Sabi%20Homestay/l332aki2739hbcae7c80.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103142/homestay/Wabi%20Sabi%20Homestay/gsexjordaqyhgnahxmco.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103143/homestay/Wabi%20Sabi%20Homestay/yeccm9gpcswgqfgdzree.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103144/homestay/Wabi%20Sabi%20Homestay/nal4uya8clvtidijirz0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103145/homestay/Wabi%20Sabi%20Homestay/e09d2vb85sjejzzasuko.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103145/homestay/Wabi%20Sabi%20Homestay/eb6jpofyxhktcjbdcqyd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103146/homestay/Wabi%20Sabi%20Homestay/zxiruygpklrlmhyy2kjr.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103147/homestay/Wabi%20Sabi%20Homestay/xlylhoen3d1nhxb7fnrx.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103148/homestay/Wabi%20Sabi%20Homestay/z9ahpipjhssrhjw2ylpi.jpg"
     ],
     "locations": [
       {
-        "address": "Số 30, Đường Lê Lợi",
-        "district": "Quận 3",
+        "address": "15A/ 4 Lê Thánh Tôn, Phường Bến Nghé, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 112, Đường Trần Hưng Đạo",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 66, Đường Lê Lợi",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
       }
     ],
-    "style": "Tropical, Industrial, Scandinavian",
-    "room_amenities": "TV màn hình phẳng, Bàn làm việc, Áo choàng tắm, Máy điều hòa, Bồn tắm, Phòng tắm riêng, Máy sấy tóc, Lò vi sóng",
-    "surrounding_amenities": "Hồ bơi, Công viên, Chợ địa phương, Bến xe buýt, Bảo tàng, Bãi biển",
-    "highlights": "Không gian yên tĩnh, Sân thượng rộng rãi, Nội thất sang trọng, Khu vườn xinh xắn",
+    "style": "Ấm cúng, Cổ điển, Hiện đại, Tối giản",
+    "room_amenities": "Bồn tắm, Máy lạnh, Tivi, Bếp, Máy chiếu, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Phòng ốc sạch sẽ, Ban công view sân nhà thoáng mát, Đầy đủ tiện nghi",
     "priority": 3
   },
   {
     "id": 39,
-    "name": "Charming House Sea View",
-    "description": "Chào mừng bạn đến với Charming House Sea View! Đây là một không gian tuyệt vời tại Quận 1, Hồ Chí Minh.",
-    "price": 1500000,
-    "rating": 4.0,
+    "name": "Mây Homestay",
+    "description": "Chào mừng bạn đến với Mây Homestay, không gian lưu trú vừa thư giãn vừa trải nghiệm.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay4.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103019/homestay/M%C3%A2y%20Homestay/cfum2vnozgfsgmhzdr9g.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103020/homestay/M%C3%A2y%20Homestay/ktosxfyfldcwteevqibv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103021/homestay/M%C3%A2y%20Homestay/yqfjkq5uzymqtc90nnhj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103022/homestay/M%C3%A2y%20Homestay/otwcxen9gl2kqwwvyikv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103022/homestay/M%C3%A2y%20Homestay/famerqrwvvcp0hk66awm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103024/homestay/M%C3%A2y%20Homestay/dmd9ic4ia4emixpvyidd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103025/homestay/M%C3%A2y%20Homestay/lnkaujs6i3jt0gdbnmdj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103026/homestay/M%C3%A2y%20Homestay/xlupredt0al24vee78vk.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103026/homestay/M%C3%A2y%20Homestay/igudr1aythypqfguuyqg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103027/homestay/M%C3%A2y%20Homestay/fb8ss0tk3nszejbwwent.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103028/homestay/M%C3%A2y%20Homestay/rddefzi39dlvmgldzbeh.jpg"
     ],
     "locations": [
       {
-        "address": "Số 31, Đường Nguyễn Huệ",
+        "address": "75/14 Nguyễn Cửu Vân, Phường 17, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "24/8 Thủ Khoa Huân, Bến Thành, Quận 1",
         "district": "Quận 1",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 110, Đường Trần Hưng Đạo",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
+        "address": "33 Nguyễn Huy Tự, Phường Dakao, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 186, Đường Nguyễn Huệ",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
+        "address": "26/14 Trần Quang Diệu, Phường 13, Quận 3",
+        "district": "Quận 3",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "419/1F Phan Xích Long, Phường 3, Quận Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Industrial, Hiện đại, Scandinavian",
-    "room_amenities": "Két an toàn, Bàn làm việc, Wi-Fi miễn phí, Bồn tắm, Máy giặt",
-    "surrounding_amenities": "Rạp chiếu phim, Bảo tàng, Bến tàu, Trung tâm mua sắm, Bến xe buýt, Bãi biển, Trung tâm thể thao",
-    "highlights": "Sân thượng rộng rãi, Khu vườn xinh xắn, View đẹp, Bếp đầy đủ tiện nghi",
+    "style": "Ấm cúng, Hiện đại, Tối giản",
+    "room_amenities": "Tủ lạnh, Máy chiếu, Bồn tắm, Bếp",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Phòng ốc sạch sẽ, Đầy đủ tiện nghi, Góc chill thư giãn chụp hình sống ảo, Tự check-in",
     "priority": 3
   },
   {
     "id": 40,
-    "name": "Elegant Condo Sea View",
-    "description": "Chào mừng bạn đến với Elegant Condo Sea View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 1800000,
-    "rating": 1.8,
+    "name": "85B Homestay",
+    "description": "Chào mừng bạn đến với 85B Homestay tọa lạc tại Quận Nhất.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay10.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102788/homestay/85B%20Homestay/hb9kcwra7myknhxizo8p.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102789/homestay/85B%20Homestay/uh7ovuaujwy179owwcwu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102790/homestay/85B%20Homestay/a0g1sryh9yl6pqrmilda.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102792/homestay/85B%20Homestay/rgaj4qjqh4ayjitltt4x.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102793/homestay/85B%20Homestay/xu2tbo7ikrn9fv5m1pwy.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102794/homestay/85B%20Homestay/ojhjtpgmdrtwrdmtybyh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102795/homestay/85B%20Homestay/nn0vphhnihaznebozuex.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102796/homestay/85B%20Homestay/ejhlk8w0y4cbmxxlhk06.jpg"
     ],
     "locations": [
       {
-        "address": "Số 128, Đường Lê Lợi",
-        "district": "Quận 2",
+        "address": "85B Đ.Trần Đình Xu, Phường Nguyễn Cư Trinh, Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 44, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
       }
     ],
-    "style": "Contemporary, Cổ điển",
-    "room_amenities": "Dép đi trong phòng, Máy giặt, Máy sấy tóc, Minibar, Bàn làm việc, Máy pha cà phê, Wi-Fi miễn phí, Bồn tắm, Ban công riêng",
-    "surrounding_amenities": "Bãi biển, Trung tâm thành phố, Trung tâm mua sắm, Hồ bơi, Công viên, Bảo tàng, Gym",
-    "highlights": "Nội thất sang trọng, Khu vườn xinh xắn, Sân thượng rộng rãi, Thiết kế độc đáo",
+    "style": "Ấm cúng, Cổ điển, Tối giản",
+    "room_amenities": "Tủ lạnh, Máy chiếu, Bếp, Tivi",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Trung tâm thành phố, Trung tâm thương mại",
+    "highlights": "Phòng ốc sạch sẽ, Đầy đủ tiện nghi, Không gian thoáng mát",
     "priority": 3
   },
   {
     "id": 41,
-    "name": "Charming Villa Downtown",
-    "description": "Chào mừng bạn đến với Charming Villa Downtown! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 2000000,
-    "rating": 3.0,
+    "name": "Paar Homestay",
+    "description": "Chào mừng bạn đến với Paar Homestay là một tụ điểm nhộn nhịp, một căn phòng đầy tiện nghi và một chiếc giường siêu êm ái đang chờ bạn đến tận hưởng.",
+    "price": 0,
+    "rating": 4.4,
     "image_urls": [
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay19.jpg",
-      "/static/images/homestay4.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103049/homestay/Paar%20Homestay/gefh51rxkredgm36sbsz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103050/homestay/Paar%20Homestay/yl5xphosfcj1rpljxcbc.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103051/homestay/Paar%20Homestay/k4f5zzcyvc9i7rehzf52.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103052/homestay/Paar%20Homestay/vful9t2ukztxfswe64t0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103053/homestay/Paar%20Homestay/zkrmhxiwr5g3367kuctn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103054/homestay/Paar%20Homestay/n8yoe4umnvucfabgahrr.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103054/homestay/Paar%20Homestay/m03slnsennw9yjxo1adh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103055/homestay/Paar%20Homestay/espmdzhirk2se80exarv.jpg"
     ],
     "locations": [
       {
-        "address": "Số 107, Đường Trần Hưng Đạo",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
+        "address": "30/37 Nguyễn Cửu Vân, Phường 17, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 184, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
+        "address": "282/6A Bùi Hữu Nghĩa, Phường 7, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 172, Đường Nguyễn Huệ",
-        "district": "Quận 3",
+        "address": "606/62 Đường 3/2, Phường 14, Quận 10",
+        "district": "Quận 10",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "451/17/19 Tô Hiến Thành, Phường 14, Quận 10",
+        "district": "Quận 10",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Hiện đại, Bohemian",
-    "room_amenities": "Máy pha cà phê, Dép đi trong phòng, Phòng tắm riêng, Máy điều hòa, TV màn hình phẳng, Tủ lạnh mini",
-    "surrounding_amenities": "Trung tâm thành phố, Hồ bơi, Bãi biển, Gym, Bảo tàng, Bến xe buýt, Chợ địa phương",
-    "highlights": "View đẹp, Khu vườn xinh xắn, Đồ dùng cao cấp",
+    "style": "Ấm cúng, Cổ điển, Hiện đại",
+    "room_amenities": "Tủ lạnh, Máy chiếu, Bếp, Bồn tắm, Bình siêu tốc, Ban công",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Trung tâm thành phố",
+    "highlights": "Đầy đủ tiện nghi, Không gian rộng rãi, Không gian chill chill mang lại cảm giác thư giãn, Tài khoản Netflix free",
     "priority": 3
   },
   {
     "id": 42,
-    "name": "Charming Apartment Riverside",
-    "description": "Chào mừng bạn đến với Charming Apartment Riverside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 1800000,
-    "rating": 2.3,
+    "name": "Princess Homestay",
+    "description": "Chào mừng bạn đến với Princess Homestay là một tụ điểm nhộn nhịp, một căn phòng đầy tiện nghi và một chiếc giường siêu êm ái đang chờ bạn đến tận hưởng.",
+    "price": 0,
+    "rating": 3.25,
     "image_urls": [
-      "/static/images/homestay18.jpg",
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay17.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103059/homestay/Princess%20Homestay/pjfhe4jg3fursluicdha.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103060/homestay/Princess%20Homestay/byc9nay7iqdkwrzeiqhz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103061/homestay/Princess%20Homestay/blsav8je3z3gqgpwtfwz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103062/homestay/Princess%20Homestay/w809fqdirnfvysjuano0.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103062/homestay/Princess%20Homestay/xtyszcit9ripdihonzom.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103063/homestay/Princess%20Homestay/twvl2wzysi8kbunqiql8.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103064/homestay/Princess%20Homestay/e757td3wzailakw4doll.jpg"
     ],
     "locations": [
       {
-        "address": "Số 70, Đường Nguyễn Huệ",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 129, Đường Trần Hưng Đạo",
-        "district": "Quận 3",
+        "address": "69 Nguyễn Gia Trí, Phường 25, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Hiện đại, Scandinavian",
-    "room_amenities": "Lò vi sóng, Ban công riêng, Máy pha cà phê, Bàn làm việc, Dép đi trong phòng, Máy giặt, Bồn tắm, Vòi sen, Máy sấy tóc",
-    "surrounding_amenities": "Bến xe buýt, Bảo tàng, Chợ địa phương, Nhà hàng, Trung tâm thể thao, Trạm taxi, Công viên, Trung tâm mua sắm",
-    "highlights": "View đẹp, Khu vườn xinh xắn, Bếp đầy đủ tiện nghi, Không gian yên tĩnh",
+    "style": "Ấm cúng, Tối giản, Lãng mạn",
+    "room_amenities": "Máy chiếu, Bếp, Tủ quần áo, Tinh dầu, Sữa tắm",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Đầy đủ tiện nghi, Không gian và góc làm việc học tập chill chill, Decor dễ thương lãng mạn, Nhà vệ sinh đầy đủ dụng cụ.",
     "priority": 3
   },
   {
     "id": 43,
-    "name": "Peaceful Studio Downtown",
-    "description": "Chào mừng bạn đến với Peaceful Studio Downtown! Đây là một không gian tuyệt vời tại Sơn Trà, Đà Nẵng.",
-    "price": 1000000,
-    "rating": 1.0,
+    "name": "Lux Home",
+    "description": "Chào mừng bạn đến với Lux Homestay tọa lạc tại Quận Bình Thạnh.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay19.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102994/homestay/Lux%20Home/bz2uagx1z06c1vlltlsq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102994/homestay/Lux%20Home/uzbu276ty9wdwfc3zopz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102995/homestay/Lux%20Home/ee4i0r9xrud7u1joytof.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102996/homestay/Lux%20Home/ky3ienu21bh1kncxv0xa.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102997/homestay/Lux%20Home/a0xjxc878yrdtv5f5zx1.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102998/homestay/Lux%20Home/hgxdkqlctwjrb95aseuf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102999/homestay/Lux%20Home/gzdhxzrixzwew72sfqss.jpg"
     ],
     "locations": [
       {
-        "address": "Số 59, Đường Trần Hưng Đạo",
-        "district": "Sơn Trà",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 29, Đường Trần Hưng Đạo",
-        "district": "Quận 2",
-        "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 87, Đường Lê Lợi",
-        "district": "Quận 3",
+        "address": "232 Đặng Thuỳ Trâm, Phường 13, Quận Bình Thạnh",
+        "district": "Quận Bình Thạnh",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Tropical",
-    "room_amenities": "Lò vi sóng, Ghế nghỉ, Phòng tắm riêng, Bồn tắm, Minibar",
-    "surrounding_amenities": "Công viên, Sân bay, Hồ bơi, Gym, Quán cà phê, Bảo tàng, Bến tàu, Trung tâm mua sắm",
-    "highlights": "Bếp đầy đủ tiện nghi, Khu vườn xinh xắn, Sân thượng rộng rãi, Thiết kế độc đáo, Không gian yên tĩnh",
+    "style": "Hiện đại",
+    "room_amenities": "Máy chiếu, Tivi, Lò vi sóng, Máy lọc nước nóng lạnh, Nồi cơm điện, Tủ lạnh, Ban công",
+    "surrounding_amenities": "Quán cà phê, Công viên, Sân bay",
+    "highlights": "Tầng hầm gửi xe, Mã khóa phòng điện tử, View cực chill hòa mình cùng thiên nhiên",
     "priority": 3
   },
   {
     "id": 44,
-    "name": "Classic Cottage Sea View",
-    "description": "Chào mừng bạn đến với Classic Cottage Sea View! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 4700000,
-    "rating": 3.2,
+    "name": "Trong Chanh Homestay",
+    "description": "Nếu bạn đang tìm một nơi để chill cùng người thương thì Chanh là lựa chọn cho bạn. Chanh luôn muốn đem đến cho bạn những không gian xanh mát rượi với thiên nhiên ấp ủ xung quanh, dù bạn đến với sự bận rộn hay âu lo thì hãy để nó ở ngoài cửa bạn nhen.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay11.jpg",
-      "/static/images/homestay12.jpg",
-      "/static/images/homestay16.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103110/homestay/Trong%20Chanh%20Homestay/ksyepijst2hhw9rt1h9i.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103111/homestay/Trong%20Chanh%20Homestay/cez771evdatruf902knq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103112/homestay/Trong%20Chanh%20Homestay/zmv5kxke6ttvxk7hp9sj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103113/homestay/Trong%20Chanh%20Homestay/ne0gp13rdkwis4s509f3.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103114/homestay/Trong%20Chanh%20Homestay/qnox0aoug0nfmo5vtyse.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103115/homestay/Trong%20Chanh%20Homestay/sg4dyzxutcit7kjgu4zz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103115/homestay/Trong%20Chanh%20Homestay/s2nlj120cc28egh8karu.jpg"
     ],
     "locations": [
       {
-        "address": "Số 14, Đường Nguyễn Huệ",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 106, Đường Trần Hưng Đạo",
-        "district": "Quận 1",
+        "address": "362 Trần Phú Phường 7 Quận 5",
+        "district": "Quận 5",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 47, Đường Lê Lợi",
-        "district": "Quận 2",
+        "address": "158 Pasteur, Phường Bến Nghé Quận 1",
+        "district": "Quận 1",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Tropical, Vintage",
-    "room_amenities": "TV màn hình phẳng, Bàn làm việc, Tủ lạnh mini, Két an toàn, Lò vi sóng, Máy sấy tóc",
-    "surrounding_amenities": "Bến tàu, Bãi biển, Trung tâm thể thao, Hồ bơi, Nhà hàng, Chợ địa phương, Gym",
-    "highlights": "Sân thượng rộng rãi, View đẹp, Thiết kế độc đáo",
+    "style": "Ấm cúng, Tối giản",
+    "room_amenities": "Máy chiếu, Lò vi sóng, Máy lạnh",
+    "surrounding_amenities": "Quán cà phê, Trung tâm thành phố tại Quận 1",
+    "highlights": "Gần mực thì đen, Gần thiên nhiên thì thư giãn, Không gian xanh mát rượi",
     "priority": 3
   },
   {
     "id": 45,
-    "name": "Modern Suite Riverside",
-    "description": "Chào mừng bạn đến với Modern Suite Riverside! Đây là một không gian tuyệt vời tại Hải Châu, Đà Nẵng.",
-    "price": 3800000,
-    "rating": 4.0,
+    "name": "Si Mê Em Homestay",
+    "description": "Buổi hẹn hò này bạn vẫn chưa biết đi đâu, vậy thì hãy đến với Si Mê Em nơi để lại những trải nghiệm khó quên cho các cặp đôi.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay16.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay8.jpg",
-      "/static/images/homestay9.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103068/homestay/Si%20M%C3%AA%20Em%20Homestay/ek77ijbisqzrcgwzhd79.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103069/homestay/Si%20M%C3%AA%20Em%20Homestay/b8ezj1yewnlfavdkdftb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103069/homestay/Si%20M%C3%AA%20Em%20Homestay/dmiofrac4g555fbhubhf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103070/homestay/Si%20M%C3%AA%20Em%20Homestay/ohcyeyje5sdgru7nrx4b.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103071/homestay/Si%20M%C3%AA%20Em%20Homestay/lbnxouscmcjoyoctlsdg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103072/homestay/Si%20M%C3%AA%20Em%20Homestay/jrivfisowjn80strikao.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103072/homestay/Si%20M%C3%AA%20Em%20Homestay/pfyay03gk9pljjfgelyq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103073/homestay/Si%20M%C3%AA%20Em%20Homestay/cpzbhtukxcgzqkozbnjl.jpg"
     ],
     "locations": [
       {
-        "address": "Số 153, Đường Nguyễn Huệ",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
+        "address": "496/22 Dương Quảng Hàm, Phường 6, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 115, Đường Lê Lợi",
-        "district": "Quận 3",
+        "address": "Hoàng Hoa Thám, Phường 13, Quận Tân Bình",
+        "district": "Quận Tân Bình",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Trường Chinh, Phường 14, Quận Tân Bình",
+        "district": "Quận Tân Bình",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Bohemian, Contemporary, Industrial",
-    "room_amenities": "Ghế nghỉ, Két an toàn, Máy điều hòa, Bồn tắm, Phòng tắm riêng",
-    "surrounding_amenities": "Trung tâm thành phố, Trạm taxi, Quán cà phê, Nhà hàng, Bến xe buýt, Trung tâm mua sắm, Hồ bơi",
-    "highlights": "Bếp đầy đủ tiện nghi, Thiết kế độc đáo, Không gian yên tĩnh",
+    "style": "Ấm cúng, Lãng mạn, Dễ thương",
+    "room_amenities": "Máy chiếu, Ban công, Bồn tắm, Bếp, Máy sấy",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Book theo giờ/ngày, Check-in/out tự động, View xịn xò, Menu đồ ăn vặt",
     "priority": 3
   },
   {
     "id": 46,
-    "name": "Luxury Bungalow Garden",
-    "description": "Chào mừng bạn đến với Luxury Bungalow Garden! Đây là một không gian tuyệt vời tại Quận 3, Hồ Chí Minh.",
-    "price": 1300000,
-    "rating": 2.7,
+    "name": "Peanut Homestay",
+    "description": "Peanut Homestay là lựa chọn tuyệt vời cho các buổi hẹn hò riêng tư và thư giãn của các cặp đôi.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay13.jpg",
-      "/static/images/homestay7.jpg",
-      "/static/images/homestay1.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103056/homestay/Peanut%20Homestay/z9a8k1gjaxsf71l9jpce.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103056/homestay/Peanut%20Homestay/uy4ybdcm2ksjpnksr97e.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103057/homestay/Peanut%20Homestay/dlacgbimdljzsjyfmm5n.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103059/homestay/Peanut%20Homestay/raafzkaqaods61iqhxtl.jpg"
     ],
     "locations": [
       {
-        "address": "Số 71, Đường Lê Lợi",
-        "district": "Quận 3",
+        "address": "153 Bạch Đằng, Phường 2, Quận Tân Bình",
+        "district": "Quận Tân Bình",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Cổ điển, Contemporary, Vintage",
-    "room_amenities": "Máy pha cà phê, Ban công riêng, Dép đi trong phòng, Máy giặt, TV màn hình phẳng, Wi-Fi miễn phí",
-    "surrounding_amenities": "Nhà hàng, Bến xe buýt, Trung tâm thể thao, Gym, Rạp chiếu phim, Trạm taxi, Quán cà phê, Công viên",
-    "highlights": "Nội thất sang trọng, Sân thượng rộng rãi, Thiết kế độc đáo, View đẹp, Không gian yên tĩnh",
+    "style": "Ấm cúng, Lãng mạn, Tối giản, Hiện đại",
+    "room_amenities": "Máy chiếu, Ban công, Bồn tắm, Bếp, Board game",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi",
+    "highlights": "Bộ bài DrunkLove, Yêu Thêm cho các cặp đôi hẹn hò hoặc các bộ board game vui nhộn khác, Tự do nấu ăn (home có cả bếp và gia vị), Xem hàng nghìn bộ phim trên Netflix",
     "priority": 3
   },
   {
     "id": 47,
-    "name": "Peaceful Apartment City Center",
-    "description": "Chào mừng bạn đến với Peaceful Apartment City Center! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 3400000,
-    "rating": 1.8,
+    "name": "Bisou Homestay",
+    "description": "Bisou Homestay là chốn hẹn hò cực chill giữa lòng thành phố.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay10.jpg",
-      "/static/images/homestay8.jpg",
-      "/static/images/homestay6.jpg",
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay18.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102820/homestay/Bisou%20Homestay/m8amhxc09x5bo4wnymrd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102821/homestay/Bisou%20Homestay/f9y7dxbc0vup6qhaik67.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102822/homestay/Bisou%20Homestay/ozlxou9crmdfqu6nqxvu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102822/homestay/Bisou%20Homestay/lnski1x1tp3earhgjlyf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102823/homestay/Bisou%20Homestay/z5r6erkw9dcufeiyuca2.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102824/homestay/Bisou%20Homestay/pokxgh3kg31dbar5hem2.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102825/homestay/Bisou%20Homestay/xytbzfa4nsegymn2plfo.jpg"
     ],
     "locations": [
       {
-        "address": "Số 60, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 33, Đường Nguyễn Huệ",
-        "district": "Quận 1",
+        "address": "39/34 Tân Thắng, Phường Sơn Kỳ, Quận Tân Phú",
+        "district": "Quận Tân Phú",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Rustic, Tối giản",
-    "room_amenities": "Phòng tắm riêng, TV màn hình phẳng, Két an toàn, Máy pha cà phê, Bồn tắm, Ban công riêng, Vòi sen",
-    "surrounding_amenities": "Trung tâm thành phố, Trung tâm mua sắm, Trung tâm thể thao, Hồ bơi, Rạp chiếu phim, Gym",
-    "highlights": "Khu vườn xinh xắn, Nội thất sang trọng, Thiết kế độc đáo",
+    "style": "Ấm cúng, Lãng mạn, Tối giản, Cổ điển, Boho",
+    "room_amenities": "Máy chiếu, Ban công, Bếp, Board game",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Trung tâm thương mại",
+    "highlights": "Tự check-in/check out linh hoạt, Tiện nghi đầy đủ, Nhà vệ sinh riêng tư từng phòng, Bếp mở đầy đủ đồ dùng",
     "priority": 3
   },
   {
     "id": 48,
-    "name": "Rustic Apartment Hillside",
-    "description": "Chào mừng bạn đến với Rustic Apartment Hillside! Đây là một không gian tuyệt vời tại Hoàn Kiếm, Hà Nội.",
-    "price": 1800000,
-    "rating": 2.7,
+    "name": "Ấy Ơi Homestay",
+    "description": "Ấy Ơi Homestay - Nơi đến để yêu thương.",
+    "price": 0,
+    "rating": 5.0,
     "image_urls": [
-      "/static/images/homestay17.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay3.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103168/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/fy9tie8iasqjkxidbhwb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103169/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/jryzmomfffzlftcds9xg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103170/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/enva04ulyirkzjgtfgp7.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103170/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/c2442us243fmwtyaotqo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103171/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/aifu3bn8pkh27xyuyr9z.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103172/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/o8on09snlcwdh9xcecm5.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103173/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/ugvu3vfaugayr6w4xfrf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103174/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/xidphfqp9rpw1ica8stu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103175/homestay/%E1%BA%A4y%20%C6%A0i%20Homestay/mkhayk8yoawmod4l9uhr.jpg"
     ],
     "locations": [
       {
-        "address": "Số 83, Đường Lê Lợi",
-        "district": "Hoàn Kiếm",
-        "city": "Hà Nội"
-      },
-      {
-        "address": "Số 192, Đường Nguyễn Huệ",
-        "district": "Quận 3",
+        "address": "362/12G Dương Quảng Hàm, Phường 5, Quận Gò Vấp",
+        "district": "Quận Gò Vấp",
         "city": "Hồ Chí Minh"
       },
       {
-        "address": "Số 96, Đường Trần Hưng Đạo",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
+        "address": "55/13 Đường số 2, Phường 3, Gò Vấp",
+        "district": "Quận Gò Vấp",
+        "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Hiện đại, Scandinavian, Industrial",
-    "room_amenities": "Máy pha cà phê, Vòi sen, Máy sấy tóc, Phòng tắm riêng, Ban công riêng, Lò vi sóng",
-    "surrounding_amenities": "Bãi biển, Trung tâm mua sắm, Quán cà phê, Công viên, Hồ bơi",
-    "highlights": "Khu vườn xinh xắn, View đẹp, Nội thất sang trọng, Không gian yên tĩnh, Thiết kế độc đáo",
+    "style": "Ấm cúng, Lãng mạn, Hiện đại",
+    "room_amenities": "Máy chiếu, Ban công, Bếp, Tủ lạnh, Tủ quần áo",
+    "surrounding_amenities": "Quán cà phê, Cửa hàng tiện lợi, Sân bay",
+    "highlights": "Giường ngủ êm ái, Bàn làm việc tiện nghi, View tuyệt đẹp, Phòng rộng rãi, sạch sẽ, Có bếp đầy đủ dụng cụ",
     "priority": 3
   },
   {
     "id": 49,
-    "name": "Luxury Studio Beachfront",
-    "description": "Chào mừng bạn đến với Luxury Studio Beachfront! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 2800000,
-    "rating": 4.8,
+    "name": "Tender Home Saigon",
+    "description": "Staycation nằm ngay trung tâm thành phố với phong cách vintage.",
+    "price": 0,
+    "rating": 2.6,
     "image_urls": [
-      "/static/images/homestay11.jpg",
-      "/static/images/homestay4.jpg",
-      "/static/images/homestay5.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103087/homestay/Tender%20Home%20Saigon/gedgan7c5rjq4ba4iuvt.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103088/homestay/Tender%20Home%20Saigon/k9k78bbcdkrsw9hgcz09.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103089/homestay/Tender%20Home%20Saigon/v6x4f4ojkhscrstyvj5u.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103089/homestay/Tender%20Home%20Saigon/ukfkotag6ljpwyvn2j69.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103090/homestay/Tender%20Home%20Saigon/bwvketu77whbxeqlowwb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103091/homestay/Tender%20Home%20Saigon/kf4jbx2d6nmzrx6ldotn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103092/homestay/Tender%20Home%20Saigon/kesyxc9euejwuj5stadz.jpg"
     ],
     "locations": [
       {
-        "address": "Số 144, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "146/3 Lý Chính Thắng, Phường 14, Quận 3",
+        "district": "Quận 3",
         "city": "Hồ Chí Minh"
-      },
-      {
-        "address": "Số 48, Đường Nguyễn Huệ",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
-      },
-      {
-        "address": "Số 40, Đường Nguyễn Huệ",
-        "district": "Hải Châu",
-        "city": "Đà Nẵng"
       }
     ],
-    "style": "Hiện đại, Industrial, Vintage",
-    "room_amenities": "TV màn hình phẳng, Ban công riêng, Lò vi sóng, Ghế nghỉ, Máy giặt, Phòng tắm riêng, Wi-Fi miễn phí",
-    "surrounding_amenities": "Nhà hàng, Trung tâm mua sắm, Quán cà phê, Trạm taxi, Bảo tàng, Siêu thị, Chợ địa phương",
-    "highlights": "Thiết kế độc đáo, Không gian yên tĩnh, Bếp đầy đủ tiện nghi, Đồ dùng cao cấp, Sân thượng rộng rãi",
+    "style": "Ấm cúng, Lãng mạn, Vintage",
+    "room_amenities": "Máy chiếu, Ban công, Máy lạnh, Tinh dầu thiên nhiên",
+    "surrounding_amenities": "Trung tâm thành phố",
+    "highlights": "Tự động check-in, Thuê theo giờ/ngày, Sẵn quầy bếp riêng mỗi phòng (đầy đủ dụng cụ bếp từ, gia vị, nồi chảo, tủ lạnh), Free mì gói, snack và cà phê, Bãi đậu xe ngay dưới nhà",
     "priority": 3
   },
   {
     "id": 50,
-    "name": "Peaceful Studio Mountain View",
-    "description": "Chào mừng bạn đến với Peaceful Studio Mountain View! Đây là một không gian tuyệt vời tại Quận 2, Hồ Chí Minh.",
-    "price": 1900000,
-    "rating": 3.0,
+    "name": "Àla Homestay",
+    "description": "Bạn đang muốn tìm một chỗ vừa tránh được cái nắng nóng mưa giông Sài Gòn mà vừa chill chill ăn uống xem Netflix free! Vậy thì để Àla chỉ cho nghennnn.",
+    "price": 0,
+    "rating": 4.8,
     "image_urls": [
-      "/static/images/homestay14.jpg",
-      "/static/images/homestay3.jpg",
-      "/static/images/homestay15.jpg"
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103155/homestay/%C3%80la%20Homestay/tt1focflf9kpmrgtv1ra.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103155/homestay/%C3%80la%20Homestay/lu7pzzvusyapfyfmgrjn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103156/homestay/%C3%80la%20Homestay/iicyynndpufz68pfb2xv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103157/homestay/%C3%80la%20Homestay/hontrjqmjptppc1ygwze.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103157/homestay/%C3%80la%20Homestay/xuymewfaqcwxsvbosqvj.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103158/homestay/%C3%80la%20Homestay/jkd83qgclzrcrnevf1lq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103159/homestay/%C3%80la%20Homestay/s4cokjgu1jfv4cbtisoe.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103160/homestay/%C3%80la%20Homestay/ot3t9jzvjnp6vgtf72a6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103160/homestay/%C3%80la%20Homestay/b1jibrjtourt8qic03w7.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103161/homestay/%C3%80la%20Homestay/ih33g1kiigkhacj7jh2u.jpg"
     ],
     "locations": [
       {
-        "address": "Số 36, Đường Nguyễn Huệ",
-        "district": "Quận 2",
+        "address": "370 Điện Biên Phủ, Phường 11, Quận 10",
+        "district": "Quận 10",
         "city": "Hồ Chí Minh"
       }
     ],
-    "style": "Industrial, Tropical, Hiện đại",
-    "room_amenities": "TV màn hình phẳng, Két an toàn, Máy pha cà phê, Minibar, Máy giặt",
-    "surrounding_amenities": "Trung tâm mua sắm, Bãi biển, Trung tâm thành phố, Siêu thị, Sân bay",
-    "highlights": "Thiết kế độc đáo, Khu vườn xinh xắn, Đồ dùng cao cấp",
+    "style": "Ấm cúng, Tối giản, Vintage, Hiện đại",
+    "room_amenities": "Máy chiếu, Ban công, Bếp, Board game, Tủ lạnh",
+    "surrounding_amenities": "Trung tâm thành phố",
+    "highlights": "Check-in tự động đảm bảo an toàn với camera AI và hệ thống khóa điện tử, Máy chiếu hiện đại với màn hình 100 inch, Đồ dùng trong phòng luôn được thay mới và sạch sẽ",
+    "priority": 3
+  },
+  {
+    "id": 51,
+    "name": "Ôm Saigon",
+    "description": "A comfy place to stay in Saigon. The one & only Ôm Saigon.",
+    "price": 0,
+    "rating": 4.3,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103162/homestay/%C3%94m%20Saigon/eipewdrknykjy51qtk7o.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103163/homestay/%C3%94m%20Saigon/nu5fjbl2klqcemyapnm8.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103163/homestay/%C3%94m%20Saigon/wbii7nhit7dztyal2zpi.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103164/homestay/%C3%94m%20Saigon/oighburdglloam9xyent.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103165/homestay/%C3%94m%20Saigon/awewru0acpyychby5snx.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103166/homestay/%C3%94m%20Saigon/tfqhqgx1iz53qyudioyv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103167/homestay/%C3%94m%20Saigon/bnoqaybnned6dmkfmp7f.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103167/homestay/%C3%94m%20Saigon/cyxmpmomowdemm6m9tq4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "336/18 Cù Lao Phường 2 Quận Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "283/7 Phạm Ngũ Lão, P. Phạm Ngũ Lão, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Ấm cúng, Tối giản, Hiện đại, Cổ điển",
+    "room_amenities": "Máy chiếu, Ban công, Máy lạnh",
+    "surrounding_amenities": "Quán cà phê, Phố ẩm thực, Cửa hàng tiện lợi",
+    "highlights": "Dù bạn đi một mình hay đi cùng bạn bè, Ôm Saigon sẽ là nơi lý tưởng để thư giãn, chia sẻ niềm vui",
+    "priority": 3
+  },
+  {
+    "id": 52,
+    "name": "Iu Homestay",
+    "description": "Iu Homestay, Welcome to my home.",
+    "price": 0,
+    "rating": 4.5,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102944/homestay/Iu%20Homestay/nlzzxl9tnfshvaiycj70.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102945/homestay/Iu%20Homestay/fyj5knp1avnyzkltavjw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102946/homestay/Iu%20Homestay/k9xns2bta4hszxku7xhz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102947/homestay/Iu%20Homestay/sqzwtlbqjnas9xhxs9jh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102948/homestay/Iu%20Homestay/ctofxrojcqxvvsvm7obn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102949/homestay/Iu%20Homestay/hdiat5oqwzhfmvschmo2.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102950/homestay/Iu%20Homestay/ehinplynwewvp8i0ho62.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102951/homestay/Iu%20Homestay/hfxroefd4k1korc1jto5.jpg"
+    ],
+    "locations": [
+      {
+        "address": "101/11d Nguyễn Văn Đậu, Phường 5, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "30/28/23 Phùng Văn Cung, Phường 7, Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Ấm cúng, Hiện đại, Cổ điển, Lãng mạn",
+    "room_amenities": "Máy chiếu, Ban công, Máy lạnh, Máy chơi game PS5, Bida, Board game, Tivi",
+    "surrounding_amenities": "Cửa hàng tiện lợi",
+    "highlights": "Check-in tự động, Các phòng gaming có PS5 cho bạn tha hồ trải nghiệm, Phòng rộng rãi sạch sẽ",
+    "priority": 3
+  },
+  {
+    "id": 53,
+    "name": "November Homestay",
+    "description": "November Homestay - Một chốn dừng chân nhỏ xinh giữa lòng Sài Gòn.",
+    "price": 0,
+    "rating": 4.7,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103038/homestay/November%20Homestay/hhioqghdkv1qdkgnaj8z.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103038/homestay/November%20Homestay/hkwaulnfjiedmvrqb7jv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103039/homestay/November%20Homestay/iraz6e2cbqyljjt7dahz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103040/homestay/November%20Homestay/wacs7tv4ymk6ws3fshvc.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103040/homestay/November%20Homestay/rpgkrjkhlhsbxxvpa4oq.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103041/homestay/November%20Homestay/ufjxyxtsivtcryc8xywl.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103042/homestay/November%20Homestay/xulteoxn4isyvler887w.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103042/homestay/November%20Homestay/cyacp6yzz3zqdcofgii1.jpg"
+    ],
+    "locations": [
+      {
+        "address": "201/1 Nguyễn Đình Chính, Phường 11, Phú Nhuận",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "119/7A, Đ. Điện Biên Phủ, Đa Kao, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Ấm cúng, Tối giản, Lãng mạn",
+    "room_amenities": "Máy chiếu, Ban công, Máy lạnh, Bếp",
+    "surrounding_amenities": "Cửa hàng tiện lợi, Trung tâm thành phố",
+    "highlights": "Không gian nghỉ dưỡng đầy đủ tiện nghi, từ máy chiếu, bếp nhỏ, đến decor tinh tế, giường êm ái.",
+    "priority": 3
+  },
+  {
+    "id": 54,
+    "name": "Chốn Homestay",
+    "description": "Nằm trên con đường Phạm Văn Đồng vô cùng tấp nập nhưng Chốn sẽ là nơi giúp bạn tận hưởng cuộc sống chậm rãi đôi chút. Chúng mình mong mọi người sẽ nhớ đến nơi đây như một “Chốn” để ghé thăm mỗi khi mệt mỏi, cần được vỗ về, cần được nghỉ ngơi.",
+    "price": 0,
+    "rating": 4.9,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102852/homestay/Ch%E1%BB%91n%20Homestay/ooezp7zy4dyvlbrwgpxh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102854/homestay/Ch%E1%BB%91n%20Homestay/k4yftt5kwkqorhde94ef.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102856/homestay/Ch%E1%BB%91n%20Homestay/mkjdqvvyd7yaaiong1ke.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102858/homestay/Ch%E1%BB%91n%20Homestay/gmzacr1bgur6zxh0n8oy.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102859/homestay/Ch%E1%BB%91n%20Homestay/agsnedxenhb25k7aqqqo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102860/homestay/Ch%E1%BB%91n%20Homestay/vmpvoubr6wdisz46tjjb.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102861/homestay/Ch%E1%BB%91n%20Homestay/fxl4kr0unhm3qrsrhwzs.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102862/homestay/Ch%E1%BB%91n%20Homestay/d1xossfaf6r0jwu2ccbg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102863/homestay/Ch%E1%BB%91n%20Homestay/dlcjo79ttz8fxl30yuz4.jpg"
+    ],
+    "locations": [
+      {
+        "address": "435N Phạm Văn Đồng, P.11, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "101/70B Nguyễn Văn Đậu, P.5, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Ấm cúng, Tối giản, Lãng mạn, Màu sắc",
+    "room_amenities": "Máy chiếu, Máy lạnh",
+    "surrounding_amenities": "Cửa hàng tiện lợi, Quán cà phê",
+    "highlights": "Mỗi căn phòng tại Chốn Homestay mang một phong cách riêng, đều được gửi gắm một lời mời: Hãy gác lại ưu phiền, thả lỏng và tận hưởng như đang ở chính ngôi nhà của bạn.",
+    "priority": 3
+  },
+  {
+    "id": 55,
+    "name": "Xanh Lá Staycation",
+    "description": "Xanh Lá Staycation là homestay với 5 phòng xinh xắn nằm tại Quận 1 và Quận Bình Thạnh.",
+    "price": 0,
+    "rating": 4.6,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103148/homestay/Xanh%20L%C3%A1%20Staycation/diacubuoxadljyoz6ucv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103149/homestay/Xanh%20L%C3%A1%20Staycation/krqlr4usvaotpar0b7yp.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103150/homestay/Xanh%20L%C3%A1%20Staycation/mhbnldkgnwhkaztdib2c.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103151/homestay/Xanh%20L%C3%A1%20Staycation/dd25vfkxnp7w2vvatthm.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103152/homestay/Xanh%20L%C3%A1%20Staycation/wyayg5twk2fr4l7biihw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103153/homestay/Xanh%20L%C3%A1%20Staycation/nzguzsotsicy1rdu5xem.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103154/homestay/Xanh%20L%C3%A1%20Staycation/imovhzbl2ycreipecnfr.jpg"
+    ],
+    "locations": [
+      {
+        "address": "42/37 Đ. Yên Đỗ, Phường 1, Bình Thạnh",
+        "district": "Bình Thạnh",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "35 Đ. Hoàng Sa, Đa Kao, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Ấm cúng, Hiện đại, Cổ điển",
+    "room_amenities": "Wifi, Điều hòa, Máy chiếu, Phòng tắm khép kín nóng lạnh, Khăn tắm, Dầu gội sữa tắm",
+    "surrounding_amenities": "Cửa hàng tiện lợi, Quán cà phê",
+    "highlights": "Cho thuê giờ/ngày/đêm, Check-in tự động, Nước suối free",
+    "priority": 3
+  },
+  {
+    "id": 56,
+    "name": "SpiceHome Homestay",
+    "description": "Spicehome - Nơi lưu trú ấm cúng tại trung tâm Phú Nhuận.",
+    "price": 0,
+    "rating": 5.0,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103079/homestay/SpiceHome%20Homestay/za2dnisyokp5uf8lqsbp.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103080/homestay/SpiceHome%20Homestay/efuz4f8gg1fjoqjwsvlz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103081/homestay/SpiceHome%20Homestay/gqn1t7mrbnwzlacxqg6n.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103082/homestay/SpiceHome%20Homestay/upmbx4vzqladpdyrgqf3.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103082/homestay/SpiceHome%20Homestay/m3t7ynj38ywanvgvcfcn.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103083/homestay/SpiceHome%20Homestay/pcxxlo8nxhmefh6lried.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103084/homestay/SpiceHome%20Homestay/ntt2n2dpc84uyiaew8cc.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103085/homestay/SpiceHome%20Homestay/pzyvi3wjzusbkvjhuayd.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103086/homestay/SpiceHome%20Homestay/sth9bhjr9lo9obkk3u18.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748103086/homestay/SpiceHome%20Homestay/f0caqgeldnggiyuufa7m.jpg"
+    ],
+    "locations": [
+      {
+        "address": "127 Trần Đình Xu, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "394 Nguyễn Công Trứ, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại",
+    "room_amenities": "Bếp chung, Máy chiếu, Tivi, Ban công, Máy giặt",
+    "surrounding_amenities": "Trung tâm thành phố",
+    "highlights": "Đa dạng loại phòng với chi phí hợp lí, Vị trí thuận tiện gần trung tâm, Nội thất tiện nghi, hiện đại",
+    "priority": 3
+  },
+  {
+    "id": 57,
+    "name": "H'Homestay",
+    "description": "H’’Homestay là homestay sang trọng mang phong cách Đông Dương kết hợp hiện đại sẽ mang lại cho bạn những trải nghiệm khó quên.",
+    "price": 0,
+    "rating": 5.0,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102911/homestay/H%27Homestay/bif7okavxkwuimgy5hjg.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102911/homestay/H%27Homestay/sndhnqyrxpmhuho8su4m.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102912/homestay/H%27Homestay/pftthhcoizq4vhaczlbi.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102913/homestay/H%27Homestay/vrralnxelrkyt0q2rcym.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102914/homestay/H%27Homestay/zrdyopix8aiu5zmngfnh.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102914/homestay/H%27Homestay/npxvhylfbdyzqzvgjre9.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102915/homestay/H%27Homestay/lb8gwwk2yk9ldagzc3my.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102916/homestay/H%27Homestay/aln5bc4sess0vrpa4bh3.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102917/homestay/H%27Homestay/prhjm4dpvbaamulsef1l.jpg"
+    ],
+    "locations": [
+      {
+        "address": "127 Trần Đình Xu, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "394 Nguyễn Công Trứ, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Sang trọng, Cổ điển, Ấm cúng, Indochine",
+    "room_amenities": "Bếp, Máy chiếu, Tivi, Ban công, Bồn tắm",
+    "surrounding_amenities": "Trung tâm thành phố, Chợ địa phương",
+    "highlights": "Có chỗ đậu xe hơi và xe máy, Có thang máy, Đầy đủ tiện nghi",
+    "priority": 3
+  },
+  {
+    "id": 58,
+    "name": "Leiden Homestay",
+    "description": "'Leiden' - nơi ấm cúng để dừng chân và trò chuyện.",
+    "price": 0,
+    "rating": 5.0,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102974/homestay/Leiden%20Homestay/xjnnv97mjmtrti0m5wsu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102975/homestay/Leiden%20Homestay/us7h9quck1vub5mhjezo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102975/homestay/Leiden%20Homestay/fjzahhgujmctuwuvrmu1.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102976/homestay/Leiden%20Homestay/u2i2quvvqaqccalys6ny.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102977/homestay/Leiden%20Homestay/g7cxokzyhoes93qx21gz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102978/homestay/Leiden%20Homestay/snbom2mcvucxn4nzjggr.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102978/homestay/Leiden%20Homestay/gukjyaifruzvnu0vbbov.jpg"
+    ],
+    "locations": [
+      {
+        "address": "121/85 Lê Thị Riêng, Phường Phạm Ngũ Lão, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Sang trọng, Tối giản",
+    "room_amenities": "Tivi, Tủ quần áo, Máy nước nóng",
+    "surrounding_amenities": "Trung tâm thành phố, Quán cà phê, Trung tâm thương mại",
+    "highlights": "Quán cafe và nhà hàng ngay trong homestay, Rộng rãi sạch sẽ",
+    "priority": 3
+  },
+  {
+    "id": 59,
+    "name": "Cozyroominsaigon",
+    "description": "Cozy and conveniently located homestay(s) in District 1 and 7 of Saigon.",
+    "price": 0,
+    "rating": 4.8,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102880/homestay/Cozyroominsaigon/egulorn9uyzw4e7baatk.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102880/homestay/Cozyroominsaigon/z4q0qzfgxlubk5lj8nyu.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102881/homestay/Cozyroominsaigon/du2y1hagng3broalw7ml.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102882/homestay/Cozyroominsaigon/rtdp3yxgliwjab3ojgei.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102882/homestay/Cozyroominsaigon/d7qqyvhmuz004qmm728v.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102883/homestay/Cozyroominsaigon/fhe2qlvdo3dkpph1vzbv.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102884/homestay/Cozyroominsaigon/jjtzjicxx5yxp2hged0m.jpg"
+    ],
+    "locations": [
+      {
+        "address": "130 Pasteur, Bến Nghé, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Vintage, Sang trọng, Hiện đại",
+    "room_amenities": "Tivi, Tủ quần áo, Board game, Bếp, Ban công",
+    "surrounding_amenities": "Trung tâm thành phố, Phố ẩm thực, Trung tâm thương mại",
+    "highlights": "Tọa lạc tại vị trí trung tâm Quận 1, Cách Ga Metro Bến Thanh chỉ với 5 phút đi bộ. Diện tích home 66m2 rộng rãi với 1 ban công, 1 phòng khách, 1 restroom và 1 phòng ngủ với 2 giường đôi, phù hợp đón khách từ 2-5 người. Thiết kế giao thoa giữa phong cách Retro và Modern tạo ra đa dạng góc check-in dành cho bạn.",
+    "priority": 3
+  },
+  {
+    "id": 60,
+    "name": "Dâu Homestay",
+    "description": "Dâu Homestay – Trải nghiệm tuyệt vời tại Quận Bình Tân.",
+    "price": 0,
+    "rating": 4.7,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102899/homestay/D%C3%A2u%20Homestay/wrzselosubt2fzwivbzf.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102900/homestay/D%C3%A2u%20Homestay/ylpjyc2ywb7sjzh8w8g6.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102900/homestay/D%C3%A2u%20Homestay/tsipmmxwrd139xmmh5qo.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102901/homestay/D%C3%A2u%20Homestay/gf25vaq4tonx7qszpzkw.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102902/homestay/D%C3%A2u%20Homestay/bjy6esqomnl7jclaqejr.jpg"
+    ],
+    "locations": [
+      {
+        "address": "752/2b HL2, Bình Trị Đông A, Bình Tân",
+        "district": "Bình Tân",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Hiện đại, Ấm cúng, Trắng đen",
+    "room_amenities": "Board game, Bồn tắm, Máy chiếu, Bida, Bếp, Game tay cầm",
+    "surrounding_amenities": "Trung tâm thương mại, Bến xe, Quán cà phê",
+    "highlights": "Tự check-in, Book theo giờ/ngày",
+    "priority": 3
+  },
+  {
+    "id": 61,
+    "name": "Kuma",
+    "description": "Kuma_Staycation ngay tại trung tâm Quận 1.",
+    "price": 0,
+    "rating": 5.0,
+    "image_urls": [
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102960/homestay/Kuma/pvqicd5h52gfhyedqada.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102961/homestay/Kuma/mscsvrh3zeszgpwf08hz.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102962/homestay/Kuma/tp7cmamjqnf9yirzzfzl.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102963/homestay/Kuma/rzmfhwgzbpzqmrqanh8c.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102963/homestay/Kuma/nd3obytg4yx59kpxunyx.jpg",
+      "https://res.cloudinary.com/drsfudaav/image/upload/v1748102964/homestay/Kuma/z1jqellvuzh95haaxqki.jpg"
+    ],
+    "locations": [
+      {
+        "address": "25/12 Nguyễn Bỉnh Khiêm, Phường Bến Nghé, Quận 1",
+        "district": "Quận 1",
+        "city": "Hồ Chí Minh"
+      },
+      {
+        "address": "Nguyễn Đình Chính, Quận Phú Nhuận (inbox)",
+        "district": "Phú Nhuận",
+        "city": "Hồ Chí Minh"
+      }
+    ],
+    "style": "Ấm cúng, Cổ điển, Tối giản",
+    "room_amenities": "Máy chiếu, Bếp, Tủ lạnh mini, Máy lạnh",
+    "surrounding_amenities": "Trung tâm thành phố, Cửa hàng tiện lợi, Siêu thị",
+    "highlights": "Book theo giờ/ngày, Đủ tiện nghi",
     "priority": 3
   }
 ]

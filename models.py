@@ -1,6 +1,7 @@
 import json
 import os
 from database import get_db_connection
+import ast
 
 
 class User:
@@ -94,6 +95,15 @@ class Homestay:
         if 'style' in homestay and isinstance(homestay['style'], list):
             normalized['style'] = ', '.join(homestay['style'])
             
+        # Ensure price is a dict if it looks like a dict in string form
+        if 'price' in normalized and isinstance(normalized['price'], str):
+            try:
+                # Try to parse string dict to actual dict
+                parsed = ast.literal_eval(normalized['price'])
+                if isinstance(parsed, dict):
+                    normalized['price'] = parsed
+            except Exception:
+                pass
         return normalized
 
     @staticmethod
@@ -249,6 +259,43 @@ class Homestay:
                 return deleted_homestay
         
         return None  # Không tìm thấy homestay
+
+    @staticmethod
+    def add_image(homestay_id: int, image_url: str) -> bool:
+        """Add an image URL to a homestay's image_urls list"""
+        homestays = HomestayJSONManager.read_homestays()
+        for homestay in homestays:
+            if str(homestay.get('id')) == str(homestay_id):
+                if 'image_urls' not in homestay:
+                    homestay['image_urls'] = []
+                if image_url not in homestay['image_urls']:
+                    homestay['image_urls'].append(image_url)
+                HomestayJSONManager.write_homestays(homestays)
+                return True
+        return False
+
+    @staticmethod
+    def remove_image(homestay_id: int, image_url: str) -> bool:
+        """Remove an image URL from a homestay's image_urls list"""
+        homestays = HomestayJSONManager.read_homestays()
+        for homestay in homestays:
+            if str(homestay.get('id')) == str(homestay_id):
+                if 'image_urls' in homestay and image_url in homestay['image_urls']:
+                    homestay['image_urls'].remove(image_url)
+                    HomestayJSONManager.write_homestays(homestays)
+                    return True
+        return False
+
+    @staticmethod
+    def update_images(homestay_id: int, image_urls: list) -> bool:
+        """Update all images for a homestay"""
+        homestays = HomestayJSONManager.read_homestays()
+        for homestay in homestays:
+            if str(homestay.get('id')) == str(homestay_id):
+                homestay['image_urls'] = image_urls
+                HomestayJSONManager.write_homestays(homestays)
+                return True
+        return False
 
 class Review:
     def __init__(self, id, homestay_id, rating, comment, created_at, username=None, user_id=None):

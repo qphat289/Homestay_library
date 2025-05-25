@@ -91,9 +91,22 @@
                         </div>
                     </div>
                     
-                    <div class="homestay-detail-price">
-                        <h5>Giá mỗi đêm</h5>
-                        <div class="price-value">{{ "{:,.0f}".format(homestay.price) }} VNĐ</div>
+                    <div class="homestay-detail-price mt-4">
+                        <h5 class="font-semibold text-yellow-700 flex items-center gap-2"><svg xmlns='http://www.w3.org/2000/svg' class='inline w-5 h-5 text-yellow-500' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 0V4m0 7v7m0 0H7m5 0h5'/></svg> Giá phòng</h5>
+                        {% if homestay.price is mapping %}
+                            <div class="price-details flex flex-col gap-1 mt-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="font-bold text-lg" style="color:#c3d600">{{ "{:,.0f}".format(homestay.price.price_for_minimum) }}đ</span>
+                                    <span class="text-sm text-gray-500">cho {{ homestay.price.minimun_hour }} giờ đầu</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <span class="font-semibold" style="color:#c3d600">Giờ tiếp theo:</span>
+                                    <span class="font-bold" style="color:#c3d600">{{ "{:,.0f}".format(homestay.price.next_hour) }}đ/giờ</span>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="price-value font-bold text-lg text-green-700 mt-2">{{ "{:,.0f}".format(homestay.price) }}đ/giờ</div>
+                        {% endif %}
                     </div>
                 </div>
                 
