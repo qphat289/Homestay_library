@@ -1,7 +1,9 @@
 import json
 import os
-from database import get_db_connection
+from database import get_db_connection, release_db_connection
 import ast
+from datetime import datetime, timedelta
+from functools import lru_cache
 
 
 class User:
@@ -9,31 +11,37 @@ class User:
     def get_by_id(user_id):
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute('SELECT * FROM users WHERE id = %s', (user_id,))
-        user = cur.fetchone()
-        cur.close()
-        conn.close()
-        return user
+        try:
+            cur.execute('SELECT * FROM users WHERE id = %s', (user_id,))
+            user = cur.fetchone()
+            return user
+        finally:
+            cur.close()
+            release_db_connection(conn)
 
     @staticmethod
     def get_by_phone(phone_number):
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute('SELECT * FROM users WHERE phone_number = %s', (phone_number,))
-        user = cur.fetchone()
-        cur.close()
-        conn.close()
-        return user
+        try:
+            cur.execute('SELECT * FROM users WHERE phone_number = %s', (phone_number,))
+            user = cur.fetchone()
+            return user
+        finally:
+            cur.close()
+            release_db_connection(conn)
     
     @staticmethod
     def get_by_email(email):
         conn = get_db_connection()
         cur = conn.cursor()
-        cur.execute('SELECT * FROM users WHERE email = %s', (email,))
-        user = cur.fetchone()
-        cur.close()
-        conn.close()
-        return user
+        try:
+            cur.execute('SELECT * FROM users WHERE email = %s', (email,))
+            user = cur.fetchone()
+            return user
+        finally:
+            cur.close()
+            release_db_connection(conn)
     
     @staticmethod
     def create(phone_number, email):
@@ -55,20 +63,30 @@ class User:
             return None
         finally:
             cur.close()
-            conn.close()
+            release_db_connection(conn)
 
 class HomestayJSONManager:
     JSON_FILE = 'data/homestays.json'
+    _cache = {}
+    _cache_time = {}
+    CACHE_DURATION = timedelta(minutes=5)
     
     @staticmethod
     def read_homestays():
+        now = datetime.now()
+        if 'homestays' in HomestayJSONManager._cache:
+            if now - HomestayJSONManager._cache_time['homestays'] < HomestayJSONManager.CACHE_DURATION:
+                return HomestayJSONManager._cache['homestays']
+
         if not os.path.exists(HomestayJSONManager.JSON_FILE):
             return []
         
         with open(HomestayJSONManager.JSON_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
-            # Handle both formats - direct array or nested under 'homestays' key
-            return data.get('homestays', data) if isinstance(data, dict) else data
+            result = data.get('homestays', data) if isinstance(data, dict) else data
+            HomestayJSONManager._cache['homestays'] = result
+            HomestayJSONManager._cache_time['homestays'] = now
+            return result
     
     @staticmethod
     def write_homestays(homestays):
@@ -76,6 +94,10 @@ class HomestayJSONManager:
         
         with open(HomestayJSONManager.JSON_FILE, 'w', encoding='utf-8') as f:
             json.dump({'homestays': homestays}, f, ensure_ascii=False, indent=4)
+        
+        # Update cache
+        HomestayJSONManager._cache['homestays'] = homestays
+        HomestayJSONManager._cache_time['homestays'] = datetime.now()
 
 class Homestay:
     @staticmethod

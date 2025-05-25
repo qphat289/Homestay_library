@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 import os
 from utils import format_price
 import json
@@ -9,10 +9,15 @@ from flask_login import LoginManager
 from auth import UserLogin
 import base64
 from routes import register_routes
+from datetime import timedelta
 
 # Initialize Flask app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-generated-key')
+
+# Configure static file caching
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(days=7)
+app.config['STATIC_FOLDER'] = 'static'
 
 # Initialize Flask-Login
 login_manager = LoginManager()
