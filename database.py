@@ -1,58 +1,92 @@
+import sqlite3
+from sqlite3 import Error
 import os
-import psycopg2
-from psycopg2 import pool
-from psycopg2.extras import RealDictCursor
-from dotenv import load_dotenv
+from contextlib import contextmanager
+from queue import Queue
+import threading
 
-load_dotenv()
+# Connection pool settings
+MAX_CONNECTIONS = 10
+POOL_TIMEOUT = 30  # seconds
 
-# Create connection pool
-connection_pool = pool.SimpleConnectionPool(
-    1,  # minconn
-    10, # maxconn
-    host=os.getenv('POSTGRES_HOST'),
-    database=os.getenv('POSTGRES_DB'),
-    user=os.getenv('POSTGRES_USER'),
-    password=os.getenv('POSTGRES_PASSWORD'),
-    port=os.getenv('POSTGRES_PORT', '5432'),
-    sslmode='require'
-)
+class DatabasePool:
+    _instance = None
+    _lock = threading.Lock()
+    
+    def __new__(cls):
+        with cls._lock:
+            if cls._instance is None:
+                cls._instance = super(DatabasePool, cls).__new__(cls)
+                cls._instance._initialize()
+            return cls._instance
+    
+    def _initialize(self):
+        self.pool = Queue(maxsize=MAX_CONNECTIONS)
+        self.db_path = 'database.db'
+        
+        # Create initial connections
+        for _ in range(MAX_CONNECTIONS):
+            conn = self._create_connection()
+            if conn:
+                self.pool.put(conn)
+    
+    def _create_connection(self):
+        try:
+            conn = sqlite3.connect(self.db_path, check_same_thread=False)
+            conn.row_factory = sqlite3.Row
+            return conn
+        except Error as e:
+            print(f"Error creating database connection: {e}")
+            return None
+    
+    @contextmanager
+    def get_connection(self):
+        conn = None
+        try:
+            conn = self.pool.get(timeout=POOL_TIMEOUT)
+            yield conn
+        except Exception as e:
+            print(f"Error getting connection from pool: {e}")
+            if conn:
+                self.pool.put(conn)
+            raise
+        finally:
+            if conn:
+                self.pool.put(conn)
+    
+    def close_all(self):
+        while not self.pool.empty():
+            conn = self.pool.get()
+            conn.close()
 
-def get_db_connection():
-    """Get database connection from pool"""
-    conn = connection_pool.getconn()
-    conn.cursor_factory = RealDictCursor
-    return conn
-
-def release_db_connection(conn):
-    """Release connection back to pool"""
-    connection_pool.putconn(conn)
+# Initialize database pool
+db_pool = DatabasePool()
 
 def init_db():
-    """Initialize database tables"""
-    conn = get_db_connection()
-    cur = conn.cursor()
-    
-    try:
+    """Initialize the database with required tables"""
+    with db_pool.get_connection() as conn:
+        cursor = conn.cursor()
+        
         # Create users table
-        cur.execute('''
-            CREATE TABLE IF NOT EXISTS users (
-                id SERIAL PRIMARY KEY,
-                phone_number VARCHAR(20) UNIQUE NOT NULL,
-                email VARCHAR(100) UNIQUE NOT NULL,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-            )
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            phone_number TEXT UNIQUE NOT NULL,
+            email TEXT UNIQUE,
+            username TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
         ''')
         
-        
-        # Add indexes for frequently queried columns
-        cur.execute('CREATE INDEX IF NOT EXISTS idx_users_phone ON users(phone_number)')
-        cur.execute('CREATE INDEX IF NOT EXISTS idx_users_email ON users(email)')
-        
         conn.commit()
-    finally:
-        cur.close()
-        release_db_connection(conn)
+
+def get_db():
+    """Get a database connection from the pool"""
+    return db_pool.get_connection()
+
+def close_db():
+    """Close all database connections"""
+    db_pool.close_all()
 
 if __name__ == '__main__':
     init_db()

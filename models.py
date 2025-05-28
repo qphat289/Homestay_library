@@ -1,69 +1,51 @@
 import json
 import os
-from database import get_db_connection, release_db_connection
+from database import get_db
 import ast
 from datetime import datetime, timedelta
 from functools import lru_cache
+import uuid
 
 
 class User:
     @staticmethod
     def get_by_id(user_id):
-        conn = get_db_connection()
-        cur = conn.cursor()
-        try:
-            cur.execute('SELECT * FROM users WHERE id = %s', (user_id,))
-            user = cur.fetchone()
-            return user
-        finally:
-            cur.close()
-            release_db_connection(conn)
+        with get_db() as conn:
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))
+            user = cursor.fetchone()
+            return dict(user) if user else None
 
     @staticmethod
     def get_by_phone(phone_number):
-        conn = get_db_connection()
-        cur = conn.cursor()
-        try:
-            cur.execute('SELECT * FROM users WHERE phone_number = %s', (phone_number,))
-            user = cur.fetchone()
-            return user
-        finally:
-            cur.close()
-            release_db_connection(conn)
+        with get_db() as conn:
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM users WHERE phone_number = ?', (phone_number,))
+            user = cursor.fetchone()
+            return dict(user) if user else None
     
     @staticmethod
     def get_by_email(email):
-        conn = get_db_connection()
-        cur = conn.cursor()
-        try:
-            cur.execute('SELECT * FROM users WHERE email = %s', (email,))
-            user = cur.fetchone()
-            return user
-        finally:
-            cur.close()
-            release_db_connection(conn)
+        with get_db() as conn:
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM users WHERE email = ?', (email,))
+            user = cursor.fetchone()
+            return dict(user) if user else None
     
     @staticmethod
     def create(phone_number, email):
-        # Kiểm tra số điện thoại đã tồn tại chưa
-        existing_user = User.get_by_phone(phone_number)
-        if existing_user:
-            return None
-            
-        conn = get_db_connection()
-        cur = conn.cursor()
-        try:
-            cur.execute('INSERT INTO users (phone_number, email) VALUES (%s, %s)',
-                       (phone_number, email))
-            conn.commit()
-            user = User.get_by_phone(phone_number)
-            return user
-        except Exception as e:
-            print(f"Error creating user: {e}")
-            return None
-        finally:
-            cur.close()
-            release_db_connection(conn)
+        with get_db() as conn:
+            cursor = conn.cursor()
+            try:
+                cursor.execute(
+                    'INSERT INTO users (phone_number, email) VALUES (?, ?)',
+                    (phone_number, email)
+                )
+                conn.commit()
+                return User.get_by_phone(phone_number)
+            except Exception as e:
+                print(f"Error creating user: {e}")
+                return None
 
 class HomestayJSONManager:
     JSON_FILE = 'data/homestays.json'
@@ -71,33 +53,72 @@ class HomestayJSONManager:
     _cache_time = {}
     CACHE_DURATION = timedelta(minutes=5)
     
-    @staticmethod
-    def read_homestays():
+    def __init__(self):
+        self.data_file = os.path.join('data', 'homestays.json')
+        self._ensure_data_file_exists()
+
+    def _ensure_data_file_exists(self):
+        os.makedirs(os.path.dirname(self.data_file), exist_ok=True)
+        if not os.path.exists(self.data_file):
+            with open(self.data_file, 'w', encoding='utf-8') as f:
+                json.dump([], f, ensure_ascii=False, indent=2)
+
+    def read_homestays(self):
         now = datetime.now()
         if 'homestays' in HomestayJSONManager._cache:
             if now - HomestayJSONManager._cache_time['homestays'] < HomestayJSONManager.CACHE_DURATION:
                 return HomestayJSONManager._cache['homestays']
 
-        if not os.path.exists(HomestayJSONManager.JSON_FILE):
+        if not os.path.exists(self.data_file):
             return []
         
-        with open(HomestayJSONManager.JSON_FILE, 'r', encoding='utf-8') as f:
+        with open(self.data_file, 'r', encoding='utf-8') as f:
             data = json.load(f)
             result = data.get('homestays', data) if isinstance(data, dict) else data
             HomestayJSONManager._cache['homestays'] = result
             HomestayJSONManager._cache_time['homestays'] = now
             return result
     
-    @staticmethod
-    def write_homestays(homestays):
-        os.makedirs(os.path.dirname(HomestayJSONManager.JSON_FILE), exist_ok=True)
+    def write_homestays(self, homestays):
+        os.makedirs(os.path.dirname(self.data_file), exist_ok=True)
         
-        with open(HomestayJSONManager.JSON_FILE, 'w', encoding='utf-8') as f:
+        with open(self.data_file, 'w', encoding='utf-8') as f:
             json.dump({'homestays': homestays}, f, ensure_ascii=False, indent=4)
         
         # Update cache
         HomestayJSONManager._cache['homestays'] = homestays
         HomestayJSONManager._cache_time['homestays'] = datetime.now()
+
+    def get_filter_options(self):
+        """Get unique filter options from all homestays"""
+        homestays = self.read_homestays()
+        cities = set()
+        districts = set()
+        styles = set()
+        
+        for homestay in homestays:
+            if 'style' in homestay:
+                styles.add(homestay['style'])
+            if 'locations' in homestay:
+                for location in homestay['locations']:
+                    if 'city' in location:
+                        cities.add(location['city'])
+                    if 'district' in location:
+                        districts.add(location['district'])
+        
+        return {
+            'cities': sorted(list(cities)),
+            'districts': sorted(list(districts)),
+            'styles': sorted(list(styles))
+        }
+
+    def get_homestay_by_id(self, id):
+        """Get a homestay by its ID"""
+        homestays = self.read_homestays()
+        for homestay in homestays:
+            if str(homestay.get('id')) == str(id):
+                return Homestay.normalize_homestay(homestay)
+        return None
 
 class Homestay:
     @staticmethod
@@ -138,7 +159,7 @@ class Homestay:
 
     @staticmethod
     def get_all(order_by='priority'):
-        homestays = HomestayJSONManager.read_homestays()
+        homestays = HomestayJSONManager().read_homestays()
         normalized_homestays = [Homestay.normalize_homestay(h) for h in homestays]
         
         # Sắp xếp theo priority nếu có
@@ -154,7 +175,7 @@ class Homestay:
         if filters is None:
             filters = {}
         
-        homestays = HomestayJSONManager.read_homestays()
+        homestays = HomestayJSONManager().read_homestays()
         filtered_homestays = []
         
         for homestay in homestays:
@@ -194,58 +215,17 @@ class Homestay:
 
     @staticmethod
     def get_by_id(id):
-        homestays = HomestayJSONManager.read_homestays()
-        # Convert id to integer if it's a string
-        try:
-            id_to_find = int(id)
-        except (ValueError, TypeError):
-            id_to_find = id
-            
-        for homestay in homestays:
-            if str(homestay.get('id')) == str(id_to_find):
-                return Homestay.normalize_homestay(homestay)
-        return None
+        homestay_manager = HomestayJSONManager()
+        return homestay_manager.get_homestay_by_id(id)
 
     @staticmethod
     def get_filter_options():
-        homestays = HomestayJSONManager.read_homestays()
-        
-        cities = set()
-        districts = set()
-        wards = set()
-        styles = set()
-        
-        for homestay in homestays:
-            if 'locations' in homestay:
-                for location in homestay['locations']:
-                    # Kiểm tra sự tồn tại của trường trước khi truy cập
-                    if 'city' in location:
-                        cities.add(location['city'])
-                    if 'district' in location:
-                        districts.add(location['district'])
-                    if 'ward' in location:
-                        wards.add(location['ward'])
-            
-            # Xử lý style (chuỗi phân cách bởi dấu phẩy)
-            if 'style' in homestay:
-                style_list = [s.strip() for s in homestay['style'].split(',')]
-                styles.update(style_list)
-        
-        # Chuyển đổi sang định dạng tương thích với template
-        cities_list = [{'city': city} for city in cities]
-        districts_list = [{'district': district} for district in districts]
-        wards_list = [{'ward': ward} for ward in wards]
-        
-        return {
-            'cities': cities_list,
-            'districts': districts_list,
-            'wards': wards_list,
-            'styles': sorted(styles)
-        }
+        homestay_manager = HomestayJSONManager()
+        return homestay_manager.get_filter_options()
     
     @staticmethod
     def add_homestay(homestay_data):
-        homestays = HomestayJSONManager.read_homestays()
+        homestays = HomestayJSONManager().read_homestays()
         
         # Tìm ID lớn nhất hiện tại
         max_id = 0
@@ -258,13 +238,13 @@ class Homestay:
         new_homestay['id'] = max_id + 1
         
         homestays.append(new_homestay)
-        HomestayJSONManager.write_homestays(homestays)
+        HomestayJSONManager().write_homestays(homestays)
         
         return new_homestay
     
     @staticmethod
     def update_homestay(id, homestay_data):
-        homestays = HomestayJSONManager.read_homestays()
+        homestays = HomestayJSONManager().read_homestays()
         
         for i, homestay in enumerate(homestays):
             if homestay['id'] == id:
@@ -273,19 +253,19 @@ class Homestay:
                 updated_homestay['id'] = id
                 homestays[i] = updated_homestay
                 
-                HomestayJSONManager.write_homestays(homestays)
+                HomestayJSONManager().write_homestays(homestays)
                 return updated_homestay
         
         return None  # Không tìm thấy homestay
     
     @staticmethod
     def delete_homestay(id):
-        homestays = HomestayJSONManager.read_homestays()
+        homestays = HomestayJSONManager().read_homestays()
         
         for i, homestay in enumerate(homestays):
             if homestay['id'] == id:
                 deleted_homestay = homestays.pop(i)
-                HomestayJSONManager.write_homestays(homestays)
+                HomestayJSONManager().write_homestays(homestays)
                 return deleted_homestay
         
         return None  # Không tìm thấy homestay
@@ -293,39 +273,20 @@ class Homestay:
     @staticmethod
     def add_image(homestay_id: int, image_url: str) -> bool:
         """Add an image URL to a homestay's image_urls list"""
-        homestays = HomestayJSONManager.read_homestays()
-        for homestay in homestays:
-            if str(homestay.get('id')) == str(homestay_id):
-                if 'image_urls' not in homestay:
-                    homestay['image_urls'] = []
-                if image_url not in homestay['image_urls']:
-                    homestay['image_urls'].append(image_url)
-                HomestayJSONManager.write_homestays(homestays)
-                return True
-        return False
+        homestay_manager = HomestayJSONManager()
+        return homestay_manager.add_image(homestay_id, image_url)
 
     @staticmethod
     def remove_image(homestay_id: int, image_url: str) -> bool:
         """Remove an image URL from a homestay's image_urls list"""
-        homestays = HomestayJSONManager.read_homestays()
-        for homestay in homestays:
-            if str(homestay.get('id')) == str(homestay_id):
-                if 'image_urls' in homestay and image_url in homestay['image_urls']:
-                    homestay['image_urls'].remove(image_url)
-                    HomestayJSONManager.write_homestays(homestays)
-                    return True
-        return False
+        homestay_manager = HomestayJSONManager()
+        return homestay_manager.remove_image(homestay_id, image_url)
 
     @staticmethod
     def update_images(homestay_id: int, image_urls: list) -> bool:
         """Update all images for a homestay"""
-        homestays = HomestayJSONManager.read_homestays()
-        for homestay in homestays:
-            if str(homestay.get('id')) == str(homestay_id):
-                homestay['image_urls'] = image_urls
-                HomestayJSONManager.write_homestays(homestays)
-                return True
-        return False
+        homestay_manager = HomestayJSONManager()
+        return homestay_manager.update_images(homestay_id, image_urls)
 
 class Review:
     def __init__(self, id, homestay_id, rating, comment, created_at, username=None, user_id=None):
@@ -338,17 +299,17 @@ class Review:
         
         # Lấy username từ database nếu có user_id
         if user_id:
-            conn = get_db_connection()
-            user = conn.execute('SELECT * FROM users WHERE id = ?', (user_id,)).fetchone()
-            conn.close()
-            self.username = user['username'] if user else ""
+            with get_db() as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))
+                user = cursor.fetchone()
+                conn.close()
+                self.username = user['username'] if user else ""
         else:
             self.username = username if username else ""
 
     @staticmethod
     def create(user_id, homestay_id, rating, comment):
-        from datetime import datetime
-        import uuid
         return Review(
             id=str(uuid.uuid4()),
             user_id=user_id,
@@ -366,41 +327,44 @@ class Review:
         return round(total_rating / len(reviews), 1)
 
 class ReviewJSONManager:
-    def __init__(self, json_file='data/reviews.json'):
-        self.json_file = json_file
-        self._ensure_file_exists()
-
-    def _ensure_file_exists(self):
-        if not os.path.exists(self.json_file):
-            os.makedirs(os.path.dirname(self.json_file), exist_ok=True)
-            with open(self.json_file, 'w', encoding='utf-8') as f:
-                json.dump([], f, ensure_ascii=False, indent=4)
+    def __init__(self):
+        self.data_file = os.path.join('data', 'reviews.json')
+        os.makedirs('data', exist_ok=True)
+        if not os.path.exists(self.data_file):
+            with open(self.data_file, 'w', encoding='utf-8') as f:
+                json.dump([], f)
 
     def read_reviews(self):
-        with open(self.json_file, 'r', encoding='utf-8') as f:
-            reviews_data = json.load(f)
-        return [Review(**review) for review in reviews_data]
+        try:
+            with open(self.data_file, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error reading reviews: {e}")
+            return []
 
     def write_reviews(self, reviews):
-        reviews_data = [vars(review) for review in reviews]
-        with open(self.json_file, 'w', encoding='utf-8') as f:
-            json.dump(reviews_data, f, ensure_ascii=False, indent=4)
+        try:
+            with open(self.data_file, 'w', encoding='utf-8') as f:
+                json.dump(reviews, f, ensure_ascii=False, indent=2)
+            return True
+        except Exception as e:
+            print(f"Error writing reviews: {e}")
+            return False
 
     def add_review(self, review):
         reviews = self.read_reviews()
         # Kiểm tra xem user đã review homestay này chưa (kiểm tra theo user_id nếu có)
         if review.user_id:
-            existing_review = next((r for r in reviews if r.user_id == review.user_id and str(r.homestay_id) == str(review.homestay_id)), None)
+            existing_review = next((r for r in reviews if r['user_id'] == review.user_id and str(r['homestay_id']) == str(review.homestay_id)), None)
             if existing_review:
                 return False, "Bạn đã đánh giá homestay này rồi"
         
-        reviews.append(review)
-        self.write_reviews(reviews)
-        return True, "Đánh giá của bạn đã được ghi nhận"
+        reviews.append(review.__dict__)
+        return self.write_reviews(reviews)
 
     def get_reviews_by_homestay(self, homestay_id):
         reviews = self.read_reviews()
-        return [r for r in reviews if str(r.homestay_id) == str(homestay_id)]
+        return [Review(**review) for review in reviews if str(review['homestay_id']) == str(homestay_id)]
 
     def get_average_rating(self, homestay_id):
         reviews = self.get_reviews_by_homestay(homestay_id)

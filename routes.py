@@ -11,28 +11,29 @@ from auth import UserLogin
 import re
 from services.image_storage import ImageStorageService
 from werkzeug.utils import secure_filename
+from extensions import cache, limiter
 
+ITEMS_PER_PAGE = 12  # Number of items per page
 
 def register_routes(app):
     @app.route('/')
     @login_required
+    @limiter.limit("30/minute")
+    @cache.cached(timeout=300)  # Cache for 5 minutes
     def index():
-        # Get search query
+        page = request.args.get('page', 1, type=int)
         search_query = request.args.get('search', '').lower()
         
-        # Get all homestays and filter options
         homestay_manager = HomestayJSONManager()
         homestays = homestay_manager.read_homestays()
         filter_options = Homestay.get_filter_options()
         
-        # Chuẩn hóa priority và sắp xếp
+        # Normalize priority and sort
         for homestay in homestays:
-            # Đảm bảo priority chỉ nhận giá trị 1, 2, 3
             priority = homestay.get('priority', 3)
             if priority not in [1, 2, 3]:
                 homestay['priority'] = 3
         
-        # Sắp xếp theo priority (1 -> 2 -> 3)
         homestays = sorted(homestays, key=lambda x: x['priority'])
         
         # Filter homestays if search query exists
@@ -49,11 +50,22 @@ def register_routes(app):
                     filtered_homestays.append(homestay)
             homestays = filtered_homestays
         
+        # Implement pagination
+        total_items = len(homestays)
+        total_pages = (total_items + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
+        start_idx = (page - 1) * ITEMS_PER_PAGE
+        end_idx = start_idx + ITEMS_PER_PAGE
+        paginated_homestays = homestays[start_idx:end_idx]
+        
         return render_template('index.html', 
-                            homestays=homestays,
+                            homestays=paginated_homestays,
                             cities=filter_options['cities'],
                             districts=filter_options['districts'],
-                            styles=filter_options['styles'])
+                            styles=filter_options['styles'],
+                            current_page=page,
+                            total_pages=total_pages,
+                            has_prev=page > 1,
+                            has_next=page < total_pages)
 
     @app.route('/login', methods=['GET', 'POST'])
     def login():
@@ -110,31 +122,27 @@ def register_routes(app):
         return redirect(url_for('login'))
 
     @app.route('/search', methods=['GET'])
+    @limiter.limit("30/minute")
+    @cache.cached(timeout=300, query_string=True)  # Cache with query parameters
     def search():
-        # Get filter parameters
+        page = request.args.get('page', 1, type=int)
         filters = {
             'city': request.args.get('city', ''),
             'district': request.args.get('district', ''),
             'style': request.args.get('style', '')
         }
-        
-        # Get search query
         search_query = request.args.get('search', '').lower()
         
-        # Search homestays with filters
         homestays = Homestay.search(filters)
         
-        # Chuẩn hóa priority và sắp xếp
+        # Normalize priority and sort
         for homestay in homestays:
-            # Đảm bảo priority chỉ nhận giá trị 1, 2, 3
             priority = homestay.get('priority', 3)
             if priority not in [1, 2, 3]:
                 homestay['priority'] = 3
         
-        # Sắp xếp theo priority (1 -> 2 -> 3)
         homestays = sorted(homestays, key=lambda x: x['priority'])
         
-        # Filter homestays if search query exists
         if search_query:
             filtered_homestays = []
             for homestay in homestays:
@@ -148,18 +156,28 @@ def register_routes(app):
                     filtered_homestays.append(homestay)
             homestays = filtered_homestays
         
-        # Get filter options for dropdowns
+        # Implement pagination
+        total_items = len(homestays)
+        total_pages = (total_items + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
+        start_idx = (page - 1) * ITEMS_PER_PAGE
+        end_idx = start_idx + ITEMS_PER_PAGE
+        paginated_homestays = homestays[start_idx:end_idx]
+        
         filter_options = Homestay.get_filter_options()
         
         return render_template('index.html', 
-                            homestays=homestays, 
+                            homestays=paginated_homestays, 
                             cities=filter_options['cities'],
                             districts=filter_options['districts'],
                             styles=filter_options['styles'],
                             selected_city=filters['city'],
                             selected_district=filters['district'],
                             selected_style=filters['style'],
-                            search_query=search_query)
+                            search_query=search_query,
+                            current_page=page,
+                            total_pages=total_pages,
+                            has_prev=page > 1,
+                            has_next=page < total_pages)
 
     @app.route('/booking', methods=['POST'])
     def booking():
@@ -175,6 +193,8 @@ def register_routes(app):
 
     @app.route('/homestay/<id>', methods=['GET'])
     @login_required
+    @limiter.limit("30/minute")
+    @cache.cached(timeout=300)  # Cache for 5 minutes
     def homestay_detail(id):
         homestay = Homestay.get_by_id(id)
         if not homestay:
@@ -184,22 +204,18 @@ def register_routes(app):
         review_manager = ReviewJSONManager()
         reviews = review_manager.get_reviews_by_homestay(id)
         
-        # Tính điểm trung bình từ reviews
         average_rating = Review.calculate_average_rating(reviews)
         
-        # Lấy thông tin user cho mỗi review
         for review in reviews:
             user = User.get_by_id(review.user_id)
             review.username = user['username'] if user else "Người dùng ẩn danh"
         
-        # Sắp xếp reviews theo thời gian mới nhất
         reviews.sort(key=lambda x: x.created_at, reverse=True)
         
         return render_template('detail.html', 
                              homestay=homestay, 
                              reviews=reviews,
-                             average_rating=average_rating,
-                             review_count=len(reviews))
+                             average_rating=average_rating)
 
     @app.route('/homestay/<id>/review', methods=['POST'])
     @login_required
@@ -268,30 +284,31 @@ def register_routes(app):
 
 
     @app.route('/serve_image/<int:homestay_id>/<int:image_index>/<string:size>')
+    @cache.cached(timeout=3600)  # Cache for 1 hour
     def serve_image(homestay_id, image_index, size='full'):
         homestay = Homestay.get_by_id(homestay_id)
         
-        # Đường dẫn đến ảnh mặc định
+        # Default image path
         default_image_path = os.path.join(app.root_path, 'static', 'images', 'default.jpg')
         
-        # Kiểm tra homestay và image_urls
+        # Check homestay and image_urls
         if not homestay or 'image_urls' not in homestay or not homestay['image_urls']:
-            print(f"Using default image for homestay {homestay_id}")
+            app.logger.info(f"Using default image for homestay {homestay_id}")
             return send_file(default_image_path, mimetype='image/jpeg')
 
-        # Kiểm tra và log index
+        # Check and log index
         if image_index >= len(homestay['image_urls']) or image_index < 0:
-            print(f"Image index {image_index} out of range for homestay {homestay_id}")
+            app.logger.info(f"Image index {image_index} out of range for homestay {homestay_id}")
             image_index = 0
 
         image_url = homestay['image_urls'][image_index]
         
-        # Kiểm tra URL có giá trị không
+        # Check if URL has value
         if not image_url:
-            print(f"Empty image URL at index {image_index} for homestay {homestay_id}")
+            app.logger.info(f"Empty image URL at index {image_index} for homestay {homestay_id}")
             return send_file(default_image_path, mimetype='image/jpeg')
         
-        # Xử lý đường dẫn ảnh - sử dụng app.root_path
+        # Process image path
         if image_url.startswith('./'):
             image_path = os.path.join(app.root_path, image_url[2:])
         elif image_url.startswith('/'):
